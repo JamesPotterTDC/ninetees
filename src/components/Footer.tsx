@@ -2,9 +2,10 @@ import { Link } from 'react-router-dom'
 import { config } from '../config'
 import Stars from './Stars'
 import { siteStats } from '../lib/reviews'
+import { products } from '../lib/catalogue'
 
 export default function Footer() {
-  const stats = siteStats()
+  const stats = siteStats(products)
   return (
     <footer className="ftr">
       <div className="wrap ftr__grid">

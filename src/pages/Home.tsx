@@ -45,7 +45,7 @@ function Hero() {
 }
 
 function Trust() {
-  const stats = siteStats()
+  const stats = siteStats(products)
   const d = config.delivery
   return (
     <div className="wrap trust">
@@ -58,7 +58,7 @@ function Trust() {
 }
 
 function Voices() {
-  const picks = featuredReviews(3)
+  const picks = featuredReviews(products, 3)
   return (
     <section className="section section--tight">
       <div className="wrap">

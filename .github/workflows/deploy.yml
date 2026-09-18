@@ -26,9 +26,15 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: npm }
       - run: npm ci
+      - run: npm run lint
+      - run: npm test
       - run: npm run build
         env:
           VITE_SHOPIFY_STOREFRONT_TOKEN: ${{ vars.SHOPIFY_STOREFRONT_TOKEN }}
+      - name: Browser smoke test against the built site
+        run: |
+          npx playwright install --with-deps chromium
+          npm run e2e
       - uses: actions/upload-pages-artifact@v3
         with: { path: dist }
   deploy:

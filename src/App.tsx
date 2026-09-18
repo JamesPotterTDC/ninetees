@@ -1,29 +1,37 @@
-import { useEffect } from 'react'
+import { lazy, Suspense, useEffect } from 'react'
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import BagDrawer from './components/BagDrawer'
 import Home from './pages/Home'
-import Collection from './pages/Collection'
-import Product from './pages/Product'
-import Bag from './pages/Bag'
-import About from './pages/About'
-import Help from './pages/Help'
-import Search from './pages/Search'
-import Thanks from './pages/Thanks'
-import NotFound from './pages/NotFound'
+// Every route except the home page loads on demand.
+const Collection = lazy(() => import('./pages/Collection'))
+const Product = lazy(() => import('./pages/Product'))
+const Bag = lazy(() => import('./pages/Bag'))
+const About = lazy(() => import('./pages/About'))
+const Help = lazy(() => import('./pages/Help'))
+const Search = lazy(() => import('./pages/Search'))
+const Thanks = lazy(() => import('./pages/Thanks'))
+const NotFound = lazy(() => import('./pages/NotFound'))
 import { useCart } from './lib/cart'
 import type { Resume } from './lib/checkout'
 
-/** Scroll to the top on every route change, or to the anchor when the link carries one (/help#delivery). */
+/** Scroll to the top on every route change, or to the anchor when the link carries one (/help#delivery).
+ *  Routes load lazily, so the anchor may not exist yet: keep looking for it for a moment before giving up. */
 function ScrollToTop() {
   const { pathname, hash } = useLocation()
   useEffect(() => {
-    if (hash) {
-      const el = document.getElementById(hash.slice(1))
+    if (!hash) { window.scrollTo({ top: 0 }); return }
+    const id = hash.slice(1)
+    const deadline = Date.now() + 2000
+    let frame = 0
+    const tryScroll = () => {
+      const el = document.getElementById(id)
       if (el) { el.scrollIntoView(); return }
+      if (Date.now() < deadline) frame = requestAnimationFrame(tryScroll)
     }
-    window.scrollTo({ top: 0 })
+    tryScroll()
+    return () => cancelAnimationFrame(frame)
   }, [pathname, hash])
   return null
 }
@@ -48,6 +56,7 @@ export default function App({ resume }: { resume: Resume }) {
         <a className="skip" href="#main">Skip to content</a>
         <Header />
         <main id="main" tabIndex={-1}>
+          <Suspense fallback={<div className="wrap" style={{ minHeight: '60vh' }} />}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/collections/:handle" element={<Collection />} />
@@ -59,6 +68,7 @@ export default function App({ resume }: { resume: Resume }) {
             <Route path="/thanks" element={<Thanks />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          </Suspense>
         </main>
         <Footer />
       </div>

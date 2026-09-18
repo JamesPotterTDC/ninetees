@@ -1,4 +1,4 @@
-import { products, type Product } from './catalogue'
+import type { Product } from './catalogue-core'
 
 export type Fit = 'small' | 'true' | 'large'
 export type Review = {
@@ -103,7 +103,7 @@ export const ratingFor = (product: Product) => summarise(reviewsFor(product))
 
 let stats: { count: number; average: number } | null = null
 /** Store-wide totals for the trust strip and footer. */
-export function siteStats() {
+export function siteStats(products: Product[]) {
   if (!stats) {
     let count = 0, sum = 0
     products.forEach((p) => reviewsFor(p).forEach((rv) => { count++; sum += rv.rating }))
@@ -113,7 +113,7 @@ export function siteStats() {
 }
 
 /** A few long five-star reviews from photographed products, for the home page. */
-export function featuredReviews(n = 3): { review: Review; product: Product }[] {
+export function featuredReviews(products: Product[], n = 3): { review: Review; product: Product }[] {
   const r = rng('featured')
   const pool = products.filter((p) => p.images.length).flatMap((p) => reviewsFor(p).filter((rv) => rv.rating === 5 && rv.body.length > 110).map((review) => ({ review, product: p })))
   const out: typeof pool = []
