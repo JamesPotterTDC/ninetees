@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-18T21:56:35+00:00",
+ "generatedAt": "2026-09-18T22:00:47+00:00",
  "shop": {
   "domain": "jamesinternaltesting.myshopify.com",
   "currency": "GBP",
@@ -3714,7 +3714,32 @@
      ]
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_2660e0c9-3685-4d99-a9c2-9b2931e9db19.png?v=1789768734",
+     "alt": "Fingerless Knit Gloves - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_6d51318a-0870-4cff-8391-7cd653f0c9d2.png?v=1789768737",
+     "alt": "Fingerless Knit Gloves - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_94a7adf1-4d85-4637-b91e-5e28109701f0.png?v=1789768740",
+     "alt": "Fingerless Knit Gloves - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_76926283-5790-4e06-9250-fab6defaa446.png?v=1789768742",
+     "alt": "Fingerless Knit Gloves - detail",
+     "width": 1024,
+     "height": 1536
+    }
+   ],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/49635494134027",
@@ -5429,7 +5454,32 @@
      ]
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_3c6aae41-ea0d-40ed-b0ea-08591d09b193.png?v=1789768709",
+     "alt": "Parklife Sweatshirt - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_4f045ae6-d484-4c0e-aaad-109e0e2e953d.png?v=1789768712",
+     "alt": "Parklife Sweatshirt - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_a1e21698-a695-442b-9621-e48d3b2c630b.png?v=1789768714",
+     "alt": "Parklife Sweatshirt - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_4cd64f48-e46c-4924-9774-d3876eaba6be.png?v=1789768716",
+     "alt": "Parklife Sweatshirt - detail",
+     "width": 1024,
+     "height": 1536
+    }
+   ],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373130735883",
@@ -5682,7 +5732,32 @@
      ]
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_db973799-e418-48ab-88c8-5b9fcdc3471c.png?v=1789768757",
+     "alt": "Popper Track Pants - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_3549c9c7-178d-4fbb-ad65-a7ad69ca5b13.png?v=1789768759",
+     "alt": "Popper Track Pants - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_d13595fa-1eb5-4fa3-be33-5d2cf9ecbccc.png?v=1789768761",
+     "alt": "Popper Track Pants - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_157a992c-561c-4d88-b0f4-9882f2f270f3.png?v=1789768763",
+     "alt": "Popper Track Pants - detail",
+     "width": 1024,
+     "height": 1536
+    }
+   ],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373134864651",
@@ -7277,7 +7352,32 @@
      ]
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_856f0a1e-622c-4f1e-adb1-52fd02709c7f.png?v=1789768664",
+     "alt": "Slacker Fisherman Jumper - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_f1c3ab3d-273c-4782-966a-b39cf5a867f6.png?v=1789768666",
+     "alt": "Slacker Fisherman Jumper - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_d8dac791-547c-4cfa-baea-7ef080f906b9.png?v=1789768668",
+     "alt": "Slacker Fisherman Jumper - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_c4e479b5-c5ff-421b-9253-9b029da6359c.png?v=1789768670",
+     "alt": "Slacker Fisherman Jumper - detail",
+     "width": 1024,
+     "height": 1536
+    }
+   ],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373128409355",
@@ -7913,7 +8013,32 @@
      ]
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_51738141-5329-4c1b-b391-a367a17d07d6.png?v=1789768649",
+     "alt": "Studded Leather Belt - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_6245aecc-bb9c-42b2-a8ad-86e36d28a3c9.png?v=1789768651",
+     "alt": "Studded Leather Belt - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_250d58dd-a03d-4bd2-bf80-3f7c0e7156fa.png?v=1789768654",
+     "alt": "Studded Leather Belt - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_db79fa8c-60d4-4250-936b-84c5d38c69b7.png?v=1789768656",
+     "alt": "Studded Leather Belt - detail",
+     "width": 1024,
+     "height": 1536
+    }
+   ],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/49635493839115",
@@ -8987,7 +9112,32 @@
      ]
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_a63d181a-f57d-4143-86bb-819c13837ad2.png?v=1789768819",
+     "alt": "Twinset Cardigan & Cami - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_623e55b1-8dd3-4290-9ed1-3475106e6991.png?v=1789768820",
+     "alt": "Twinset Cardigan & Cami - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_8fbc5994-9d76-4f13-8369-a70cb6dae983.png?v=1789768822",
+     "alt": "Twinset Cardigan & Cami - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_5339fa72-89f3-44db-8979-df618a5a552e.png?v=1789768824",
+     "alt": "Twinset Cardigan & Cami - detail",
+     "width": 1024,
+     "height": 1536
+    }
+   ],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373136208139",
