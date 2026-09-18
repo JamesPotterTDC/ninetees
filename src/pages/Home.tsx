@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom'
 import Ticker from '../components/Ticker'
 import ProductGrid from '../components/ProductGrid'
 import ProductCard from '../components/ProductCard'
-import { collectionByHandle, collectionCover, img, newIn, products, productsInCollection } from '../lib/catalogue'
+import { collectionByHandle, collectionCover, img, newIn, productByHandle, products, productsInCollection } from '../lib/catalogue'
 import { config } from '../config'
 
 const TILES = ['women', 'men', 'the-britpop-edit', 'footwear', 'rave', 'accessories']
+const STAPLES = ['wannabe-platform-sandals', 'supernova-shell-jacket', 'camden-denim-jacket', 'faux-leather-biker-jacket', 'big-beat-platform-trainers', 'tartan-kilt-mini', 'firestarter-shell-tracksuit', 'ripped-mum-jeans']
 
 function Hero() {
-  const picks = ['terrace-harrington-jacket', 'wannabe-platform-sandals', 'supernova-shell-jacket']
+  const picks = ['touchline-hooded-jacket', 'wannabe-platform-sandals', 'supernova-shell-jacket']
     .map((h) => products.find((p) => p.handle === h && p.images.length)).filter(Boolean) as typeof products
   return (
     <section className="hero">
@@ -124,7 +125,8 @@ function Newsletter() {
 }
 
 export default function Home() {
-  const fresh = newIn.slice(0, 8)
+  const staples = STAPLES.map(productByHandle).filter(Boolean) as typeof products
+  const fresh = newIn.slice(0, 4)
   return (
     <>
       <Hero />
@@ -133,13 +135,22 @@ export default function Home() {
       <section className="section section--tight">
         <div className="wrap">
           <div className="section__head">
-            <div><p className="eyebrow">Just landed</p><h2 className="display">New in</h2></div>
-            <Link to="/collections/new-in" className="link">View all {newIn.length}</Link>
+            <div><p className="eyebrow">The staples</p><h2 className="display">Start here</h2></div>
+            <Link to="/collections/the-britpop-edit" className="link">Shop the edit</Link>
           </div>
-          <ProductGrid products={fresh} eagerCount={4} />
+          <ProductGrid products={staples} eagerCount={4} />
         </div>
       </section>
       <Britpop />
+      <section className="section section--tight">
+        <div className="wrap">
+          <div className="section__head">
+            <div><p className="eyebrow">Just landed</p><h2 className="display">New in</h2></div>
+            <Link to="/collections/new-in" className="link">View all {newIn.length}</Link>
+          </div>
+          <ProductGrid products={fresh} />
+        </div>
+      </section>
       <Story />
       <Newsletter />
     </>

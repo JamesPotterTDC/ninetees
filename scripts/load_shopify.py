@@ -36,16 +36,16 @@ def description_html(p):
             f"<li><strong>Style code:</strong> {p['sku']}</li></ul>")
 
 def existing_index(shop):
-    """sku base -> (product gid, existing variant gid, existing barcode, option names)."""
+    """every sku -> (product gid, variant gid, barcode); base sku gives the product."""
     q = """query($first:Int!,$after:String){ products(first:$first,after:$after){ pageInfo{hasNextPage endCursor}
            nodes{ id title options{id name values} variants(first:5){nodes{id sku barcode}} } } }"""
     idx = {}
-    for prod in shop.paginate(q, "products"):
+    for prod in shop.paginate(q.replace("variants(first:5)", "variants(first:100)"), "products"):
         for v in prod["variants"]["nodes"]:
-            if v["sku"]: idx[v["sku"].split("-")[0] + "-" + v["sku"].split("-")[1]] = (prod["id"], v["id"], v["barcode"], prod["options"])
+            if v["sku"]: idx[v["sku"]] = (prod["id"], v["id"], v["barcode"])
     return idx
 
-def build_input(p, existing):
+def build_input(p, existing, idx):
     names, _ = SCHEMES[p["scheme"]]
     variants = []
     for vi, v in enumerate(variants_for(p)):
@@ -56,9 +56,10 @@ def build_input(p, existing):
             "inventoryPolicy": "DENY",
             "inventoryItem": {"tracked": True, "measurement": {"weight": {"unit": "KILOGRAMS", "value": WEIGHT_KG.get(p["type"], .5)}}},
         }
-        if v["is_existing"] and existing:
-            item["id"] = existing[1]
-            if existing[2]: item["barcode"] = existing[2]
+        hit = idx.get(v["sku"])
+        if hit:
+            item["id"] = hit[1]
+            if hit[2]: item["barcode"] = hit[2]
         else:
             item["inventoryQuantities"] = [{"locationId": LOCATION_ID, "name": "available",
                                             "quantity": random.Random(v["sku"]).randint(12, 140)}]
@@ -89,7 +90,7 @@ def load(only=None):
     log = []
     for p in todo:
         existing = idx.get(p["sku"])
-        out = shop.gql(PRODUCT_SET, {"input": build_input(p, existing)})
+        out = shop.gql(PRODUCT_SET, {"input": build_input(p, existing, idx)})
         res = (out.get("data") or {}).get("productSet") or {}
         errs = res.get("userErrors") or out.get("errors")
         prod = res.get("product")

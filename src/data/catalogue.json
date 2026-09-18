@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-18T18:35:25+00:00",
+ "generatedAt": "2026-09-18T18:58:44+00:00",
  "shop": {
   "domain": "jamesinternaltesting.myshopify.com",
   "currency": "GBP",
@@ -104,9 +104,9 @@
     "NineTees"
    ],
    "gender": "Men",
-   "colour": "Acid Wash",
-   "descriptionHtml": "<p>Straight-leg rigid jeans in a proper marbled acid wash. Five pockets, button fly and a slightly tapered leg.</p><ul>\n<li>\n<strong>Colour:</strong> Acid Wash</li>\n<li>\n<strong>Fit:</strong> Men's waist 30 to 38, leg 30 to 34.</li>\n<li>\n<strong>Care:</strong> Wash rarely, cold, inside out.</li>\n<li>\n<strong>Style code:</strong> 90S-049</li>\n</ul>",
-   "description": "Straight-leg rigid jeans in a proper marbled acid wash. Five pockets, button fly and a slightly tapered leg.",
+   "colour": "Light Wash",
+   "descriptionHtml": "<p>Straight-leg rigid jeans in a light vintage wash. Five pockets, button fly and a slightly tapered leg.</p><ul>\n<li>\n<strong>Colour:</strong> Light Wash</li>\n<li>\n<strong>Fit:</strong> Men's waist 30 to 38, leg 30 to 34.</li>\n<li>\n<strong>Care:</strong> Wash rarely, cold, inside out.</li>\n<li>\n<strong>Style code:</strong> 90S-049</li>\n</ul>",
+   "description": "Straight-leg rigid jeans in a light vintage wash. Five pockets, button fly and a slightly tapered leg.",
    "price": 85.0,
    "priceMax": 85.0,
    "createdAt": "2025-03-06T16:22:59Z",
@@ -146,8 +146,8 @@
      "title": "30 / 30",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 60,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "30",
       "Leg": "30"
@@ -159,8 +159,8 @@
      "title": "30 / 32",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 75,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "30",
       "Leg": "32"
@@ -172,8 +172,8 @@
      "title": "30 / 34",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 72,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "30",
       "Leg": "34"
@@ -185,8 +185,8 @@
      "title": "32 / 30",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 17,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "32",
       "Leg": "30"
@@ -211,8 +211,8 @@
      "title": "32 / 34",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 37,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "32",
       "Leg": "34"
@@ -224,8 +224,8 @@
      "title": "34 / 30",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 49,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "34",
       "Leg": "30"
@@ -237,8 +237,8 @@
      "title": "34 / 32",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 113,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "34",
       "Leg": "32"
@@ -250,8 +250,8 @@
      "title": "34 / 34",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 79,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "34",
       "Leg": "34"
@@ -263,8 +263,8 @@
      "title": "36 / 30",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 85,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "36",
       "Leg": "30"
@@ -276,8 +276,8 @@
      "title": "36 / 32",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 81,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "36",
       "Leg": "32"
@@ -289,8 +289,8 @@
      "title": "36 / 34",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 107,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "36",
       "Leg": "34"
@@ -302,8 +302,8 @@
      "title": "38 / 30",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 85,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "38",
       "Leg": "30"
@@ -315,8 +315,8 @@
      "title": "38 / 32",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 79,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "38",
       "Leg": "32"
@@ -328,8 +328,8 @@
      "title": "38 / 34",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 31,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "38",
       "Leg": "34"
@@ -343,19 +343,19 @@
   },
   {
    "id": "gid://shopify/Product/9779332677899",
-   "handle": "bandana-print-cami",
-   "title": "Bandana Print Cami",
+   "handle": "bandana-print-tee",
+   "title": "Bandana Print Tee",
    "vendor": "NineTees",
-   "type": "Tops",
+   "type": "T-Shirts",
    "tags": [
     "NineTees",
-    "Tops",
+    "Tees",
     "Women"
    ],
    "gender": "Women",
-   "colour": "Black Paisley",
-   "descriptionHtml": "<p>Bias-cut cami in a black paisley bandana print with skinny adjustable straps. Cool as anything.</p><ul>\n<li>\n<strong>Colour:</strong> Black Paisley</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-030</li>\n</ul>",
-   "description": "Bias-cut cami in a black paisley bandana print with skinny adjustable straps. Cool as anything.",
+   "colour": "Red Paisley",
+   "descriptionHtml": "<p>Fitted baby tee in a red paisley bandana print with a ribbed crew neck. Cool as anything.</p><ul>\n<li>\n<strong>Colour:</strong> Red Paisley</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-030</li>\n</ul>",
+   "description": "Fitted baby tee in a red paisley bandana print with a ribbed crew neck. Cool as anything.",
    "price": 32.0,
    "priceMax": 32.0,
    "createdAt": "2025-03-06T16:22:40Z",
@@ -376,7 +376,7 @@
    "images": [
     {
      "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/BandanaPrintTop.png?v=1749762137",
-     "alt": "Bandana Print Cami",
+     "alt": "Bandana Print Tee",
      "width": 1024,
      "height": 1024
     }
@@ -388,8 +388,8 @@
      "title": "UK 6",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 139,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 6"
      }
@@ -412,8 +412,8 @@
      "title": "UK 10",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 107,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 10"
      }
@@ -424,8 +424,8 @@
      "title": "UK 12",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 45,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 12"
      }
@@ -436,8 +436,8 @@
      "title": "UK 14",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 28,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 14"
      }
@@ -448,8 +448,8 @@
      "title": "UK 16",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 38,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 16"
      }
@@ -473,8 +473,8 @@
     "Women"
    ],
    "gender": "Women",
-   "colour": "White / Silver",
-   "descriptionHtml": "<p>Chunky white leather platform trainers with a silver heel tab and a 5cm sole. Built for dancefloors and the queue outside.</p><ul>\n<li>\n<strong>Colour:</strong> White / Silver</li>\n<li>\n<strong>Fit:</strong> UK women's sizes 2 to 9. Take your usual size.</li>\n<li>\n<strong>Care:</strong> Wipe clean. Store out of direct sunlight.</li>\n<li>\n<strong>Style code:</strong> 90S-012</li>\n</ul>",
+   "colour": "White",
+   "descriptionHtml": "<p>Chunky white leather platform trainers with a silver heel tab and a 5cm sole. Built for dancefloors and the queue outside.</p><ul>\n<li>\n<strong>Colour:</strong> White</li>\n<li>\n<strong>Fit:</strong> UK women's sizes 2 to 9. Take your usual size.</li>\n<li>\n<strong>Care:</strong> Wipe clean. Store out of direct sunlight.</li>\n<li>\n<strong>Style code:</strong> 90S-012</li>\n</ul>",
    "description": "Chunky white leather platform trainers with a silver heel tab and a 5cm sole. Built for dancefloors and the queue outside.",
    "price": 110.0,
    "priceMax": 110.0,
@@ -510,8 +510,8 @@
      "title": "2",
      "price": 110.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 33,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "2"
      }
@@ -522,8 +522,8 @@
      "title": "3",
      "price": 110.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 65,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "3"
      }
@@ -534,8 +534,8 @@
      "title": "4",
      "price": 110.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 13,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "4"
      }
@@ -546,8 +546,8 @@
      "title": "5",
      "price": 110.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 97,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "5"
      }
@@ -558,8 +558,8 @@
      "title": "6",
      "price": 110.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 101,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "6"
      }
@@ -582,8 +582,8 @@
      "title": "8",
      "price": 110.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 129,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "8"
      }
@@ -594,8 +594,8 @@
      "title": "9",
      "price": 110.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 68,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "9"
      }
@@ -609,8 +609,8 @@
   },
   {
    "id": "gid://shopify/Product/9779332940043",
-   "handle": "bittersweet-satin-slip-dress",
-   "title": "Bittersweet Satin Slip Dress",
+   "handle": "bittersweet-slip-dress",
+   "title": "Bittersweet Slip Dress",
    "vendor": "NineTees",
    "type": "Dresses",
    "tags": [
@@ -620,9 +620,9 @@
     "Women"
    ],
    "gender": "Women",
-   "colour": "Champagne",
-   "descriptionHtml": "<p>Bias-cut satin slip in champagne with a cowl neck and adjustable spaghetti straps. Wear over a white tee, or absolutely not.</p><ul>\n<li>\n<strong>Colour:</strong> Champagne</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-037</li>\n</ul>",
-   "description": "Bias-cut satin slip in champagne with a cowl neck and adjustable spaghetti straps. Wear over a white tee, or absolutely not.",
+   "colour": "Black",
+   "descriptionHtml": "<p>Bias-cut slip dress in black with skinny straps and a straight neckline. Wear over a white tee, or absolutely not.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-037</li>\n</ul>",
+   "description": "Bias-cut slip dress in black with skinny straps and a straight neckline. Wear over a white tee, or absolutely not.",
    "price": 85.0,
    "priceMax": 85.0,
    "createdAt": "2025-03-06T16:22:47Z",
@@ -643,7 +643,7 @@
    "images": [
     {
      "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/SpaghettiStrapDress.jpg?v=1755688898",
-     "alt": "Bittersweet Satin Slip Dress",
+     "alt": "Bittersweet Slip Dress",
      "width": 1024,
      "height": 1536
     }
@@ -655,8 +655,8 @@
      "title": "UK 6",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 98,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 6"
      }
@@ -679,8 +679,8 @@
      "title": "UK 10",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 34,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 10"
      }
@@ -691,8 +691,8 @@
      "title": "UK 12",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 133,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 12"
      }
@@ -703,8 +703,8 @@
      "title": "UK 14",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 96,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 14"
      }
@@ -715,8 +715,8 @@
      "title": "UK 16",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 83,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 16"
      }
@@ -725,6 +725,126 @@
    "collections": [
     "women",
     "the-britpop-edit"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/9779333300491",
+   "handle": "bold-stripe-long-sleeve",
+   "title": "Bold Stripe Long Sleeve",
+   "vendor": "NineTees",
+   "type": "Tops",
+   "tags": [
+    "NineTees",
+    "Tops",
+    "Unisex"
+   ],
+   "gender": "Unisex",
+   "colour": "Black / Multi Stripe",
+   "descriptionHtml": "<p>Long-sleeve tee in heavyweight black cotton with bold red, yellow and blue stripes and a crew neck. Effortless, allegedly.</p><ul>\n<li>\n<strong>Colour:</strong> Black / Multi Stripe</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-045</li>\n</ul>",
+   "description": "Long-sleeve tee in heavyweight black cotton with bold red, yellow and blue stripes and a crew neck. Effortless, allegedly.",
+   "price": 45.0,
+   "priceMax": 45.0,
+   "createdAt": "2025-03-06T16:22:55Z",
+   "newIn": false,
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+     ]
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/StrippedLongSleeve.jpg?v=1755691284",
+     "alt": "Bold Stripe Long Sleeve",
+     "width": 1024,
+     "height": 1536
+    }
+   ],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/53373130572043",
+     "sku": "90S-045-XS",
+     "title": "XS",
+     "price": 45.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "XS"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373130604811",
+     "sku": "90S-045-S",
+     "title": "S",
+     "price": 45.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "S"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/49635494560011",
+     "sku": "90S-045",
+     "title": "M",
+     "price": 45.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "M"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373130637579",
+     "sku": "90S-045-L",
+     "title": "L",
+     "price": 45.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "L"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373130670347",
+     "sku": "90S-045-XL",
+     "title": "XL",
+     "price": 45.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "XL"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373130703115",
+     "sku": "90S-045-2XL",
+     "title": "2XL",
+     "price": 45.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "2XL"
+     }
+    }
+   ],
+   "collections": [
+    "men",
+    "women",
+    "tees"
    ]
   },
   {
@@ -739,9 +859,9 @@
     "Women"
    ],
    "gender": "Women",
-   "colour": "Dark Indigo",
-   "descriptionHtml": "<p>Mid-rise, hip-hugging bootcut flares in dark indigo stretch denim. Long enough to catch on your heels.</p><ul>\n<li>\n<strong>Colour:</strong> Dark Indigo</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. Sits on the waist.</li>\n<li>\n<strong>Care:</strong> Wash rarely, cold, inside out.</li>\n<li>\n<strong>Style code:</strong> 90S-040</li>\n</ul>",
-   "description": "Mid-rise, hip-hugging bootcut flares in dark indigo stretch denim. Long enough to catch on your heels.",
+   "colour": "Mid Blue",
+   "descriptionHtml": "<p>Mid-rise, hip-hugging bootcut flares in mid-blue stretch denim. Long enough to catch on your heels.</p><ul>\n<li>\n<strong>Colour:</strong> Mid Blue</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. Sits on the waist.</li>\n<li>\n<strong>Care:</strong> Wash rarely, cold, inside out.</li>\n<li>\n<strong>Style code:</strong> 90S-040</li>\n</ul>",
+   "description": "Mid-rise, hip-hugging bootcut flares in mid-blue stretch denim. Long enough to catch on your heels.",
    "price": 85.0,
    "priceMax": 85.0,
    "createdAt": "2025-03-06T16:22:50Z",
@@ -774,8 +894,8 @@
      "title": "UK 6",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 82,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 6"
      }
@@ -786,8 +906,8 @@
      "title": "UK 8",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 31,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 8"
      }
@@ -798,8 +918,8 @@
      "title": "UK 10",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 85,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 10"
      }
@@ -822,8 +942,8 @@
      "title": "UK 14",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 79,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 14"
      }
@@ -834,8 +954,8 @@
      "title": "UK 16",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 109,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 16"
      }
@@ -844,126 +964,6 @@
    "collections": [
     "women",
     "denim"
-   ]
-  },
-  {
-   "id": "gid://shopify/Product/9779333300491",
-   "handle": "breton-stripe-long-sleeve",
-   "title": "Breton Stripe Long Sleeve",
-   "vendor": "NineTees",
-   "type": "Tops",
-   "tags": [
-    "NineTees",
-    "Tops",
-    "Unisex"
-   ],
-   "gender": "Unisex",
-   "colour": "Navy / Ecru",
-   "descriptionHtml": "<p>Long-sleeve tee in a heavyweight navy and ecru Breton stripe with a boat neck. Effortless, allegedly.</p><ul>\n<li>\n<strong>Colour:</strong> Navy / Ecru</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-045</li>\n</ul>",
-   "description": "Long-sleeve tee in a heavyweight navy and ecru Breton stripe with a boat neck. Effortless, allegedly.",
-   "price": 45.0,
-   "priceMax": 45.0,
-   "createdAt": "2025-03-06T16:22:55Z",
-   "newIn": false,
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL"
-     ]
-    }
-   ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/StrippedLongSleeve.jpg?v=1755691284",
-     "alt": "Breton Stripe Long Sleeve",
-     "width": 1024,
-     "height": 1536
-    }
-   ],
-   "variants": [
-    {
-     "id": "gid://shopify/ProductVariant/53373130572043",
-     "sku": "90S-045-XS",
-     "title": "XS",
-     "price": 45.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 119,
-     "options": {
-      "Size": "XS"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373130604811",
-     "sku": "90S-045-S",
-     "title": "S",
-     "price": 45.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 106,
-     "options": {
-      "Size": "S"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/49635494560011",
-     "sku": "90S-045",
-     "title": "M",
-     "price": 45.0,
-     "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
-     "options": {
-      "Size": "M"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373130637579",
-     "sku": "90S-045-L",
-     "title": "L",
-     "price": 45.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 110,
-     "options": {
-      "Size": "L"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373130670347",
-     "sku": "90S-045-XL",
-     "title": "XL",
-     "price": 45.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 62,
-     "options": {
-      "Size": "XL"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373130703115",
-     "sku": "90S-045-2XL",
-     "title": "2XL",
-     "price": 45.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 65,
-     "options": {
-      "Size": "2XL"
-     }
-    }
-   ],
-   "collections": [
-    "men",
-    "women",
-    "tees"
    ]
   },
   {
@@ -978,9 +978,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Navy",
-   "descriptionHtml": "<p>Structured six-panel cap in navy twill with a flat peak and an embroidered NineTees mark. Wear backwards at your own risk.</p><ul>\n<li>\n<strong>Colour:</strong> Navy</li>\n<li>\n<strong>Fit:</strong> Two sizes: S/M fits up to 57cm, L/XL up to 61cm.</li>\n<li>\n<strong>Care:</strong> Hand wash. Reshape while damp.</li>\n<li>\n<strong>Style code:</strong> 90S-017</li>\n</ul>",
-   "description": "Structured six-panel cap in navy twill with a flat peak and an embroidered NineTees mark. Wear backwards at your own risk.",
+   "colour": "Red",
+   "descriptionHtml": "<p>Structured six-panel cap in red twill with a flat peak and an embroidered NineTees mark. Wear backwards at your own risk.</p><ul>\n<li>\n<strong>Colour:</strong> Red</li>\n<li>\n<strong>Fit:</strong> Two sizes: S/M fits up to 57cm, L/XL up to 61cm.</li>\n<li>\n<strong>Care:</strong> Hand wash. Reshape while damp.</li>\n<li>\n<strong>Style code:</strong> 90S-017</li>\n</ul>",
+   "description": "Structured six-panel cap in red twill with a flat peak and an embroidered NineTees mark. Wear backwards at your own risk.",
    "price": 32.0,
    "priceMax": 32.0,
    "createdAt": "2025-03-06T16:22:28Z",
@@ -1021,8 +1021,8 @@
      "title": "L/XL",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 116,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "L/XL"
      }
@@ -1048,9 +1048,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Black Nylon",
-   "descriptionHtml": "<p>Boxy nylon bum bag with two zipped compartments and a clip-fasten waist strap. Wear it cross-body if you must.</p><ul>\n<li>\n<strong>Colour:</strong> Black Nylon</li>\n<li>\n<strong>Fit:</strong> One size.</li>\n<li>\n<strong>Care:</strong> Spot clean only.</li>\n<li>\n<strong>Style code:</strong> 90S-035</li>\n</ul>",
-   "description": "Boxy nylon bum bag with two zipped compartments and a clip-fasten waist strap. Wear it cross-body if you must.",
+   "colour": "Teal / Pink / Purple",
+   "descriptionHtml": "<p>Colour-block nylon bum bag in teal, pink and purple with two zipped compartments and a clip-fasten waist strap. Wear it cross-body if you must.</p><ul>\n<li>\n<strong>Colour:</strong> Teal / Pink / Purple</li>\n<li>\n<strong>Fit:</strong> One size.</li>\n<li>\n<strong>Care:</strong> Spot clean only.</li>\n<li>\n<strong>Style code:</strong> 90S-035</li>\n</ul>",
+   "description": "Colour-block nylon bum bag in teal, pink and purple with two zipped compartments and a clip-fasten waist strap. Wear it cross-body if you must.",
    "price": 38.0,
    "priceMax": 38.0,
    "createdAt": "2025-03-06T16:22:45Z",
@@ -1105,9 +1105,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Stonewash",
-   "descriptionHtml": "<p>Boxy, stonewashed and built to be lived in. Classic trucker cut with copper hardware and a slightly dropped shoulder, made to be worn over a hoodie outside a Camden venue in the drizzle.</p><ul>\n<li>\n<strong>Colour:</strong> Stonewash</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-002</li>\n</ul>",
-   "description": "Boxy, stonewashed and built to be lived in. Classic trucker cut with copper hardware and a slightly dropped shoulder, made to be worn over a hoodie outside a Camden venue in the drizzle.",
+   "colour": "Dark Wash",
+   "descriptionHtml": "<p>Boxy, dark-washed and built to be lived in. Classic trucker cut with copper hardware and a slightly dropped shoulder, made to be worn over a hoodie outside a Camden venue in the drizzle.</p><ul>\n<li>\n<strong>Colour:</strong> Dark Wash</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-002</li>\n</ul>",
+   "description": "Boxy, dark-washed and built to be lived in. Classic trucker cut with copper hardware and a slightly dropped shoulder, made to be worn over a hoodie outside a Camden venue in the drizzle.",
    "price": 110.0,
    "priceMax": 110.0,
    "createdAt": "2025-03-06T16:22:13Z",
@@ -1140,8 +1140,8 @@
      "title": "XS",
      "price": 110.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 115,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -1152,8 +1152,8 @@
      "title": "S",
      "price": 110.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 117,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -1164,8 +1164,8 @@
      "title": "M",
      "price": 110.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 66,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "M"
      }
@@ -1188,8 +1188,8 @@
      "title": "XL",
      "price": 110.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 108,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -1200,8 +1200,8 @@
      "title": "2XL",
      "price": 110.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 138,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -1262,8 +1262,8 @@
      "title": "30 / 30",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 48,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "30",
       "Leg": "30"
@@ -1275,8 +1275,8 @@
      "title": "30 / 32",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 30,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "30",
       "Leg": "32"
@@ -1288,8 +1288,8 @@
      "title": "30 / 34",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 66,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "30",
       "Leg": "34"
@@ -1301,8 +1301,8 @@
      "title": "32 / 30",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 134,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "32",
       "Leg": "30"
@@ -1314,8 +1314,8 @@
      "title": "32 / 32",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 81,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "32",
       "Leg": "32"
@@ -1327,8 +1327,8 @@
      "title": "32 / 34",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 136,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "32",
       "Leg": "34"
@@ -1340,8 +1340,8 @@
      "title": "34 / 30",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 82,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "34",
       "Leg": "30"
@@ -1353,8 +1353,8 @@
      "title": "34 / 32",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 28,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "34",
       "Leg": "32"
@@ -1366,8 +1366,8 @@
      "title": "34 / 34",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 48,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "34",
       "Leg": "34"
@@ -1379,8 +1379,8 @@
      "title": "36 / 30",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 125,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "36",
       "Leg": "30"
@@ -1392,8 +1392,8 @@
      "title": "36 / 32",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 32,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "36",
       "Leg": "32"
@@ -1405,8 +1405,8 @@
      "title": "36 / 34",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 80,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "36",
       "Leg": "34"
@@ -1418,8 +1418,8 @@
      "title": "38 / 30",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 137,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "38",
       "Leg": "30"
@@ -1431,8 +1431,8 @@
      "title": "38 / 32",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 40,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "38",
       "Leg": "32"
@@ -1444,8 +1444,8 @@
      "title": "38 / 34",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 69,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "38",
       "Leg": "34"
@@ -1493,8 +1493,8 @@
      "title": "One Size",
      "price": 45.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 138,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "One Size"
      }
@@ -1553,8 +1553,8 @@
      "title": "3",
      "price": 140.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 111,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "3"
      }
@@ -1565,8 +1565,8 @@
      "title": "4",
      "price": 140.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 138,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "4"
      }
@@ -1577,8 +1577,8 @@
      "title": "5",
      "price": 140.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 27,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "5"
      }
@@ -1589,8 +1589,8 @@
      "title": "6",
      "price": 140.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 113,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "6"
      }
@@ -1601,8 +1601,8 @@
      "title": "7",
      "price": 140.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 114,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "7"
      }
@@ -1613,8 +1613,8 @@
      "title": "8",
      "price": 140.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 57,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "8"
      }
@@ -1625,8 +1625,8 @@
      "title": "9",
      "price": 140.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 118,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "9"
      }
@@ -1637,8 +1637,8 @@
      "title": "10",
      "price": 140.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 108,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "10"
      }
@@ -1649,8 +1649,8 @@
      "title": "11",
      "price": 140.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 31,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "11"
      }
@@ -1661,8 +1661,8 @@
      "title": "12",
      "price": 140.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 133,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "12"
      }
@@ -1718,8 +1718,8 @@
      "title": "2",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 109,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "2"
      }
@@ -1730,8 +1730,8 @@
      "title": "3",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 127,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "3"
      }
@@ -1742,8 +1742,8 @@
      "title": "4",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 99,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "4"
      }
@@ -1754,8 +1754,8 @@
      "title": "5",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 21,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "5"
      }
@@ -1766,8 +1766,8 @@
      "title": "6",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 85,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "6"
      }
@@ -1778,8 +1778,8 @@
      "title": "7",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 116,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "7"
      }
@@ -1790,8 +1790,8 @@
      "title": "8",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 122,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "8"
      }
@@ -1802,8 +1802,8 @@
      "title": "9",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 87,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "9"
      }
@@ -1856,8 +1856,8 @@
      "title": "UK 6",
      "price": 70.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 20,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 6"
      }
@@ -1868,8 +1868,8 @@
      "title": "UK 8",
      "price": 70.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 78,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 8"
      }
@@ -1880,8 +1880,8 @@
      "title": "UK 10",
      "price": 70.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 23,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 10"
      }
@@ -1892,8 +1892,8 @@
      "title": "UK 12",
      "price": 70.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 62,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 12"
      }
@@ -1904,8 +1904,8 @@
      "title": "UK 14",
      "price": 70.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 13,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 14"
      }
@@ -1916,8 +1916,8 @@
      "title": "UK 16",
      "price": 70.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 105,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 16"
      }
@@ -1970,8 +1970,8 @@
      "title": "XS",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 94,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -1982,8 +1982,8 @@
      "title": "S",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 56,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -1994,8 +1994,8 @@
      "title": "M",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 116,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "M"
      }
@@ -2006,8 +2006,8 @@
      "title": "L",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 51,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "L"
      }
@@ -2018,8 +2018,8 @@
      "title": "XL",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 17,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -2030,8 +2030,8 @@
      "title": "2XL",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 125,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -2058,9 +2058,9 @@
     "Women"
    ],
    "gender": "Women",
-   "colour": "Vintage Wash",
-   "descriptionHtml": "<p>High-rise denim shorts in a vintage wash with a rolled hem. Cut to sit at the waist and stop just where they should.</p><ul>\n<li>\n<strong>Colour:</strong> Vintage Wash</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-024</li>\n</ul>",
-   "description": "High-rise denim shorts in a vintage wash with a rolled hem. Cut to sit at the waist and stop just where they should.",
+   "colour": "Mid Wash",
+   "descriptionHtml": "<p>High-rise denim shorts in a mid wash with a rolled hem. Cut to sit at the waist and stop just where they should.</p><ul>\n<li>\n<strong>Colour:</strong> Mid Wash</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-024</li>\n</ul>",
+   "description": "High-rise denim shorts in a mid wash with a rolled hem. Cut to sit at the waist and stop just where they should.",
    "price": 55.0,
    "priceMax": 55.0,
    "createdAt": "2025-03-06T16:22:34Z",
@@ -2093,8 +2093,8 @@
      "title": "UK 6",
      "price": 55.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 27,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 6"
      }
@@ -2105,8 +2105,8 @@
      "title": "UK 8",
      "price": 55.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 105,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 8"
      }
@@ -2129,8 +2129,8 @@
      "title": "UK 12",
      "price": 55.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 94,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 12"
      }
@@ -2141,8 +2141,8 @@
      "title": "UK 14",
      "price": 55.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 19,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 14"
      }
@@ -2153,8 +2153,8 @@
      "title": "UK 16",
      "price": 55.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 78,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 16"
      }
@@ -2207,8 +2207,8 @@
      "title": "XS",
      "price": 125.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 102,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -2219,8 +2219,8 @@
      "title": "S",
      "price": 125.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 102,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -2231,8 +2231,8 @@
      "title": "M",
      "price": 125.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 80,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "M"
      }
@@ -2243,8 +2243,8 @@
      "title": "L",
      "price": 125.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 125,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "L"
      }
@@ -2255,8 +2255,8 @@
      "title": "XL",
      "price": 125.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 61,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -2267,8 +2267,8 @@
      "title": "2XL",
      "price": 125.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 122,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -2324,8 +2324,8 @@
      "title": "XS",
      "price": 110.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 107,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -2336,8 +2336,8 @@
      "title": "S",
      "price": 110.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 138,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -2348,8 +2348,8 @@
      "title": "M",
      "price": 110.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 54,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "M"
      }
@@ -2360,8 +2360,8 @@
      "title": "L",
      "price": 110.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 122,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "L"
      }
@@ -2372,8 +2372,8 @@
      "title": "XL",
      "price": 110.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 130,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -2384,8 +2384,8 @@
      "title": "2XL",
      "price": 110.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 117,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -2411,9 +2411,9 @@
     "Shirts"
    ],
    "gender": "Men",
-   "colour": "Rust & Forest Check",
-   "descriptionHtml": "<p>Brushed cotton flannel in a rust and forest check. Cut oversized to wear open over a tee with the sleeves shoved up. Britpop's unofficial uniform, tidied up.</p><ul>\n<li>\n<strong>Colour:</strong> Rust &amp; Forest Check</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-005</li>\n</ul>",
-   "description": "Brushed cotton flannel in a rust and forest check. Cut oversized to wear open over a tee with the sleeves shoved up. Britpop's unofficial uniform, tidied up.",
+   "colour": "Red & Black Check",
+   "descriptionHtml": "<p>Brushed cotton flannel in a red and black check. Cut oversized to wear open over a tee with the sleeves shoved up. Britpop's unofficial uniform, tidied up.</p><ul>\n<li>\n<strong>Colour:</strong> Red &amp; Black Check</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-005</li>\n</ul>",
+   "description": "Brushed cotton flannel in a red and black check. Cut oversized to wear open over a tee with the sleeves shoved up. Britpop's unofficial uniform, tidied up.",
    "price": 65.0,
    "priceMax": 65.0,
    "createdAt": "2025-03-06T16:22:16Z",
@@ -2446,8 +2446,8 @@
      "title": "XS",
      "price": 65.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 76,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -2470,8 +2470,8 @@
      "title": "M",
      "price": 65.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 93,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "M"
      }
@@ -2494,8 +2494,8 @@
      "title": "XL",
      "price": 65.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 129,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -2506,8 +2506,8 @@
      "title": "2XL",
      "price": 65.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 68,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -2619,8 +2619,8 @@
      "title": "UK 6",
      "price": 30.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 129,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 6"
      }
@@ -2631,8 +2631,8 @@
      "title": "UK 8",
      "price": 30.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 50,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 8"
      }
@@ -2655,8 +2655,8 @@
      "title": "UK 12",
      "price": 30.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 74,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 12"
      }
@@ -2667,8 +2667,8 @@
      "title": "UK 14",
      "price": 30.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 58,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 14"
      }
@@ -2679,8 +2679,8 @@
      "title": "UK 16",
      "price": 30.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 111,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 16"
      }
@@ -2688,128 +2688,6 @@
    ],
    "collections": [
     "women"
-   ]
-  },
-  {
-   "id": "gid://shopify/Product/9779332088075",
-   "handle": "definitely-tour-tee",
-   "title": "Definitely Tour Tee",
-   "vendor": "NineTees",
-   "type": "T-Shirts",
-   "tags": [
-    "Britpop",
-    "NineTees",
-    "Tees",
-    "Unisex"
-   ],
-   "gender": "Unisex",
-   "colour": "Washed Black",
-   "descriptionHtml": "<p>Washed black tee with a full tour-date back print from a tour that never happened. Heavyweight, boxy, pre-faded.</p><ul>\n<li>\n<strong>Colour:</strong> Washed Black</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-016</li>\n</ul>",
-   "description": "Washed black tee with a full tour-date back print from a tour that never happened. Heavyweight, boxy, pre-faded.",
-   "price": 35.0,
-   "priceMax": 35.0,
-   "createdAt": "2025-03-06T16:22:27Z",
-   "newIn": false,
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL"
-     ]
-    }
-   ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/BandTshirt.png?v=1749761184",
-     "alt": "Definitely Tour Tee",
-     "width": 1024,
-     "height": 1024
-    }
-   ],
-   "variants": [
-    {
-     "id": "gid://shopify/ProductVariant/53373126738187",
-     "sku": "90S-016-XS",
-     "title": "XS",
-     "price": 35.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 34,
-     "options": {
-      "Size": "XS"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373126770955",
-     "sku": "90S-016-S",
-     "title": "S",
-     "price": 35.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 121,
-     "options": {
-      "Size": "S"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373126803723",
-     "sku": "90S-016-M",
-     "title": "M",
-     "price": 35.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 66,
-     "options": {
-      "Size": "M"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/49635491283211",
-     "sku": "90S-016",
-     "title": "L",
-     "price": 35.0,
-     "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
-     "options": {
-      "Size": "L"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373126836491",
-     "sku": "90S-016-XL",
-     "title": "XL",
-     "price": 35.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 15,
-     "options": {
-      "Size": "XL"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373126869259",
-     "sku": "90S-016-2XL",
-     "title": "2XL",
-     "price": 35.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 17,
-     "options": {
-      "Size": "2XL"
-     }
-    }
-   ],
-   "collections": [
-    "men",
-    "women",
-    "tees",
-    "the-britpop-edit"
    ]
   },
   {
@@ -2866,8 +2744,8 @@
      "title": "UK 6",
      "price": 50.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 70,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 6"
      }
@@ -2890,8 +2768,8 @@
      "title": "UK 10",
      "price": 50.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 110,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 10"
      }
@@ -2902,8 +2780,8 @@
      "title": "UK 12",
      "price": 50.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 38,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 12"
      }
@@ -2914,8 +2792,8 @@
      "title": "UK 14",
      "price": 50.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 58,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 14"
      }
@@ -2926,8 +2804,8 @@
      "title": "UK 16",
      "price": 50.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 45,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 16"
      }
@@ -2940,8 +2818,8 @@
   },
   {
    "id": "gid://shopify/Product/9779332546827",
-   "handle": "disco-2000-velvet-crop",
-   "title": "Disco 2000 Velvet Crop",
+   "handle": "disco-2000-velvet-cami",
+   "title": "Disco 2000 Velvet Cami",
    "vendor": "NineTees",
    "type": "Tops",
    "tags": [
@@ -2950,9 +2828,9 @@
     "Women"
    ],
    "gender": "Women",
-   "colour": "Midnight Blue",
-   "descriptionHtml": "<p>Stretch velvet crop top in midnight blue with a high neck and long sleeves. For dancing badly, well.</p><ul>\n<li>\n<strong>Colour:</strong> Midnight Blue</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-026</li>\n</ul>",
-   "description": "Stretch velvet crop top in midnight blue with a high neck and long sleeves. For dancing badly, well.",
+   "colour": "Black",
+   "descriptionHtml": "<p>Stretch velvet cami crop in black with skinny straps and a straight neckline. For dancing badly, well.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-026</li>\n</ul>",
+   "description": "Stretch velvet cami crop in black with skinny straps and a straight neckline. For dancing badly, well.",
    "price": 38.0,
    "priceMax": 38.0,
    "createdAt": "2025-03-06T16:22:36Z",
@@ -2973,7 +2851,7 @@
    "images": [
     {
      "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/VelvetCropTop.jpg?v=1755697106",
-     "alt": "Disco 2000 Velvet Crop",
+     "alt": "Disco 2000 Velvet Cami",
      "width": 1024,
      "height": 1024
     }
@@ -2985,8 +2863,8 @@
      "title": "UK 6",
      "price": 38.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 115,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 6"
      }
@@ -2997,8 +2875,8 @@
      "title": "UK 8",
      "price": 38.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 36,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 8"
      }
@@ -3021,8 +2899,8 @@
      "title": "UK 12",
      "price": 38.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 34,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 12"
      }
@@ -3033,8 +2911,8 @@
      "title": "UK 14",
      "price": 38.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 66,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 14"
      }
@@ -3045,8 +2923,8 @@
      "title": "UK 16",
      "price": 38.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 40,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 16"
      }
@@ -3104,8 +2982,8 @@
      "title": "UK 6",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 37,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 6"
      }
@@ -3128,8 +3006,8 @@
      "title": "UK 10",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 96,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 10"
      }
@@ -3140,8 +3018,8 @@
      "title": "UK 12",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 81,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 12"
      }
@@ -3152,8 +3030,8 @@
      "title": "UK 14",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 40,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 14"
      }
@@ -3164,8 +3042,8 @@
      "title": "UK 16",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 122,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 16"
      }
@@ -3222,8 +3100,8 @@
      "title": "UK 6",
      "price": 140.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 65,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 6"
      }
@@ -3234,8 +3112,8 @@
      "title": "UK 8",
      "price": 140.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 136,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 8"
      }
@@ -3258,8 +3136,8 @@
      "title": "UK 12",
      "price": 140.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 119,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 12"
      }
@@ -3270,8 +3148,8 @@
      "title": "UK 14",
      "price": 140.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 20,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 14"
      }
@@ -3282,8 +3160,8 @@
      "title": "UK 16",
      "price": 140.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 84,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 16"
      }
@@ -3307,9 +3185,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Purple / Teal",
-   "descriptionHtml": "<p>Full shell suit in crinkle nylon: zip-through jacket and matching elasticated bottoms in purple and teal. Rustles when you walk. That is the point.</p><ul>\n<li>\n<strong>Colour:</strong> Purple / Teal</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-019</li>\n</ul>",
-   "description": "Full shell suit in crinkle nylon: zip-through jacket and matching elasticated bottoms in purple and teal. Rustles when you walk. That is the point.",
+   "colour": "Teal / Purple / Pink",
+   "descriptionHtml": "<p>Full shell suit in crinkle nylon: zip-through jacket and matching elasticated bottoms in teal, purple and pink. Rustles when you walk. That is the point.</p><ul>\n<li>\n<strong>Colour:</strong> Teal / Purple / Pink</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-019</li>\n</ul>",
+   "description": "Full shell suit in crinkle nylon: zip-through jacket and matching elasticated bottoms in teal, purple and pink. Rustles when you walk. That is the point.",
    "price": 130.0,
    "priceMax": 130.0,
    "createdAt": "2025-03-06T16:22:30Z",
@@ -3342,8 +3220,8 @@
      "title": "XS",
      "price": 130.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 33,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -3354,8 +3232,8 @@
      "title": "S",
      "price": 130.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 137,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -3366,8 +3244,8 @@
      "title": "M",
      "price": 130.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 84,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "M"
      }
@@ -3390,8 +3268,8 @@
      "title": "XL",
      "price": 130.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 80,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -3402,8 +3280,8 @@
      "title": "2XL",
      "price": 130.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 93,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -3513,8 +3391,8 @@
      "title": "XS",
      "price": 180.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 65,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -3525,8 +3403,8 @@
      "title": "S",
      "price": 180.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 83,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -3537,8 +3415,8 @@
      "title": "M",
      "price": 180.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 81,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "M"
      }
@@ -3549,8 +3427,8 @@
      "title": "L",
      "price": 180.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 21,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "L"
      }
@@ -3561,8 +3439,8 @@
      "title": "XL",
      "price": 180.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 105,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -3573,8 +3451,8 @@
      "title": "2XL",
      "price": 180.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 67,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -3600,9 +3478,9 @@
     "Sportswear"
    ],
    "gender": "Men",
-   "colour": "Royal Blue",
-   "descriptionHtml": "<p>Lightweight woven football shorts in royal blue with a white contrast trim and a drawstring waist. Slightly too short, exactly as intended.</p><ul>\n<li>\n<strong>Colour:</strong> Royal Blue</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-027</li>\n</ul>",
-   "description": "Lightweight woven football shorts in royal blue with a white contrast trim and a drawstring waist. Slightly too short, exactly as intended.",
+   "colour": "Teal / Pink / Purple",
+   "descriptionHtml": "<p>Lightweight retro shorts in teal with a pink and purple side stripe and a drawstring waist. Slightly too short, exactly as intended.</p><ul>\n<li>\n<strong>Colour:</strong> Teal / Pink / Purple</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-027</li>\n</ul>",
+   "description": "Lightweight retro shorts in teal with a pink and purple side stripe and a drawstring waist. Slightly too short, exactly as intended.",
    "price": 35.0,
    "priceMax": 35.0,
    "createdAt": "2025-03-06T16:22:37Z",
@@ -3635,8 +3513,8 @@
      "title": "XS",
      "price": 35.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 55,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -3647,8 +3525,8 @@
      "title": "S",
      "price": 35.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 88,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -3659,8 +3537,8 @@
      "title": "M",
      "price": 35.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 99,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "M"
      }
@@ -3683,8 +3561,8 @@
      "title": "XL",
      "price": 35.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 62,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -3695,8 +3573,8 @@
      "title": "2XL",
      "price": 35.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 49,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -3709,8 +3587,8 @@
   },
   {
    "id": "gid://shopify/Product/9779331793163",
-   "handle": "girl-power-baby-tee",
-   "title": "Girl Power Baby Tee",
+   "handle": "girl-power-tee",
+   "title": "Girl Power Tee",
    "vendor": "NineTees",
    "type": "T-Shirts",
    "tags": [
@@ -3720,9 +3598,9 @@
     "Women"
    ],
    "gender": "Women",
-   "colour": "Baby Pink",
-   "descriptionHtml": "<p>A fitted, cropped baby tee in ribbed cotton with a raised chenille GIRL POWER slogan. Cap sleeves, high neck, zero apologies.</p><ul>\n<li>\n<strong>Colour:</strong> Baby Pink</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-009</li>\n</ul>",
-   "description": "A fitted, cropped baby tee in ribbed cotton with a raised chenille GIRL POWER slogan. Cap sleeves, high neck, zero apologies.",
+   "colour": "Black",
+   "descriptionHtml": "<p>Black cotton tee with a full-colour Girl Power print across the chest. Relaxed fit, ribbed neck, zero apologies.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-009</li>\n</ul>",
+   "description": "Black cotton tee with a full-colour Girl Power print across the chest. Relaxed fit, ribbed neck, zero apologies.",
    "price": 28.0,
    "priceMax": 28.0,
    "createdAt": "2025-03-06T16:22:20Z",
@@ -3743,7 +3621,7 @@
    "images": [
     {
      "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/SpiceGirlsTee.jpg?v=1755694893",
-     "alt": "Girl Power Baby Tee",
+     "alt": "Girl Power Tee",
      "width": 1024,
      "height": 1536
     }
@@ -3755,8 +3633,8 @@
      "title": "XS",
      "price": 28.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 26,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -3779,8 +3657,8 @@
      "title": "M",
      "price": 28.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 13,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "M"
      }
@@ -3791,8 +3669,8 @@
      "title": "L",
      "price": 28.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 43,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "L"
      }
@@ -3803,8 +3681,8 @@
      "title": "XL",
      "price": 28.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 32,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -3815,8 +3693,8 @@
      "title": "2XL",
      "price": 28.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 114,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -3875,8 +3753,8 @@
      "title": "UK 6",
      "price": 95.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 109,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 6"
      }
@@ -3887,8 +3765,8 @@
      "title": "UK 8",
      "price": 95.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 117,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 8"
      }
@@ -3899,8 +3777,8 @@
      "title": "UK 10",
      "price": 95.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 119,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 10"
      }
@@ -3923,8 +3801,8 @@
      "title": "UK 14",
      "price": 95.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 121,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 14"
      }
@@ -3935,8 +3813,8 @@
      "title": "UK 16",
      "price": 95.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 40,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 16"
      }
@@ -3946,6 +3824,128 @@
     "women",
     "denim",
     "rave"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/9779332088075",
+   "handle": "grunge-band-tee",
+   "title": "Grunge Band Tee",
+   "vendor": "NineTees",
+   "type": "T-Shirts",
+   "tags": [
+    "Grunge",
+    "NineTees",
+    "Tees",
+    "Unisex"
+   ],
+   "gender": "Unisex",
+   "colour": "Black",
+   "descriptionHtml": "<p>Washed black tee with a classic grunge band print. Heavyweight, boxy, pre-faded.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-016</li>\n</ul>",
+   "description": "Washed black tee with a classic grunge band print. Heavyweight, boxy, pre-faded.",
+   "price": 35.0,
+   "priceMax": 35.0,
+   "createdAt": "2025-03-06T16:22:27Z",
+   "newIn": false,
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+     ]
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/BandTshirt.png?v=1749761184",
+     "alt": "Grunge Band Tee",
+     "width": 1024,
+     "height": 1024
+    }
+   ],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/53373126738187",
+     "sku": "90S-016-XS",
+     "title": "XS",
+     "price": 35.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "XS"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373126770955",
+     "sku": "90S-016-S",
+     "title": "S",
+     "price": 35.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "S"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373126803723",
+     "sku": "90S-016-M",
+     "title": "M",
+     "price": 35.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "M"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/49635491283211",
+     "sku": "90S-016",
+     "title": "L",
+     "price": 35.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "L"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373126836491",
+     "sku": "90S-016-XL",
+     "title": "XL",
+     "price": 35.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "XL"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373126869259",
+     "sku": "90S-016-2XL",
+     "title": "2XL",
+     "price": 35.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "2XL"
+     }
+    }
+   ],
+   "collections": [
+    "men",
+    "women",
+    "tees",
+    "the-britpop-edit"
    ]
   },
   {
@@ -3961,9 +3961,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Sunset Swirl",
-   "descriptionHtml": "<p>Heavyweight cotton tee, hand-dyed in a sunset swirl so no two are the same. Relaxed fit, ribbed neck, and a small embroidered NineTees mark at the hem.</p><ul>\n<li>\n<strong>Colour:</strong> Sunset Swirl</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-004</li>\n</ul>",
-   "description": "Heavyweight cotton tee, hand-dyed in a sunset swirl so no two are the same. Relaxed fit, ribbed neck, and a small embroidered NineTees mark at the hem.",
+   "colour": "Rainbow Spiral",
+   "descriptionHtml": "<p>Heavyweight cotton tee, hand-dyed in a rainbow spiral so no two are the same. Relaxed fit, ribbed neck, and a small embroidered NineTees mark at the hem.</p><ul>\n<li>\n<strong>Colour:</strong> Rainbow Spiral</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-004</li>\n</ul>",
+   "description": "Heavyweight cotton tee, hand-dyed in a rainbow spiral so no two are the same. Relaxed fit, ribbed neck, and a small embroidered NineTees mark at the hem.",
    "price": 32.0,
    "priceMax": 32.0,
    "createdAt": "2025-03-06T16:22:15Z",
@@ -3996,8 +3996,8 @@
      "title": "XS",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 85,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -4008,8 +4008,8 @@
      "title": "S",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 87,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -4020,8 +4020,8 @@
      "title": "M",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 105,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "M"
      }
@@ -4044,8 +4044,8 @@
      "title": "XL",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 125,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -4056,8 +4056,8 @@
      "title": "2XL",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 111,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -4065,6 +4065,127 @@
    ],
    "collections": [
     "men",
+    "women",
+    "tees",
+    "rave"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/9779332743435",
+   "handle": "heart-mesh-tee",
+   "title": "Heart Mesh Tee",
+   "vendor": "NineTees",
+   "type": "T-Shirts",
+   "tags": [
+    "NineTees",
+    "Rave",
+    "Tees",
+    "Women"
+   ],
+   "gender": "Women",
+   "colour": "Black / Rainbow Hearts",
+   "descriptionHtml": "<p>Sheer black mesh baby tee scattered with rainbow hearts. Layer it or don't.</p><ul>\n<li>\n<strong>Colour:</strong> Black / Rainbow Hearts</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-032</li>\n</ul>",
+   "description": "Sheer black mesh baby tee scattered with rainbow hearts. Layer it or don't.",
+   "price": 30.0,
+   "priceMax": 30.0,
+   "createdAt": "2025-03-06T16:22:42Z",
+   "newIn": false,
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UK 6",
+      "UK 8",
+      "UK 10",
+      "UK 12",
+      "UK 14",
+      "UK 16"
+     ]
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/MeshCropTop.jpg?v=1755691703",
+     "alt": "Heart Mesh Tee",
+     "width": 1024,
+     "height": 1536
+    }
+   ],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/53373128933643",
+     "sku": "90S-032-UK6",
+     "title": "UK 6",
+     "price": 30.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "UK 6"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/49635493544203",
+     "sku": "90S-032",
+     "title": "UK 8",
+     "price": 30.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 890,
+     "options": {
+      "Size": "UK 8"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373128966411",
+     "sku": "90S-032-UK10",
+     "title": "UK 10",
+     "price": 30.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "UK 10"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373128999179",
+     "sku": "90S-032-UK12",
+     "title": "UK 12",
+     "price": 30.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "UK 12"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373129031947",
+     "sku": "90S-032-UK14",
+     "title": "UK 14",
+     "price": 30.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "UK 14"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373129064715",
+     "sku": "90S-032-UK16",
+     "title": "UK 16",
+     "price": 30.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "UK 16"
+     }
+    }
+   ],
+   "collections": [
     "women",
     "tees",
     "rave"
@@ -4083,9 +4204,9 @@
     "NineTees"
    ],
    "gender": "Men",
-   "colour": "Bleach Wash",
-   "descriptionHtml": "<p>Wide from hip to hem with a proper amount of swagger. Heavyweight rigid denim in a bleach wash, five pockets and a leg that pools just so over your trainers.</p><ul>\n<li>\n<strong>Colour:</strong> Bleach Wash</li>\n<li>\n<strong>Fit:</strong> Men's waist 30 to 38, leg 30 to 34.</li>\n<li>\n<strong>Care:</strong> Wash rarely, cold, inside out.</li>\n<li>\n<strong>Style code:</strong> 90S-003</li>\n</ul>",
-   "description": "Wide from hip to hem with a proper amount of swagger. Heavyweight rigid denim in a bleach wash, five pockets and a leg that pools just so over your trainers.",
+   "colour": "Light Wash",
+   "descriptionHtml": "<p>Wide from hip to hem with a proper amount of swagger. Heavyweight rigid denim in a light wash, five pockets and a leg that pools just so over your trainers.</p><ul>\n<li>\n<strong>Colour:</strong> Light Wash</li>\n<li>\n<strong>Fit:</strong> Men's waist 30 to 38, leg 30 to 34.</li>\n<li>\n<strong>Care:</strong> Wash rarely, cold, inside out.</li>\n<li>\n<strong>Style code:</strong> 90S-003</li>\n</ul>",
+   "description": "Wide from hip to hem with a proper amount of swagger. Heavyweight rigid denim in a light wash, five pockets and a leg that pools just so over your trainers.",
    "price": 85.0,
    "priceMax": 85.0,
    "createdAt": "2025-03-06T16:22:14Z",
@@ -4125,8 +4246,8 @@
      "title": "30 / 30",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 39,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "30",
       "Leg": "30"
@@ -4138,8 +4259,8 @@
      "title": "30 / 32",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 25,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "30",
       "Leg": "32"
@@ -4151,8 +4272,8 @@
      "title": "30 / 34",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 25,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "30",
       "Leg": "34"
@@ -4164,8 +4285,8 @@
      "title": "32 / 30",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 40,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "32",
       "Leg": "30"
@@ -4229,8 +4350,8 @@
      "title": "34 / 34",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 81,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "34",
       "Leg": "34"
@@ -4242,8 +4363,8 @@
      "title": "36 / 30",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 138,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "36",
       "Leg": "30"
@@ -4255,8 +4376,8 @@
      "title": "36 / 32",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 14,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "36",
       "Leg": "32"
@@ -4268,8 +4389,8 @@
      "title": "36 / 34",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 40,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "36",
       "Leg": "34"
@@ -4281,8 +4402,8 @@
      "title": "38 / 30",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 85,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "38",
       "Leg": "30"
@@ -4294,8 +4415,8 @@
      "title": "38 / 32",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 106,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "38",
       "Leg": "32"
@@ -4307,8 +4428,8 @@
      "title": "38 / 34",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 76,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "38",
       "Leg": "34"
@@ -4322,121 +4443,122 @@
    ]
   },
   {
-   "id": "gid://shopify/Product/9779332743435",
-   "handle": "mesh-long-sleeve-crop",
-   "title": "Mesh Long-Sleeve Crop",
+   "id": "gid://shopify/Product/9779333398795",
+   "handle": "memphis-graphic-tee",
+   "title": "Memphis Graphic Tee",
    "vendor": "NineTees",
-   "type": "Tops",
+   "type": "T-Shirts",
    "tags": [
     "NineTees",
     "Rave",
-    "Tops",
-    "Women"
+    "Tees",
+    "Unisex"
    ],
-   "gender": "Women",
-   "colour": "Black",
-   "descriptionHtml": "<p>Sheer black mesh long-sleeve crop with a high neck and thumbholes. Layer it or don't.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-032</li>\n</ul>",
-   "description": "Sheer black mesh long-sleeve crop with a high neck and thumbholes. Layer it or don't.",
-   "price": 30.0,
-   "priceMax": 30.0,
-   "createdAt": "2025-03-06T16:22:42Z",
+   "gender": "Unisex",
+   "colour": "White",
+   "descriptionHtml": "<p>White cotton tee with an abstract Memphis-style print in primary colours. The second summer of love, in shapes.</p><ul>\n<li>\n<strong>Colour:</strong> White</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-048</li>\n</ul>",
+   "description": "White cotton tee with an abstract Memphis-style print in primary colours. The second summer of love, in shapes.",
+   "price": 32.0,
+   "priceMax": 32.0,
+   "createdAt": "2025-03-06T16:22:58Z",
    "newIn": false,
    "options": [
     {
      "name": "Size",
      "values": [
-      "UK 6",
-      "UK 8",
-      "UK 10",
-      "UK 12",
-      "UK 14",
-      "UK 16"
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
      ]
     }
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/MeshCropTop.jpg?v=1755691703",
-     "alt": "Mesh Long-Sleeve Crop",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/GraphicTee.png?v=1749760337",
+     "alt": "Memphis Graphic Tee",
      "width": 1024,
-     "height": 1536
+     "height": 1024
     }
    ],
    "variants": [
     {
-     "id": "gid://shopify/ProductVariant/53373128933643",
-     "sku": "90S-032-UK6",
-     "title": "UK 6",
-     "price": 30.0,
+     "id": "gid://shopify/ProductVariant/53373131063563",
+     "sku": "90S-048-XS",
+     "title": "XS",
+     "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 19,
+     "available": false,
+     "quantity": 0,
      "options": {
-      "Size": "UK 6"
+      "Size": "XS"
      }
     },
     {
-     "id": "gid://shopify/ProductVariant/49635493544203",
-     "sku": "90S-032",
-     "title": "UK 8",
-     "price": 30.0,
+     "id": "gid://shopify/ProductVariant/53373131096331",
+     "sku": "90S-048-S",
+     "title": "S",
+     "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 890,
+     "available": false,
+     "quantity": 0,
      "options": {
-      "Size": "UK 8"
+      "Size": "S"
      }
     },
     {
-     "id": "gid://shopify/ProductVariant/53373128966411",
-     "sku": "90S-032-UK10",
-     "title": "UK 10",
-     "price": 30.0,
+     "id": "gid://shopify/ProductVariant/53373131129099",
+     "sku": "90S-048-M",
+     "title": "M",
+     "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 78,
+     "available": false,
+     "quantity": 0,
      "options": {
-      "Size": "UK 10"
+      "Size": "M"
      }
     },
     {
-     "id": "gid://shopify/ProductVariant/53373128999179",
-     "sku": "90S-032-UK12",
-     "title": "UK 12",
-     "price": 30.0,
+     "id": "gid://shopify/ProductVariant/49635497672971",
+     "sku": "90S-048",
+     "title": "L",
+     "price": 32.0,
      "compareAtPrice": null,
      "available": true,
-     "quantity": 30,
+     "quantity": 865,
      "options": {
-      "Size": "UK 12"
+      "Size": "L"
      }
     },
     {
-     "id": "gid://shopify/ProductVariant/53373129031947",
-     "sku": "90S-032-UK14",
-     "title": "UK 14",
-     "price": 30.0,
+     "id": "gid://shopify/ProductVariant/53373131161867",
+     "sku": "90S-048-XL",
+     "title": "XL",
+     "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 60,
+     "available": false,
+     "quantity": 0,
      "options": {
-      "Size": "UK 14"
+      "Size": "XL"
      }
     },
     {
-     "id": "gid://shopify/ProductVariant/53373129064715",
-     "sku": "90S-032-UK16",
-     "title": "UK 16",
-     "price": 30.0,
+     "id": "gid://shopify/ProductVariant/53373131194635",
+     "sku": "90S-048-2XL",
+     "title": "2XL",
+     "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 12,
+     "available": false,
+     "quantity": 0,
      "options": {
-      "Size": "UK 16"
+      "Size": "2XL"
      }
     }
    ],
    "collections": [
+    "men",
     "women",
     "tees",
     "rave"
@@ -4455,9 +4577,9 @@
     "Women"
    ],
    "gender": "Women",
-   "colour": "Electric Pink",
-   "descriptionHtml": "<p>High-waisted leggings in a matte electric pink stretch jersey. Aerobics class not included.</p><ul>\n<li>\n<strong>Colour:</strong> Electric Pink</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-036</li>\n</ul>",
-   "description": "High-waisted leggings in a matte electric pink stretch jersey. Aerobics class not included.",
+   "colour": "Acid Green",
+   "descriptionHtml": "<p>High-waisted leggings in a matte acid-green stretch jersey. Aerobics class not included.</p><ul>\n<li>\n<strong>Colour:</strong> Acid Green</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-036</li>\n</ul>",
+   "description": "High-waisted leggings in a matte acid-green stretch jersey. Aerobics class not included.",
    "price": 32.0,
    "priceMax": 32.0,
    "createdAt": "2025-03-06T16:22:46Z",
@@ -4490,8 +4612,8 @@
      "title": "UK 6",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 115,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 6"
      }
@@ -4502,8 +4624,8 @@
      "title": "UK 8",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 83,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 8"
      }
@@ -4526,8 +4648,8 @@
      "title": "UK 12",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 95,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 12"
      }
@@ -4538,8 +4660,8 @@
      "title": "UK 14",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 136,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 14"
      }
@@ -4550,8 +4672,8 @@
      "title": "UK 16",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 48,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 16"
      }
@@ -4563,24 +4685,23 @@
    ]
   },
   {
-   "id": "gid://shopify/Product/9779333333259",
-   "handle": "parklife-sweatshirt",
-   "title": "Parklife Sweatshirt",
+   "id": "gid://shopify/Product/9779332055307",
+   "handle": "patched-denim-gilet",
+   "title": "Patched Denim Gilet",
    "vendor": "NineTees",
-   "type": "Sweatshirts",
+   "type": "Jackets",
    "tags": [
-    "Britpop",
+    "Denim",
     "NineTees",
-    "Sweatshirts",
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Heather Grey",
-   "descriptionHtml": "<p>Loopback cotton sweatshirt in heather grey with a raised PARKLIFE chest print and ribbed hem. All the people.</p><ul>\n<li>\n<strong>Colour:</strong> Heather Grey</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-046</li>\n</ul>",
-   "description": "Loopback cotton sweatshirt in heather grey with a raised PARKLIFE chest print and ribbed hem. All the people.",
-   "price": 60.0,
-   "priceMax": 60.0,
-   "createdAt": "2025-03-06T16:22:56Z",
+   "colour": "Light Wash",
+   "descriptionHtml": "<p>Sleeveless denim jacket in a light wash, covered in band patches and worn in at the edges. Layer over a long-sleeve tee and lean against something.</p><ul>\n<li>\n<strong>Colour:</strong> Light Wash</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-015</li>\n</ul>",
+   "description": "Sleeveless denim jacket in a light wash, covered in band patches and worn in at the edges. Layer over a long-sleeve tee and lean against something.",
+   "price": 75.0,
+   "priceMax": 75.0,
+   "createdAt": "2025-03-06T16:22:26Z",
    "newIn": false,
    "options": [
     {
@@ -4597,81 +4718,81 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/BaggySweatshirt.png?v=1749751272",
-     "alt": "Parklife Sweatshirt",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/DenimVest.jpg?v=1755696022",
+     "alt": "Patched Denim Gilet",
      "width": 1024,
      "height": 1024
     }
    ],
    "variants": [
     {
-     "id": "gid://shopify/ProductVariant/53373130735883",
-     "sku": "90S-046-XS",
+     "id": "gid://shopify/ProductVariant/53373126541579",
+     "sku": "90S-015-XS",
      "title": "XS",
-     "price": 60.0,
+     "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 91,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
     },
     {
-     "id": "gid://shopify/ProductVariant/53373130768651",
-     "sku": "90S-046-S",
+     "id": "gid://shopify/ProductVariant/53373126574347",
+     "sku": "90S-015-S",
      "title": "S",
-     "price": 60.0,
+     "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 78,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
     },
     {
-     "id": "gid://shopify/ProductVariant/53373130801419",
-     "sku": "90S-046-M",
+     "id": "gid://shopify/ProductVariant/49635491250443",
+     "sku": "90S-015",
      "title": "M",
-     "price": 60.0,
+     "price": 75.0,
      "compareAtPrice": null,
      "available": true,
-     "quantity": 94,
+     "quantity": 79,
      "options": {
       "Size": "M"
      }
     },
     {
-     "id": "gid://shopify/ProductVariant/49635497607435",
-     "sku": "90S-046",
+     "id": "gid://shopify/ProductVariant/53373126607115",
+     "sku": "90S-015-L",
      "title": "L",
-     "price": 60.0,
+     "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 86,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "L"
      }
     },
     {
-     "id": "gid://shopify/ProductVariant/53373130834187",
-     "sku": "90S-046-XL",
+     "id": "gid://shopify/ProductVariant/53373126639883",
+     "sku": "90S-015-XL",
      "title": "XL",
-     "price": 60.0,
+     "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 16,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
     },
     {
-     "id": "gid://shopify/ProductVariant/53373130866955",
-     "sku": "90S-046-2XL",
+     "id": "gid://shopify/ProductVariant/53373126672651",
+     "sku": "90S-015-2XL",
      "title": "2XL",
-     "price": 60.0,
+     "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 18,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -4680,7 +4801,7 @@
    "collections": [
     "men",
     "women",
-    "the-britpop-edit"
+    "denim"
    ]
   },
   {
@@ -4696,9 +4817,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Black / Electric Blue",
-   "descriptionHtml": "<p>Straight-leg track pants in soft brushed jersey with a contrast side stripe and popper cuffs. Sit low, wear with anything, do not run in them.</p><ul>\n<li>\n<strong>Colour:</strong> Black / Electric Blue</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-006</li>\n</ul>",
-   "description": "Straight-leg track pants in soft brushed jersey with a contrast side stripe and popper cuffs. Sit low, wear with anything, do not run in them.",
+   "colour": "Acid Green",
+   "descriptionHtml": "<p>Straight-leg joggers in acid-green brushed jersey with a drawstring waist and cuffed hems. Sit low, wear with anything, do not run in them.</p><ul>\n<li>\n<strong>Colour:</strong> Acid Green</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-006</li>\n</ul>",
+   "description": "Straight-leg joggers in acid-green brushed jersey with a drawstring waist and cuffed hems. Sit low, wear with anything, do not run in them.",
    "price": 58.0,
    "priceMax": 58.0,
    "createdAt": "2025-03-06T16:22:17Z",
@@ -4731,8 +4852,8 @@
      "title": "XS",
      "price": 58.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 13,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -4743,8 +4864,8 @@
      "title": "S",
      "price": 58.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 73,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -4767,8 +4888,8 @@
      "title": "L",
      "price": 58.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 34,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "L"
      }
@@ -4779,8 +4900,8 @@
      "title": "XL",
      "price": 58.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 89,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -4791,8 +4912,8 @@
      "title": "2XL",
      "price": 58.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 18,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -4846,8 +4967,8 @@
      "title": "XS",
      "price": 60.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 104,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -4858,8 +4979,8 @@
      "title": "S",
      "price": 60.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 137,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -4870,8 +4991,8 @@
      "title": "M",
      "price": 60.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 52,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "M"
      }
@@ -4894,8 +5015,8 @@
      "title": "XL",
      "price": 60.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 93,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -4906,8 +5027,8 @@
      "title": "2XL",
      "price": 60.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 84,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -4932,9 +5053,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Black",
-   "descriptionHtml": "<p>A big, glossy black puffa with a high collar, storm cuffs and a satin-feel lining. Warm enough for a February queue.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-044</li>\n</ul>",
-   "description": "A big, glossy black puffa with a high collar, storm cuffs and a satin-feel lining. Warm enough for a February queue.",
+   "colour": "Purple",
+   "descriptionHtml": "<p>A big, glossy purple puffa with a high collar, storm cuffs and a satin-feel lining. Warm enough for a February queue.</p><ul>\n<li>\n<strong>Colour:</strong> Purple</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-044</li>\n</ul>",
+   "description": "A big, glossy purple puffa with a high collar, storm cuffs and a satin-feel lining. Warm enough for a February queue.",
    "price": 150.0,
    "priceMax": 150.0,
    "createdAt": "2025-03-06T16:22:54Z",
@@ -4967,8 +5088,8 @@
      "title": "XS",
      "price": 150.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 17,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -4979,8 +5100,8 @@
      "title": "S",
      "price": 150.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 119,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -4991,8 +5112,8 @@
      "title": "M",
      "price": 150.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 132,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "M"
      }
@@ -5015,8 +5136,8 @@
      "title": "XL",
      "price": 150.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 57,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -5027,8 +5148,8 @@
      "title": "2XL",
      "price": 150.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 30,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -5053,9 +5174,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Purple Haze",
-   "descriptionHtml": "<p>Heavyweight hoodie, spiral-dyed in purple and acid green. Oversized hood, kangaroo pocket, and a fit that swallows you whole.</p><ul>\n<li>\n<strong>Colour:</strong> Purple Haze</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-018</li>\n</ul>",
-   "description": "Heavyweight hoodie, spiral-dyed in purple and acid green. Oversized hood, kangaroo pocket, and a fit that swallows you whole.",
+   "colour": "Rainbow Spiral",
+   "descriptionHtml": "<p>Heavyweight hoodie, spiral-dyed in every colour going. Oversized hood, kangaroo pocket, and a fit that swallows you whole.</p><ul>\n<li>\n<strong>Colour:</strong> Rainbow Spiral</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-018</li>\n</ul>",
+   "description": "Heavyweight hoodie, spiral-dyed in every colour going. Oversized hood, kangaroo pocket, and a fit that swallows you whole.",
    "price": 68.0,
    "priceMax": 68.0,
    "createdAt": "2025-03-06T16:22:29Z",
@@ -5088,8 +5209,8 @@
      "title": "XS",
      "price": 68.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 69,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -5100,8 +5221,8 @@
      "title": "S",
      "price": 68.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 86,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -5124,8 +5245,8 @@
      "title": "L",
      "price": 68.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 116,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "L"
      }
@@ -5136,8 +5257,8 @@
      "title": "XL",
      "price": 68.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 57,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -5148,8 +5269,8 @@
      "title": "2XL",
      "price": 68.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 112,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -5174,9 +5295,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Stone Cord",
-   "descriptionHtml": "<p>A wide-brim bucket hat in stone corduroy, lined and stitched to hold its shape. The hat that launched a thousand album covers.</p><ul>\n<li>\n<strong>Colour:</strong> Stone Cord</li>\n<li>\n<strong>Fit:</strong> Two sizes: S/M fits up to 57cm, L/XL up to 61cm.</li>\n<li>\n<strong>Care:</strong> Hand wash. Reshape while damp.</li>\n<li>\n<strong>Style code:</strong> 90S-014</li>\n</ul>",
-   "description": "A wide-brim bucket hat in stone corduroy, lined and stitched to hold its shape. The hat that launched a thousand album covers.",
+   "colour": "Royal Blue",
+   "descriptionHtml": "<p>A wide-brim bucket hat in royal blue cotton twill, lined and stitched to hold its shape. The hat that launched a thousand album covers.</p><ul>\n<li>\n<strong>Colour:</strong> Royal Blue</li>\n<li>\n<strong>Fit:</strong> Two sizes: S/M fits up to 57cm, L/XL up to 61cm.</li>\n<li>\n<strong>Care:</strong> Hand wash. Reshape while damp.</li>\n<li>\n<strong>Style code:</strong> 90S-014</li>\n</ul>",
+   "description": "A wide-brim bucket hat in royal blue cotton twill, lined and stitched to hold its shape. The hat that launched a thousand album covers.",
    "price": 35.0,
    "priceMax": 35.0,
    "createdAt": "2025-03-06T16:22:25Z",
@@ -5217,8 +5338,8 @@
      "title": "L/XL",
      "price": 35.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 15,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "L/XL"
      }
@@ -5274,8 +5395,8 @@
      "title": "XS",
      "price": 55.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 123,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -5286,8 +5407,8 @@
      "title": "S",
      "price": 55.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 26,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -5298,8 +5419,8 @@
      "title": "M",
      "price": 55.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 65,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "M"
      }
@@ -5310,8 +5431,8 @@
      "title": "L",
      "price": 55.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 46,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "L"
      }
@@ -5322,8 +5443,8 @@
      "title": "XL",
      "price": 55.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 138,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -5334,8 +5455,8 @@
      "title": "2XL",
      "price": 55.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 86,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -5361,9 +5482,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Charcoal",
-   "descriptionHtml": "<p>Chunky ribbed beanie in charcoal with a folded cuff. Roll it high or pull it low.</p><ul>\n<li>\n<strong>Colour:</strong> Charcoal</li>\n<li>\n<strong>Fit:</strong> Two sizes: S/M fits up to 57cm, L/XL up to 61cm.</li>\n<li>\n<strong>Care:</strong> Hand wash. Reshape while damp.</li>\n<li>\n<strong>Style code:</strong> 90S-029</li>\n</ul>",
-   "description": "Chunky ribbed beanie in charcoal with a folded cuff. Roll it high or pull it low.",
+   "colour": "Black",
+   "descriptionHtml": "<p>Chunky ribbed beanie in black with a folded cuff. Roll it high or pull it low.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> Two sizes: S/M fits up to 57cm, L/XL up to 61cm.</li>\n<li>\n<strong>Care:</strong> Hand wash. Reshape while damp.</li>\n<li>\n<strong>Style code:</strong> 90S-029</li>\n</ul>",
+   "description": "Chunky ribbed beanie in black with a folded cuff. Roll it high or pull it low.",
    "price": 25.0,
    "priceMax": 25.0,
    "createdAt": "2025-03-06T16:22:39Z",
@@ -5404,8 +5525,8 @@
      "title": "L/XL",
      "price": 25.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 129,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "L/XL"
      }
@@ -5464,8 +5585,8 @@
      "title": "UK 6",
      "price": 80.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 73,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 6"
      }
@@ -5476,8 +5597,8 @@
      "title": "UK 8",
      "price": 80.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 67,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 8"
      }
@@ -5500,8 +5621,8 @@
      "title": "UK 12",
      "price": 80.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 132,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 12"
      }
@@ -5512,8 +5633,8 @@
      "title": "UK 14",
      "price": 80.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 65,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 14"
      }
@@ -5524,8 +5645,8 @@
      "title": "UK 16",
      "price": 80.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 99,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 16"
      }
@@ -5549,9 +5670,9 @@
     "NineTees"
    ],
    "gender": "Men",
-   "colour": "Black",
-   "descriptionHtml": "<p>Fine-knit merino roll neck in black. Wear it under a Harrington, or a suit, or nothing else.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Hand wash cold. Dry flat.</li>\n<li>\n<strong>Style code:</strong> 90S-041</li>\n</ul>",
-   "description": "Fine-knit merino roll neck in black. Wear it under a Harrington, or a suit, or nothing else.",
+   "colour": "Royal Blue",
+   "descriptionHtml": "<p>Fine-knit merino roll neck in royal blue. Wear it under a Harrington, or a suit, or nothing else.</p><ul>\n<li>\n<strong>Colour:</strong> Royal Blue</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Hand wash cold. Dry flat.</li>\n<li>\n<strong>Style code:</strong> 90S-041</li>\n</ul>",
+   "description": "Fine-knit merino roll neck in royal blue. Wear it under a Harrington, or a suit, or nothing else.",
    "price": 80.0,
    "priceMax": 80.0,
    "createdAt": "2025-03-06T16:22:51Z",
@@ -5584,8 +5705,8 @@
      "title": "XS",
      "price": 80.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 74,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -5596,8 +5717,8 @@
      "title": "S",
      "price": 80.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 47,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -5620,8 +5741,8 @@
      "title": "L",
      "price": 80.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 101,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "L"
      }
@@ -5632,8 +5753,8 @@
      "title": "XL",
      "price": 80.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 97,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -5644,8 +5765,8 @@
      "title": "2XL",
      "price": 80.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 99,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -5671,9 +5792,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Dark Indigo",
-   "descriptionHtml": "<p>An oversized dark-indigo denim jacket with a drop shoulder, oversized chest pockets and a wide body. Wear it like a coat.</p><ul>\n<li>\n<strong>Colour:</strong> Dark Indigo</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-031</li>\n</ul>",
-   "description": "An oversized dark-indigo denim jacket with a drop shoulder, oversized chest pockets and a wide body. Wear it like a coat.",
+   "colour": "Light Wash",
+   "descriptionHtml": "<p>An oversized light-wash denim jacket with a drop shoulder, oversized chest pockets and a wide body. Wear it like a coat.</p><ul>\n<li>\n<strong>Colour:</strong> Light Wash</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-031</li>\n</ul>",
+   "description": "An oversized light-wash denim jacket with a drop shoulder, oversized chest pockets and a wide body. Wear it like a coat.",
    "price": 115.0,
    "priceMax": 115.0,
    "createdAt": "2025-03-06T16:22:41Z",
@@ -5706,8 +5827,8 @@
      "title": "XS",
      "price": 115.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 24,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -5718,8 +5839,8 @@
      "title": "S",
      "price": 115.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 109,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -5730,8 +5851,8 @@
      "title": "M",
      "price": 115.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 97,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "M"
      }
@@ -5754,8 +5875,8 @@
      "title": "XL",
      "price": 115.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 55,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -5766,8 +5887,8 @@
      "title": "2XL",
      "price": 115.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 12,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -5828,8 +5949,8 @@
      "title": "XS",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 13,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -5840,8 +5961,8 @@
      "title": "S",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 55,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -5852,8 +5973,8 @@
      "title": "M",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 30,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "M"
      }
@@ -5876,8 +5997,8 @@
      "title": "XL",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 80,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -5888,8 +6009,8 @@
      "title": "2XL",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 131,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -5903,8 +6024,8 @@
   },
   {
    "id": "gid://shopify/Product/9779333366027",
-   "handle": "shell-track-top",
-   "title": "Shell Track Top",
+   "handle": "shell-hooded-track-top",
+   "title": "Shell Hooded Track Top",
    "vendor": "NineTees",
    "type": "Jackets",
    "tags": [
@@ -5913,9 +6034,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Red / Navy / White",
-   "descriptionHtml": "<p>Zip-through track top in colour-blocked crinkle nylon with a contrast collar and mesh lining. Sounds like a crisp packet, looks like a legend.</p><ul>\n<li>\n<strong>Colour:</strong> Red / Navy / White</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-047</li>\n</ul>",
-   "description": "Zip-through track top in colour-blocked crinkle nylon with a contrast collar and mesh lining. Sounds like a crisp packet, looks like a legend.",
+   "colour": "Pink / Teal",
+   "descriptionHtml": "<p>Zip-through hooded shell in colour-blocked pink and teal crinkle nylon with a drawstring hood. Sounds like a crisp packet, looks like a legend.</p><ul>\n<li>\n<strong>Colour:</strong> Pink / Teal</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-047</li>\n</ul>",
+   "description": "Zip-through hooded shell in colour-blocked pink and teal crinkle nylon with a drawstring hood. Sounds like a crisp packet, looks like a legend.",
    "price": 85.0,
    "priceMax": 85.0,
    "createdAt": "2025-03-06T16:22:57Z",
@@ -5936,7 +6057,7 @@
    "images": [
     {
      "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/RetroTrackJacket.png?v=1749761121",
-     "alt": "Shell Track Top",
+     "alt": "Shell Hooded Track Top",
      "width": 1024,
      "height": 1024
     }
@@ -5948,8 +6069,8 @@
      "title": "XS",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 106,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -5960,8 +6081,8 @@
      "title": "S",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 70,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -5984,8 +6105,8 @@
      "title": "L",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 100,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "L"
      }
@@ -5996,8 +6117,8 @@
      "title": "XL",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 30,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -6008,8 +6129,8 @@
      "title": "2XL",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 60,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -6023,19 +6144,19 @@
   },
   {
    "id": "gid://shopify/Product/9779332972811",
-   "handle": "ska-check-mini-skirt",
-   "title": "Ska Check Mini Skirt",
+   "handle": "ska-check-shirt",
+   "title": "Ska Check Shirt",
    "vendor": "NineTees",
-   "type": "Skirts",
+   "type": "Shirts",
    "tags": [
     "NineTees",
-    "Skirts",
+    "Shirts",
     "Women"
    ],
    "gender": "Women",
    "colour": "Black / White Check",
-   "descriptionHtml": "<p>A-line mini in a bold black-and-white checkerboard with a hidden side zip. Two-tone, one purpose.</p><ul>\n<li>\n<strong>Colour:</strong> Black / White Check</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-038</li>\n</ul>",
-   "description": "A-line mini in a bold black-and-white checkerboard with a hidden side zip. Two-tone, one purpose.",
+   "descriptionHtml": "<p>Short-sleeve button-up in a bold black-and-white checkerboard with a boxy cut. Two-tone, one purpose.</p><ul>\n<li>\n<strong>Colour:</strong> Black / White Check</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-038</li>\n</ul>",
+   "description": "Short-sleeve button-up in a bold black-and-white checkerboard with a boxy cut. Two-tone, one purpose.",
    "price": 50.0,
    "priceMax": 50.0,
    "createdAt": "2025-03-06T16:22:48Z",
@@ -6056,7 +6177,7 @@
    "images": [
     {
      "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/Checkboardshirt.png?v=1749764267",
-     "alt": "Ska Check Mini Skirt",
+     "alt": "Ska Check Shirt",
      "width": 1024,
      "height": 1024
     }
@@ -6068,8 +6189,8 @@
      "title": "UK 6",
      "price": 50.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 86,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 6"
      }
@@ -6080,8 +6201,8 @@
      "title": "UK 8",
      "price": 50.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 119,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 8"
      }
@@ -6104,8 +6225,8 @@
      "title": "UK 12",
      "price": 50.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 69,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 12"
      }
@@ -6116,8 +6237,8 @@
      "title": "UK 14",
      "price": 50.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 85,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 14"
      }
@@ -6128,8 +6249,8 @@
      "title": "UK 16",
      "price": 50.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 66,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 16"
      }
@@ -6185,8 +6306,8 @@
      "title": "3",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 68,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "3"
      }
@@ -6197,8 +6318,8 @@
      "title": "4",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 24,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "4"
      }
@@ -6209,8 +6330,8 @@
      "title": "5",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 75,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "5"
      }
@@ -6221,8 +6342,8 @@
      "title": "6",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 25,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "6"
      }
@@ -6233,8 +6354,8 @@
      "title": "7",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 99,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "7"
      }
@@ -6245,8 +6366,8 @@
      "title": "8",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 75,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "8"
      }
@@ -6257,8 +6378,8 @@
      "title": "9",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 89,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "9"
      }
@@ -6269,8 +6390,8 @@
      "title": "10",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 68,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "10"
      }
@@ -6281,8 +6402,8 @@
      "title": "11",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 81,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "11"
      }
@@ -6293,8 +6414,8 @@
      "title": "12",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 93,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "12"
      }
@@ -6319,9 +6440,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Oatmeal",
-   "descriptionHtml": "<p>A heavy, oversized crew-neck jumper in an oatmeal wool blend with dropped shoulders and ribbed cuffs. Slouches beautifully.</p><ul>\n<li>\n<strong>Colour:</strong> Oatmeal</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Hand wash cold. Dry flat.</li>\n<li>\n<strong>Style code:</strong> 90S-028</li>\n</ul>",
-   "description": "A heavy, oversized crew-neck jumper in an oatmeal wool blend with dropped shoulders and ribbed cuffs. Slouches beautifully.",
+   "colour": "Forest Green",
+   "descriptionHtml": "<p>A heavy, oversized crew-neck jumper in a forest green wool blend with dropped shoulders and ribbed cuffs. Slouches beautifully.</p><ul>\n<li>\n<strong>Colour:</strong> Forest Green</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Hand wash cold. Dry flat.</li>\n<li>\n<strong>Style code:</strong> 90S-028</li>\n</ul>",
+   "description": "A heavy, oversized crew-neck jumper in a forest green wool blend with dropped shoulders and ribbed cuffs. Slouches beautifully.",
    "price": 85.0,
    "priceMax": 85.0,
    "createdAt": "2025-03-06T16:22:38Z",
@@ -6354,8 +6475,8 @@
      "title": "XS",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 24,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -6366,8 +6487,8 @@
      "title": "S",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 19,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -6378,8 +6499,8 @@
      "title": "M",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 108,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "M"
      }
@@ -6402,8 +6523,8 @@
      "title": "XL",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 32,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -6414,8 +6535,8 @@
      "title": "2XL",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 122,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -6425,248 +6546,6 @@
     "men",
     "women",
     "knitwear"
-   ]
-  },
-  {
-   "id": "gid://shopify/Product/9779332055307",
-   "handle": "sleeveless-denim-gilet",
-   "title": "Sleeveless Denim Gilet",
-   "vendor": "NineTees",
-   "type": "Jackets",
-   "tags": [
-    "Denim",
-    "NineTees",
-    "Unisex"
-   ],
-   "gender": "Unisex",
-   "colour": "Black Wash",
-   "descriptionHtml": "<p>A cropped, sleeveless denim jacket in a black wash with raw armholes. Layer over a long-sleeve tee or a hoodie and lean against something.</p><ul>\n<li>\n<strong>Colour:</strong> Black Wash</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-015</li>\n</ul>",
-   "description": "A cropped, sleeveless denim jacket in a black wash with raw armholes. Layer over a long-sleeve tee or a hoodie and lean against something.",
-   "price": 75.0,
-   "priceMax": 75.0,
-   "createdAt": "2025-03-06T16:22:26Z",
-   "newIn": false,
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL"
-     ]
-    }
-   ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/DenimVest.jpg?v=1755696022",
-     "alt": "Sleeveless Denim Gilet",
-     "width": 1024,
-     "height": 1024
-    }
-   ],
-   "variants": [
-    {
-     "id": "gid://shopify/ProductVariant/53373126541579",
-     "sku": "90S-015-XS",
-     "title": "XS",
-     "price": 75.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 104,
-     "options": {
-      "Size": "XS"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373126574347",
-     "sku": "90S-015-S",
-     "title": "S",
-     "price": 75.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 53,
-     "options": {
-      "Size": "S"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/49635491250443",
-     "sku": "90S-015",
-     "title": "M",
-     "price": 75.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 79,
-     "options": {
-      "Size": "M"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373126607115",
-     "sku": "90S-015-L",
-     "title": "L",
-     "price": 75.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 95,
-     "options": {
-      "Size": "L"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373126639883",
-     "sku": "90S-015-XL",
-     "title": "XL",
-     "price": 75.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 94,
-     "options": {
-      "Size": "XL"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373126672651",
-     "sku": "90S-015-2XL",
-     "title": "2XL",
-     "price": 75.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 61,
-     "options": {
-      "Size": "2XL"
-     }
-    }
-   ],
-   "collections": [
-    "men",
-    "women",
-    "denim"
-   ]
-  },
-  {
-   "id": "gid://shopify/Product/9779333398795",
-   "handle": "smiley-graphic-tee",
-   "title": "Smiley Graphic Tee",
-   "vendor": "NineTees",
-   "type": "T-Shirts",
-   "tags": [
-    "NineTees",
-    "Rave",
-    "Tees",
-    "Unisex"
-   ],
-   "gender": "Unisex",
-   "colour": "Acid Yellow",
-   "descriptionHtml": "<p>Acid-yellow cotton tee with an oversized smiley chest print. The second summer of love, on repeat.</p><ul>\n<li>\n<strong>Colour:</strong> Acid Yellow</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-048</li>\n</ul>",
-   "description": "Acid-yellow cotton tee with an oversized smiley chest print. The second summer of love, on repeat.",
-   "price": 32.0,
-   "priceMax": 32.0,
-   "createdAt": "2025-03-06T16:22:58Z",
-   "newIn": false,
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL"
-     ]
-    }
-   ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/GraphicTee.png?v=1749760337",
-     "alt": "Smiley Graphic Tee",
-     "width": 1024,
-     "height": 1024
-    }
-   ],
-   "variants": [
-    {
-     "id": "gid://shopify/ProductVariant/53373131063563",
-     "sku": "90S-048-XS",
-     "title": "XS",
-     "price": 32.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 138,
-     "options": {
-      "Size": "XS"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373131096331",
-     "sku": "90S-048-S",
-     "title": "S",
-     "price": 32.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 106,
-     "options": {
-      "Size": "S"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373131129099",
-     "sku": "90S-048-M",
-     "title": "M",
-     "price": 32.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 35,
-     "options": {
-      "Size": "M"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/49635497672971",
-     "sku": "90S-048",
-     "title": "L",
-     "price": 32.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 865,
-     "options": {
-      "Size": "L"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373131161867",
-     "sku": "90S-048-XL",
-     "title": "XL",
-     "price": 32.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 58,
-     "options": {
-      "Size": "XL"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373131194635",
-     "sku": "90S-048-2XL",
-     "title": "2XL",
-     "price": 32.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 124,
-     "options": {
-      "Size": "2XL"
-     }
-    }
-   ],
-   "collections": [
-    "men",
-    "women",
-    "tees",
-    "rave"
    ]
   },
   {
@@ -6682,9 +6561,9 @@
     "Women"
    ],
    "gender": "Women",
-   "colour": "Acid Lime",
-   "descriptionHtml": "<p>Fitted acid-lime crop in a soft ribbed jersey with a scoop neck. Glows a bit under UV. Sorted.</p><ul>\n<li>\n<strong>Colour:</strong> Acid Lime</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-025</li>\n</ul>",
-   "description": "Fitted acid-lime crop in a soft ribbed jersey with a scoop neck. Glows a bit under UV. Sorted.",
+   "colour": "Hot Pink",
+   "descriptionHtml": "<p>Fitted hot-pink crop in a soft ribbed jersey with a scoop neck. Glows a bit under UV. Sorted.</p><ul>\n<li>\n<strong>Colour:</strong> Hot Pink</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-025</li>\n</ul>",
+   "description": "Fitted hot-pink crop in a soft ribbed jersey with a scoop neck. Glows a bit under UV. Sorted.",
    "price": 28.0,
    "priceMax": 28.0,
    "createdAt": "2025-03-06T16:22:35Z",
@@ -6717,8 +6596,8 @@
      "title": "UK 6",
      "price": 28.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 46,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 6"
      }
@@ -6741,8 +6620,8 @@
      "title": "UK 10",
      "price": 28.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 101,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 10"
      }
@@ -6753,8 +6632,8 @@
      "title": "UK 12",
      "price": 28.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 66,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 12"
      }
@@ -6765,8 +6644,8 @@
      "title": "UK 14",
      "price": 28.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 131,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 14"
      }
@@ -6777,8 +6656,8 @@
      "title": "UK 16",
      "price": 28.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 111,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 16"
      }
@@ -6888,8 +6767,8 @@
      "title": "6",
      "price": 90.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 84,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "6"
      }
@@ -6900,8 +6779,8 @@
      "title": "7",
      "price": 90.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 36,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "7"
      }
@@ -6912,8 +6791,8 @@
      "title": "8",
      "price": 90.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 15,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "8"
      }
@@ -6924,8 +6803,8 @@
      "title": "9",
      "price": 90.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 65,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "9"
      }
@@ -6936,8 +6815,8 @@
      "title": "10",
      "price": 90.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 114,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "10"
      }
@@ -6948,8 +6827,8 @@
      "title": "11",
      "price": 90.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 131,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "11"
      }
@@ -6960,8 +6839,8 @@
      "title": "12",
      "price": 90.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 63,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "12"
      }
@@ -6987,9 +6866,9 @@
     "Women"
    ],
    "gender": "Women",
-   "colour": "Patent Black",
-   "descriptionHtml": "<p>Tiny patent backpack with adjustable straps and a zipped front pocket. Fits a lipstick, a lighter and a phone from 1997.</p><ul>\n<li>\n<strong>Colour:</strong> Patent Black</li>\n<li>\n<strong>Fit:</strong> One size.</li>\n<li>\n<strong>Care:</strong> Spot clean only.</li>\n<li>\n<strong>Style code:</strong> 90S-020</li>\n</ul>",
-   "description": "Tiny patent backpack with adjustable straps and a zipped front pocket. Fits a lipstick, a lighter and a phone from 1997.",
+   "colour": "Memphis Print",
+   "descriptionHtml": "<p>Tiny backpack in a riot of Memphis-pattern print with adjustable straps and a zipped front pocket. Fits a lipstick, a lighter and a phone from 1997.</p><ul>\n<li>\n<strong>Colour:</strong> Memphis Print</li>\n<li>\n<strong>Fit:</strong> One size.</li>\n<li>\n<strong>Care:</strong> Spot clean only.</li>\n<li>\n<strong>Style code:</strong> 90S-020</li>\n</ul>",
+   "description": "Tiny backpack in a riot of Memphis-pattern print with adjustable straps and a zipped front pocket. Fits a lipstick, a lighter and a phone from 1997.",
    "price": 45.0,
    "priceMax": 45.0,
    "createdAt": "2025-03-06T16:22:31Z",
@@ -7043,8 +6922,8 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Electric Blue / Acid Yellow",
-   "descriptionHtml": "<p>A lightweight cagoule cut for the festival field and the last bus home. Colour-blocked shell, half-zip neck, packable hood and a kangaroo pocket big enough for a disposable camera.</p><ul>\n<li>\n<strong>Colour:</strong> Electric Blue / Acid Yellow</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-001</li>\n</ul>",
+   "colour": "Hot Pink / Teal / Purple",
+   "descriptionHtml": "<p>A lightweight cagoule cut for the festival field and the last bus home. Colour-blocked shell, half-zip neck, packable hood and a kangaroo pocket big enough for a disposable camera.</p><ul>\n<li>\n<strong>Colour:</strong> Hot Pink / Teal / Purple</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-001</li>\n</ul>",
    "description": "A lightweight cagoule cut for the festival field and the last bus home. Colour-blocked shell, half-zip neck, packable hood and a kangaroo pocket big enough for a disposable camera.",
    "price": 95.0,
    "priceMax": 95.0,
@@ -7078,8 +6957,8 @@
      "title": "XS",
      "price": 95.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 42,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -7090,8 +6969,8 @@
      "title": "S",
      "price": 95.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 86,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -7114,8 +6993,8 @@
      "title": "L",
      "price": 95.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 100,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "L"
      }
@@ -7126,8 +7005,8 @@
      "title": "XL",
      "price": 95.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 21,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -7138,8 +7017,8 @@
      "title": "2XL",
      "price": 95.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 126,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -7201,8 +7080,8 @@
      "title": "UK 6",
      "price": 55.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 95,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 6"
      }
@@ -7213,8 +7092,8 @@
      "title": "UK 8",
      "price": 55.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 103,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 8"
      }
@@ -7237,8 +7116,8 @@
      "title": "UK 12",
      "price": 55.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 58,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 12"
      }
@@ -7249,8 +7128,8 @@
      "title": "UK 14",
      "price": 55.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 45,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 14"
      }
@@ -7261,8 +7140,8 @@
      "title": "UK 16",
      "price": 55.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 76,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 16"
      }
@@ -7270,127 +7149,6 @@
    ],
    "collections": [
     "women",
-    "the-britpop-edit"
-   ]
-  },
-  {
-   "id": "gid://shopify/Product/9779331957003",
-   "handle": "terrace-harrington-jacket",
-   "title": "Terrace Harrington Jacket",
-   "vendor": "NineTees",
-   "type": "Jackets",
-   "tags": [
-    "Britpop",
-    "Men",
-    "NineTees",
-    "Outerwear"
-   ],
-   "gender": "Men",
-   "colour": "Bottle Green",
-   "descriptionHtml": "<p>The classic Harrington in bottle green cotton with a tartan lining, elasticated cuffs and a stand collar. Neat, sharp and quietly menacing.</p><ul>\n<li>\n<strong>Colour:</strong> Bottle Green</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-013</li>\n</ul>",
-   "description": "The classic Harrington in bottle green cotton with a tartan lining, elasticated cuffs and a stand collar. Neat, sharp and quietly menacing.",
-   "price": 120.0,
-   "priceMax": 120.0,
-   "createdAt": "2025-03-06T16:22:24Z",
-   "newIn": false,
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL"
-     ]
-    }
-   ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/StarterJacket.jpg?v=1755698786",
-     "alt": "Terrace Harrington Jacket",
-     "width": 1024,
-     "height": 1536
-    }
-   ],
-   "variants": [
-    {
-     "id": "gid://shopify/ProductVariant/53373124968715",
-     "sku": "90S-013-XS",
-     "title": "XS",
-     "price": 120.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 121,
-     "options": {
-      "Size": "XS"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373125001483",
-     "sku": "90S-013-S",
-     "title": "S",
-     "price": 120.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 23,
-     "options": {
-      "Size": "S"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373125034251",
-     "sku": "90S-013-M",
-     "title": "M",
-     "price": 120.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 126,
-     "options": {
-      "Size": "M"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/49635490824459",
-     "sku": "90S-013",
-     "title": "L",
-     "price": 120.0,
-     "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
-     "options": {
-      "Size": "L"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373125067019",
-     "sku": "90S-013-XL",
-     "title": "XL",
-     "price": 120.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 135,
-     "options": {
-      "Size": "XL"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373125099787",
-     "sku": "90S-013-2XL",
-     "title": "2XL",
-     "price": 120.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 52,
-     "options": {
-      "Size": "2XL"
-     }
-    }
-   ],
-   "collections": [
-    "men",
-    "outerwear",
     "the-britpop-edit"
    ]
   },
@@ -7408,9 +7166,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Blue Swirl",
-   "descriptionHtml": "<p>Cotton bucket hat, spiral-dyed in blues and whites. No two the same.</p><ul>\n<li>\n<strong>Colour:</strong> Blue Swirl</li>\n<li>\n<strong>Fit:</strong> Two sizes: S/M fits up to 57cm, L/XL up to 61cm.</li>\n<li>\n<strong>Care:</strong> Hand wash. Reshape while damp.</li>\n<li>\n<strong>Style code:</strong> 90S-042</li>\n</ul>",
-   "description": "Cotton bucket hat, spiral-dyed in blues and whites. No two the same.",
+   "colour": "Rainbow Swirl",
+   "descriptionHtml": "<p>Cotton bucket hat, spiral-dyed in every colour of the rainbow. No two the same.</p><ul>\n<li>\n<strong>Colour:</strong> Rainbow Swirl</li>\n<li>\n<strong>Fit:</strong> Two sizes: S/M fits up to 57cm, L/XL up to 61cm.</li>\n<li>\n<strong>Care:</strong> Hand wash. Reshape while damp.</li>\n<li>\n<strong>Style code:</strong> 90S-042</li>\n</ul>",
+   "description": "Cotton bucket hat, spiral-dyed in every colour of the rainbow. No two the same.",
    "price": 32.0,
    "priceMax": 32.0,
    "createdAt": "2025-03-06T16:22:52Z",
@@ -7451,8 +7209,8 @@
      "title": "L/XL",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 80,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "L/XL"
      }
@@ -7508,8 +7266,8 @@
      "title": "XS",
      "price": 65.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 38,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -7520,8 +7278,8 @@
      "title": "S",
      "price": 65.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 50,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -7532,8 +7290,8 @@
      "title": "M",
      "price": 65.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 98,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "M"
      }
@@ -7544,8 +7302,8 @@
      "title": "L",
      "price": 65.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 71,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "L"
      }
@@ -7556,8 +7314,8 @@
      "title": "XL",
      "price": 65.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 97,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -7568,8 +7326,8 @@
      "title": "2XL",
      "price": 65.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 105,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -7578,6 +7336,128 @@
    "collections": [
     "new-in",
     "men",
+    "the-britpop-edit"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/9779331957003",
+   "handle": "touchline-hooded-jacket",
+   "title": "Touchline Hooded Jacket",
+   "vendor": "NineTees",
+   "type": "Jackets",
+   "tags": [
+    "Britpop",
+    "Men",
+    "NineTees",
+    "Outerwear",
+    "Sportswear"
+   ],
+   "gender": "Men",
+   "colour": "Royal Blue / Black / Yellow",
+   "descriptionHtml": "<p>Padded hooded jacket in royal blue with a black chevron yoke and a yellow hood lining. Terrace-issue warmth for a wet Wednesday night.</p><ul>\n<li>\n<strong>Colour:</strong> Royal Blue / Black / Yellow</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-013</li>\n</ul>",
+   "description": "Padded hooded jacket in royal blue with a black chevron yoke and a yellow hood lining. Terrace-issue warmth for a wet Wednesday night.",
+   "price": 120.0,
+   "priceMax": 120.0,
+   "createdAt": "2025-03-06T16:22:24Z",
+   "newIn": false,
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+     ]
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/StarterJacket.jpg?v=1755698786",
+     "alt": "Touchline Hooded Jacket",
+     "width": 1024,
+     "height": 1536
+    }
+   ],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/53373124968715",
+     "sku": "90S-013-XS",
+     "title": "XS",
+     "price": 120.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "XS"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373125001483",
+     "sku": "90S-013-S",
+     "title": "S",
+     "price": 120.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "S"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373125034251",
+     "sku": "90S-013-M",
+     "title": "M",
+     "price": 120.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "M"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/49635490824459",
+     "sku": "90S-013",
+     "title": "L",
+     "price": 120.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "L"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373125067019",
+     "sku": "90S-013-XL",
+     "title": "XL",
+     "price": 120.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "XL"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373125099787",
+     "sku": "90S-013-2XL",
+     "title": "2XL",
+     "price": 120.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "2XL"
+     }
+    }
+   ],
+   "collections": [
+    "men",
+    "outerwear",
     "the-britpop-edit"
    ]
   },
@@ -7623,8 +7503,8 @@
      "title": "UK 6",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 22,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 6"
      }
@@ -7635,8 +7515,8 @@
      "title": "UK 8",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 22,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 8"
      }
@@ -7647,8 +7527,8 @@
      "title": "UK 10",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 72,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 10"
      }
@@ -7659,8 +7539,8 @@
      "title": "UK 12",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 37,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 12"
      }
@@ -7671,8 +7551,8 @@
      "title": "UK 14",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 123,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 14"
      }
@@ -7683,8 +7563,8 @@
      "title": "UK 16",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 109,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 16"
      }
@@ -7739,8 +7619,8 @@
      "title": "XS",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 79,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XS"
      }
@@ -7751,8 +7631,8 @@
      "title": "S",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 128,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "S"
      }
@@ -7763,8 +7643,8 @@
      "title": "M",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 76,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "M"
      }
@@ -7775,8 +7655,8 @@
      "title": "L",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 59,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "L"
      }
@@ -7787,8 +7667,8 @@
      "title": "XL",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 44,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "XL"
      }
@@ -7799,8 +7679,8 @@
      "title": "2XL",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 113,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "2XL"
      }
@@ -7811,6 +7691,127 @@
     "men",
     "women",
     "tees",
+    "the-britpop-edit"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/9779333333259",
+   "handle": "varsity-sweatshirt",
+   "title": "Varsity Sweatshirt",
+   "vendor": "NineTees",
+   "type": "Sweatshirts",
+   "tags": [
+    "Britpop",
+    "NineTees",
+    "Sweatshirts",
+    "Unisex"
+   ],
+   "gender": "Unisex",
+   "colour": "Navy",
+   "descriptionHtml": "<p>Loopback cotton sweatshirt in navy with a raised red collegiate chest print and ribbed hem. All the people.</p><ul>\n<li>\n<strong>Colour:</strong> Navy</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-046</li>\n</ul>",
+   "description": "Loopback cotton sweatshirt in navy with a raised red collegiate chest print and ribbed hem. All the people.",
+   "price": 60.0,
+   "priceMax": 60.0,
+   "createdAt": "2025-03-06T16:22:56Z",
+   "newIn": false,
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+     ]
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/BaggySweatshirt.png?v=1749751272",
+     "alt": "Varsity Sweatshirt",
+     "width": 1024,
+     "height": 1024
+    }
+   ],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/53373130735883",
+     "sku": "90S-046-XS",
+     "title": "XS",
+     "price": 60.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "XS"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373130768651",
+     "sku": "90S-046-S",
+     "title": "S",
+     "price": 60.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "S"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373130801419",
+     "sku": "90S-046-M",
+     "title": "M",
+     "price": 60.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "M"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/49635497607435",
+     "sku": "90S-046",
+     "title": "L",
+     "price": 60.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 86,
+     "options": {
+      "Size": "L"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373130834187",
+     "sku": "90S-046-XL",
+     "title": "XL",
+     "price": 60.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "XL"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373130866955",
+     "sku": "90S-046-2XL",
+     "title": "2XL",
+     "price": 60.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "2XL"
+     }
+    }
+   ],
+   "collections": [
+    "men",
+    "women",
     "the-britpop-edit"
    ]
   },
@@ -7855,8 +7856,8 @@
      "title": "UK 6",
      "price": 120.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 121,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 6"
      }
@@ -7867,8 +7868,8 @@
      "title": "UK 8",
      "price": 120.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 75,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 8"
      }
@@ -7879,8 +7880,8 @@
      "title": "UK 10",
      "price": 120.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 118,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 10"
      }
@@ -7891,8 +7892,8 @@
      "title": "UK 12",
      "price": 120.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 79,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 12"
      }
@@ -7903,8 +7904,8 @@
      "title": "UK 14",
      "price": 120.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 29,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 14"
      }
@@ -7915,8 +7916,8 @@
      "title": "UK 16",
      "price": 120.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 92,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "UK 16"
      }
@@ -7964,8 +7965,8 @@
      "title": "One Size",
      "price": 12.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 68,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "One Size"
      }
@@ -8027,8 +8028,8 @@
      "title": "2",
      "price": 95.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 115,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "2"
      }
@@ -8039,8 +8040,8 @@
      "title": "3",
      "price": 95.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 32,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "3"
      }
@@ -8051,8 +8052,8 @@
      "title": "4",
      "price": 95.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 110,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "4"
      }
@@ -8063,8 +8064,8 @@
      "title": "5",
      "price": 95.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 56,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "5"
      }
@@ -8087,8 +8088,8 @@
      "title": "7",
      "price": 95.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 106,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "7"
      }
@@ -8099,8 +8100,8 @@
      "title": "8",
      "price": 95.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 84,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "8"
      }
@@ -8111,8 +8112,8 @@
      "title": "9",
      "price": 95.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 77,
+     "available": false,
+     "quantity": 0,
      "options": {
       "UK Size": "9"
      }
@@ -8172,8 +8173,8 @@
      "title": "30 / 30",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 93,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "30",
       "Leg": "30"
@@ -8185,8 +8186,8 @@
      "title": "30 / 32",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 86,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "30",
       "Leg": "32"
@@ -8198,8 +8199,8 @@
      "title": "30 / 34",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 90,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "30",
       "Leg": "34"
@@ -8211,8 +8212,8 @@
      "title": "32 / 30",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 128,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "32",
       "Leg": "30"
@@ -8224,8 +8225,8 @@
      "title": "32 / 32",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 110,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "32",
       "Leg": "32"
@@ -8237,8 +8238,8 @@
      "title": "32 / 34",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 115,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "32",
       "Leg": "34"
@@ -8250,8 +8251,8 @@
      "title": "34 / 30",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 64,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "34",
       "Leg": "30"
@@ -8263,8 +8264,8 @@
      "title": "34 / 32",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 100,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "34",
       "Leg": "32"
@@ -8276,8 +8277,8 @@
      "title": "34 / 34",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 83,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "34",
       "Leg": "34"
@@ -8289,8 +8290,8 @@
      "title": "36 / 30",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 110,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "36",
       "Leg": "30"
@@ -8302,8 +8303,8 @@
      "title": "36 / 32",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 81,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "36",
       "Leg": "32"
@@ -8315,8 +8316,8 @@
      "title": "36 / 34",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 104,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "36",
       "Leg": "34"
@@ -8328,8 +8329,8 @@
      "title": "38 / 30",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 116,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "38",
       "Leg": "30"
@@ -8341,8 +8342,8 @@
      "title": "38 / 32",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 94,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "38",
       "Leg": "32"
@@ -8354,8 +8355,8 @@
      "title": "38 / 34",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 21,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Waist": "38",
       "Leg": "34"
@@ -8405,8 +8406,8 @@
      "title": "One Size",
      "price": 35.0,
      "compareAtPrice": null,
-     "available": true,
-     "quantity": 128,
+     "available": false,
+     "quantity": 0,
      "options": {
       "Size": "One Size"
      }

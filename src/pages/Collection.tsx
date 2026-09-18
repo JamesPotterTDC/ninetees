@@ -23,7 +23,7 @@ export default function Collection() {
     let l = base.filter((p) => (gender === 'All' || p.gender === gender || p.gender === 'Unisex') && (type === 'All' || p.type === type))
     if (size !== 'All') l = l.filter((p) => p.variants.some((v) => v.available && Object.entries(v.options).some(([k, val]) => k !== 'Leg' && val === size)))
     const by: Record<Sort, (a: Product, b: Product) => number> = {
-      featured: (a, b) => Number(b.newIn) - Number(a.newIn) || Number(Boolean(b.images.length)) - Number(Boolean(a.images.length)),
+      featured: (a, b) => Number(Boolean(b.images.length)) - Number(Boolean(a.images.length)) || Number(b.newIn) - Number(a.newIn) || a.title.localeCompare(b.title),
       new: (a, b) => b.createdAt.localeCompare(a.createdAt),
       low: (a, b) => a.price - b.price,
       high: (a, b) => b.price - a.price,
