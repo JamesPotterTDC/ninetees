@@ -20,6 +20,7 @@ const Ctx = createContext<CartCtx | null>(null)
 const KEY = 'ninetees.bag.v1'
 const CHECKOUT_KEY = 'ninetees.checkout.v1'
 const PENDING_KEY = 'ninetees.checkout.pending'
+const PW_DONE_KEY = 'ninetees.pw.done'
 
 /** Top-level POST of the store password to Shopify. Shopify sets its session cookie and lands on the
  *  theme home page, which redirects back here with ?resume=checkout; resumeCheckout() then finishes the job. */
@@ -105,8 +106,11 @@ export function CartProvider({ children }: { children: ReactNode }) {
       const err = json.errors?.[0]?.message ?? json.data?.cartCreate.userErrors[0]?.message
       const url = json.data?.cartCreate.cart?.checkoutUrl
       if (err || !url) throw new Error(err ?? 'Shopify did not return a checkout link.')
-      if (config.storePassword) {
-        try { localStorage.setItem(CHECKOUT_KEY, JSON.stringify({ url, at: Date.now() })) } catch { window.location.assign(url); return }
+      // Shopify only needs the store password once per browser. After that, go straight to checkout.
+      let pwDone = false
+      try { pwDone = localStorage.getItem(PW_DONE_KEY) === '1' } catch { /* ignore */ }
+      if (config.storePassword && !pwDone) {
+        try { localStorage.setItem(CHECKOUT_KEY, JSON.stringify({ url, at: Date.now() })); localStorage.setItem(PW_DONE_KEY, '1') } catch { window.location.assign(url); return }
         postStorePassword()
       } else {
         window.location.assign(url)
