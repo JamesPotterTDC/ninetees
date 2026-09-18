@@ -59,6 +59,13 @@ export const allSizes = (list: Product[]) => {
 }
 export const allTypes = (list: Product[]) => [...new Set(list.map((p) => p.type))].sort()
 
+/** Display order for size values across every scheme the catalogue uses; anything unknown sorts last. */
+export const SIZE_ORDER = ['XS', 'S', 'M', 'L', 'XL', '2XL', 'UK 6', 'UK 8', 'UK 10', 'UK 12', 'UK 14', 'UK 16', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '30', '32', '34', '36', '38', 'S/M', 'L/XL', 'One Size']
+export const sortSizes = (sizes: string[]) => {
+  const rank = (s: string) => { const i = SIZE_ORDER.indexOf(s); return i === -1 ? SIZE_ORDER.length : i }
+  return [...sizes].sort((a, b) => rank(a) - rank(b) || a.localeCompare(b))
+}
+
 export function searchProducts(q: string): Product[] {
   const s = q.trim().toLowerCase()
   if (!s) return []
