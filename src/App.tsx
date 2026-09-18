@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react'
-import { Route, Routes, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import BagDrawer from './components/BagDrawer'
@@ -10,8 +10,10 @@ import Bag from './pages/Bag'
 import About from './pages/About'
 import Help from './pages/Help'
 import Search from './pages/Search'
+import Thanks from './pages/Thanks'
 import NotFound from './pages/NotFound'
-import { resumeCheckout, useCart } from './lib/cart'
+import { useCart } from './lib/cart'
+import type { Resume } from './lib/checkout'
 
 /** Scroll to the top on every route change, or to the anchor when the link carries one (/help#delivery). */
 function ScrollToTop() {
@@ -26,10 +28,12 @@ function ScrollToTop() {
   return null
 }
 
-export default function App() {
-  const [state] = useState(() => resumeCheckout())
+export default function App({ resume }: { resume: Resume }) {
   const { open } = useCart()
-  if (state === 'redirecting') {
+  const navigate = useNavigate()
+  const returned = resume?.state === 'returned' ? resume : null
+  useEffect(() => { if (returned) navigate('/thanks', { replace: true, state: { cartId: returned.cartId } }) }, [returned, navigate])
+  if (resume?.state === 'redirecting') {
     return (
       <div className="site" style={{ display: 'grid', placeItems: 'center', minHeight: '100dvh' }}>
         <p className="eyebrow">Taking you to checkout…</p>
@@ -52,6 +56,7 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/help" element={<Help />} />
             <Route path="/search" element={<Search />} />
+            <Route path="/thanks" element={<Thanks />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

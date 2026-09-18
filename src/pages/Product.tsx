@@ -2,10 +2,11 @@ import { useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import ProductGrid from '../components/ProductGrid'
 import Placeholder from '../components/Placeholder'
-import { img, productByHandle, related, type Product as ProductInfo } from '../lib/catalogue'
+import { img, productByHandle, related, type Product as ProductInfo, type Variant } from '../lib/catalogue'
 import { useCart } from '../lib/cart'
 import { money } from '../lib/format'
 import { usePageMeta } from '../lib/usePageMeta'
+import { useLiveStock } from '../lib/useLiveStock'
 import NotFound from './NotFound'
 
 const SIZE_GUIDE: Record<string, string> = {
@@ -34,14 +35,21 @@ function ProductView({ product }: { product: ProductInfo }) {
   const [imgIdx, setImgIdx] = useState(0)
   const [added, setAdded] = useState(false)
   usePageMeta(product.title, product.description)
+  // Live numbers from Shopify (which Helm keeps in step) override the exported snapshot once they arrive.
+  const live = useLiveStock(product.handle)
+  const stockOf = (v: Variant) => {
+    const l = live?.[v.id]
+    return { available: l ? l.available : v.available, quantity: l?.quantity ?? v.quantity, live: Boolean(l) }
+  }
 
   const variant = useMemo(() => product.variants.find((v) => product.options.every((o) => v.options[o.name] === sel[o.name])), [product, sel])
   const others = useMemo(() => related(product, 4), [product])
 
   const complete = product.options.every((o) => sel[o.name])
   const availableFor = (name: string, value: string) =>
-    product.variants.some((v) => v.available && v.options[name] === value && product.options.every((o) => o.name === name || !sel[o.name] || v.options[o.name] === sel[o.name]))
-  const onAdd = () => { if (variant?.available) { add(variant.id); setAdded(true); setTimeout(() => setAdded(false), 1800) } }
+    product.variants.some((v) => stockOf(v).available && v.options[name] === value && product.options.every((o) => o.name === name || !sel[o.name] || v.options[o.name] === sel[o.name]))
+  const stock = variant ? stockOf(variant) : null
+  const onAdd = () => { if (stock?.available && variant) { add(variant.id); setAdded(true); setTimeout(() => setAdded(false), 1800) } }
   const [details] = product.descriptionHtml.split('<ul>')
   const bullets = product.descriptionHtml.includes('<ul>') ? '<ul>' + product.descriptionHtml.split('<ul>')[1] : ''
   const main = product.images[imgIdx]
@@ -88,14 +96,15 @@ function ProductView({ product }: { product: ProductInfo }) {
               </div>
             </div>
           ))}
-          {variant && (
-            <p className={`stock${variant.quantity > 0 && variant.quantity < 20 ? ' stock--low' : ''}`}>
-              {!variant.available ? 'Sold out in this size' : variant.quantity < 20 ? `Low stock: ${variant.quantity} left` : 'In stock, ships within 24 hours'}
+          {variant && stock && (
+            <p className={`stock${stock.available && stock.quantity > 0 && stock.quantity < 20 ? ' stock--low' : ''}`}>
+              {!stock.available ? 'Sold out in this size' : stock.quantity < 20 ? `Low stock: ${stock.quantity} left` : 'In stock, ships within 24 hours'}
               {' · '}<span className="small">Ref {variant.sku}</span>
+              {stock.live && <span className="live" title="Live from the warehouse">Live</span>}
             </p>
           )}
-          <button type="button" className="btn btn--full" disabled={!complete || !variant?.available} onClick={onAdd}>
-            {added ? 'Added to bag' : !complete ? 'Select your size' : variant?.available ? `Add to bag · ${money(variant.price)}` : 'Sold out'}
+          <button type="button" className="btn btn--full" disabled={!complete || !stock?.available} onClick={onAdd}>
+            {added ? 'Added to bag' : !complete ? 'Select your size' : stock?.available ? `Add to bag · ${money(variant!.price)}` : 'Sold out'}
           </button>
           <div className="acc">
             <details open><summary>Details</summary><div className="body" dangerouslySetInnerHTML={{ __html: bullets }} /></details>

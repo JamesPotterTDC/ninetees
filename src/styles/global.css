@@ -336,3 +336,13 @@ button.link { color: inherit; font: inherit; }
   .tile img, .card__media img, .btn, .drawer__panel, .drawer__bg { transition: none; }
   .tile:hover img, .card:hover .card__media img { transform: none; }
 }
+
+/* order confirmation */
+.thanks { padding-block: 64px 120px; display: grid; gap: 24px; }
+.thanks h1 { font-size: clamp(64px, 12vw, 180px); }
+.thanks__lede { max-width: 56ch; font-size: 18px; color: #2b2b30; }
+.thanks .story { margin-top: 8px; }
+.thanks .hero__cta { margin-top: 0; }
+/* live stock indicator */
+.live { display: inline-flex; align-items: center; gap: 6px; margin-left: 10px; font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--grey); }
+.live::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #1fa24a; box-shadow: 0 0 0 3px rgba(31, 162, 74, .18); }

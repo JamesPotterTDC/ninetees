@@ -1,3 +1,4 @@
+import { config } from '../config'
 import { storefront } from './storefront'
 
 export const BAG_KEY = 'ninetees.bag.v1'
@@ -6,6 +7,17 @@ export const CHECKOUT_KEY = 'ninetees.checkout.v1'
 /** Set when we leave for Shopify's checkout, so we recognise the visitor when Shopify sends them back. */
 export const PENDING_KEY = 'ninetees.checkout.pending'
 export const PW_DONE_KEY = 'ninetees.pw.done'
+
+/** Top-level POST of the store password to Shopify. Shopify sets its session cookie and lands on the theme home
+ *  page, which redirects back here with ?resume=checkout; resumeCheckout() then finishes the job. */
+export function postStorePassword() {
+  const form = document.createElement('form')
+  form.method = 'POST'; form.action = `https://${config.shopDomain}/password`; form.style.display = 'none'
+  for (const [name, value] of Object.entries({ form_type: 'storefront_password', utf8: '✓', password: config.storePassword })) {
+    const input = document.createElement('input'); input.type = 'hidden'; input.name = name; input.value = value; form.appendChild(input)
+  }
+  document.body.appendChild(form); form.submit()
+}
 
 export type Resume = { state: 'redirecting' } | { state: 'returned'; cartId: string | null } | null
 
