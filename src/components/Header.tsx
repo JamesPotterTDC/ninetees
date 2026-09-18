@@ -8,7 +8,7 @@ const NAV = [
 ]
 
 export default function Header() {
-  const { count, setOpen } = useCart()
+  const { count, open, setOpen } = useCart()
   return (
     <header className="hdr">
       <div className="wrap hdr__row">
@@ -20,7 +20,7 @@ export default function Header() {
         </nav>
         <div className="hdr__actions">
           <Link to="/search">Search</Link>
-          <button type="button" onClick={() => setOpen(true)} aria-label={`Open bag, ${count} items`}>
+          <button type="button" onClick={() => setOpen(true)} aria-label={`Open bag, ${count} items`} aria-haspopup="dialog" aria-expanded={open} aria-controls="bag-drawer">
             Bag <span className="pill">{count}</span>
           </button>
         </div>

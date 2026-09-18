@@ -5,6 +5,7 @@ import ProductGrid from '../components/ProductGrid'
 import ProductCard from '../components/ProductCard'
 import { collectionByHandle, collectionCover, img, newIn, productByHandle, products, productsInCollection } from '../lib/catalogue'
 import { config } from '../config'
+import { usePageMeta } from '../lib/usePageMeta'
 
 const TILES = ['women', 'men', 'the-britpop-edit', 'footwear', 'rave', 'accessories']
 const STAPLES = ['wannabe-platform-sandals', 'supernova-shell-jacket', 'camden-denim-jacket', 'faux-leather-biker-jacket', 'big-beat-platform-trainers', 'tartan-kilt-mini', 'firestarter-shell-tracksuit', 'ripped-mum-jeans']
@@ -100,7 +101,7 @@ function Newsletter() {
   const [done, setDone] = useState(false)
   const submit = (e: FormEvent) => { e.preventDefault(); setDone(true) }
   return (
-    <section className="section">
+    <section className="section" id="newsletter">
       <div className="wrap news">
         <div><p className="eyebrow">Mailing list</p><h2 className="display">Drops, early. Spam, never.</h2></div>
         <div>
@@ -118,6 +119,7 @@ function Newsletter() {
 }
 
 export default function Home() {
+  usePageMeta()
   const staples = STAPLES.map(productByHandle).filter(Boolean) as typeof products
   const fresh = newIn.slice(0, 4)
   return (

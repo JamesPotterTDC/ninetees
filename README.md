@@ -29,6 +29,6 @@ python3 scripts/load_shopify.py --collections      # (re)build smart collections
 python3 scripts/export_catalogue.py                # refresh src/data/catalogue.json
 ```
 
-`scripts/catalogue.py` is the single source of truth: 70 products, UK size schemes, copy and tags. Existing Helm-linked SKUs (`90S-001` to `90S-050`) keep their bare SKU on the original size; every other size is `SKU-<size>`.
+`scripts/catalogue.py` is the single source of truth: 73 products, UK size schemes, copy and tags. Existing Helm-linked SKUs (`90S-001` to `90S-050`) keep their bare SKU on the original size; every other size is `SKU-<size>`.
 
 Every order placed on the site is a test order. Nothing is charged and nothing is shipped.

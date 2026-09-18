@@ -3,9 +3,11 @@ import Placeholder from '../components/Placeholder'
 import { useCart } from '../lib/cart'
 import { img } from '../lib/catalogue'
 import { money } from '../lib/format'
+import { usePageMeta } from '../lib/usePageMeta'
 
 export default function Bag() {
   const { lines, subtotal, setQty, remove, checkout, checkingOut, checkoutError, canCheckout } = useCart()
+  usePageMeta('Your bag')
   return (
     <div className="wrap bagpage">
       <div>
@@ -39,7 +41,7 @@ export default function Bag() {
         <p className="small">Taxes included. Delivery and discount codes are finalised at checkout.</p>
         {!canCheckout && <div className="alert">Checkout is not switched on for this preview yet.</div>}
         {checkoutError && <div className="alert">{checkoutError}</div>}
-        <p className="small">Checkout is handled securely by Shopify. If it asks for a store password, use <strong>yeltao</strong>.</p>
+        <p className="small">Checkout is handled securely by Shopify. Test orders only: nothing is charged and nothing is shipped.</p>
         <button type="button" className="btn btn--full" disabled={!canCheckout || checkingOut || lines.length === 0} onClick={checkout}>
           {checkingOut ? 'Taking you to checkout…' : 'Checkout'}
         </button>

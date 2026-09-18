@@ -23,18 +23,18 @@ export default function Footer() {
         <div>
           <h4>Help</h4>
           <ul>
-            <li><Link to="/about">Our story</Link></li>
-            <li><Link to="/about#delivery">Delivery &amp; returns</Link></li>
-            <li><Link to="/about#sizing">Size guide</Link></li>
+            <li><Link to="/help">Help &amp; FAQ</Link></li>
+            <li><Link to="/help#delivery">Delivery &amp; returns</Link></li>
+            <li><Link to="/help#sizing">Size guide</Link></li>
             <li><Link to="/bag">Your bag</Link></li>
           </ul>
         </div>
         <div>
-          <h4>Follow</h4>
+          <h4>Keep in touch</h4>
           <ul>
-            <li><span>Instagram</span></li>
-            <li><span>TikTok</span></li>
-            <li><span>Newsletter</span></li>
+            <li><Link to="/about">Our story</Link></li>
+            <li><Link to="/#newsletter">Newsletter</Link></li>
+            <li><Link to="/help#contact">Contact</Link></li>
           </ul>
         </div>
       </div>

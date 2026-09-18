@@ -1,4 +1,4 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { config } from '../config'
 import { lookupVariant, type Product, type Variant } from './catalogue'
 
@@ -59,7 +59,17 @@ function loadItems(): BagItem[] {
 
 export function CartProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<BagItem[]>(loadItems)
-  const [open, setOpen] = useState(false)
+  const [open, setOpenState] = useState(false)
+  const returnFocus = useRef<HTMLElement | null>(null)
+  /** Remember what had focus when the bag opened, so closing it can hand focus straight back. */
+  const setOpen = useCallback((o: boolean) => {
+    if (o) returnFocus.current = document.activeElement instanceof HTMLElement ? document.activeElement : null
+    setOpenState(o)
+  }, [])
+  useEffect(() => {
+    if (open || !returnFocus.current) return
+    returnFocus.current.focus(); returnFocus.current = null
+  }, [open])
   const [checkingOut, setCheckingOut] = useState(false)
   const [checkoutError, setCheckoutError] = useState<string | null>(null)
 
@@ -78,7 +88,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
       ? prev.map((i) => (i.variantId === variantId ? { ...i, qty: i.qty + qty } : i))
       : [...prev, { variantId, qty }])
     setOpen(true)
-  }, [])
+  }, [setOpen])
   const setQty = useCallback((variantId: string, qty: number) => {
     setItems((prev) => qty <= 0 ? prev.filter((i) => i.variantId !== variantId) : prev.map((i) => (i.variantId === variantId ? { ...i, qty } : i)))
   }, [])
@@ -122,7 +132,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   }, [canCheckout, lines])
 
   const value = useMemo<CartCtx>(() => ({ lines, count, subtotal, open, add, setQty, remove, clear, setOpen, checkout, checkingOut, checkoutError, canCheckout }),
-    [lines, count, subtotal, open, add, setQty, remove, clear, checkout, checkingOut, checkoutError, canCheckout])
+    [lines, count, subtotal, open, add, setQty, remove, clear, setOpen, checkout, checkingOut, checkoutError, canCheckout])
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>
 }
 

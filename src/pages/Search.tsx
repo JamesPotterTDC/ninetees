@@ -2,11 +2,13 @@ import { useMemo } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import ProductGrid from '../components/ProductGrid'
 import { searchProducts } from '../lib/catalogue'
+import { usePageMeta } from '../lib/usePageMeta'
 
 export default function Search() {
   const [params, setParams] = useSearchParams()
   const q = params.get('q') ?? ''
   const results = useMemo(() => searchProducts(q), [q])
+  usePageMeta(q ? `Search: ${q}` : 'Search')
   return (
     <div className="wrap" style={{ paddingBottom: 96 }}>
       <h1 className="display page-title">Search</h1>

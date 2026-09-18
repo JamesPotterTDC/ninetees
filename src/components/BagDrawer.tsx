@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { useCart } from '../lib/cart'
 import { img } from '../lib/catalogue'
@@ -6,13 +7,24 @@ import Placeholder from './Placeholder'
 
 export default function BagDrawer() {
   const { open, setOpen, lines, subtotal, setQty, remove, checkout, checkingOut, checkoutError, canCheckout } = useCart()
+  const closeRef = useRef<HTMLButtonElement>(null)
+
+  // Escape closes the bag, and focus lands on the close button when it opens. The cart hands focus back on close.
+  useEffect(() => {
+    if (!open) return
+    closeRef.current?.focus()
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false) }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [open, setOpen])
+
   return (
-    <div className={`drawer${open ? ' open' : ''}`} aria-hidden={!open}>
+    <div className={`drawer${open ? ' open' : ''}`} aria-hidden={!open} inert={!open}>
       <div className="drawer__bg" onClick={() => setOpen(false)} />
-      <aside className="drawer__panel" role="dialog" aria-label="Your bag">
+      <aside className="drawer__panel" id="bag-drawer" role="dialog" aria-modal="true" aria-label="Your bag">
         <div className="drawer__head">
           <h2>Your bag</h2>
-          <button type="button" onClick={() => setOpen(false)} aria-label="Close bag" style={{ fontSize: 22 }}>×</button>
+          <button ref={closeRef} type="button" onClick={() => setOpen(false)} aria-label="Close bag" style={{ fontSize: 22 }}>×</button>
         </div>
         <div className="drawer__body">
           {lines.length === 0 && <p className="empty">Nothing in here yet. Go on.</p>}
@@ -43,7 +55,7 @@ export default function BagDrawer() {
             <p className="small">Delivery and any discounts are worked out at checkout. Free UK delivery over £75.</p>
             {!canCheckout && <div className="alert">Checkout is not switched on for this preview yet.</div>}
             {checkoutError && <div className="alert">{checkoutError}</div>}
-            <p className="small">Checkout is handled securely by Shopify. If it asks for a store password, use <strong>yeltao</strong>.</p>
+            <p className="small">Checkout is handled securely by Shopify. Test orders only: nothing is charged and nothing is shipped.</p>
             <button type="button" className="btn btn--full" disabled={!canCheckout || checkingOut} onClick={checkout}>
               {checkingOut ? 'Taking you to checkout…' : 'Checkout'}
             </button>

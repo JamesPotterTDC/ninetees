@@ -298,3 +298,29 @@ main { flex: 1; }
   .band__grid { grid-template-columns: 1fr 1fr; }
   .ftr__grid { grid-template-columns: 1fr; }
 }
+
+/* help page */
+.help-grid { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 48px; align-items: start; }
+.help-nav { position: sticky; top: 88px; display: grid; gap: 4px; }
+.help-nav a { font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--grey); padding: 6px 0 6px 12px; border-left: 2px solid var(--line); }
+.help-nav a:hover { color: var(--ink); border-color: var(--ink); }
+.prose h3 { font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--ink); margin-top: 8px; }
+.table-wrap { overflow-x: auto; }
+.table { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
+.table th, .table td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.table th { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--grey); font-weight: 700; }
+.table td:first-child { font-weight: 600; white-space: nowrap; }
+.prose .acc { border-top: 1px solid var(--line); }
+.prose .acc summary { font-size: 12px; }
+.prose .acc .body p { font-size: 15px; line-height: 1.55; }
+/* anchors land below the sticky header */
+h2[id], section[id] { scroll-margin-top: 84px; }
+/* clear-filters chip and inline link buttons */
+.chip--clear { border-style: dashed; color: var(--grey); }
+.chip--clear:hover { color: var(--ink); }
+button.link { color: inherit; font: inherit; }
+@media (max-width: 860px) {
+  .help-grid { grid-template-columns: 1fr; gap: 24px; }
+  .help-nav { position: static; display: flex; flex-wrap: wrap; gap: 6px 18px; }
+  .help-nav a { border-left: 0; padding-left: 0; }
+}

@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
+import { usePageMeta } from '../lib/usePageMeta'
 
 export default function NotFound() {
+  usePageMeta('Page not found')
   return (
     <div className="wrap" style={{ padding: '80px 0 120px' }}>
       <p className="eyebrow">404</p>

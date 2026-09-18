@@ -1,10 +1,11 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import ProductGrid from '../components/ProductGrid'
 import Placeholder from '../components/Placeholder'
-import { img, productByHandle, related } from '../lib/catalogue'
+import { img, productByHandle, related, type Product as ProductInfo } from '../lib/catalogue'
 import { useCart } from '../lib/cart'
 import { money } from '../lib/format'
+import { usePageMeta } from '../lib/usePageMeta'
 import NotFound from './NotFound'
 
 const SIZE_GUIDE: Record<string, string> = {
@@ -17,23 +18,25 @@ const SIZE_GUIDE: Record<string, string> = {
 export default function Product() {
   const { handle = '' } = useParams()
   const product = productByHandle(handle)
-  const { add } = useCart()
-  const [sel, setSel] = useState<Record<string, string>>({})
-  const [imgIdx, setImgIdx] = useState(0)
-  const [added, setAdded] = useState(false)
+  if (!product) return <NotFound />
+  // Keyed on the handle so selection, gallery and "added" state start fresh for every product.
+  return <ProductView key={product.handle} product={product} />
+}
 
-  useEffect(() => {
-    setImgIdx(0); setAdded(false)
-    if (!product) return
-    // Pre-select any option that only has one value (One Size, or a hat's single option list of two is left alone).
+function ProductView({ product }: { product: ProductInfo }) {
+  const { add } = useCart()
+  // Pre-select any option that only has one value (One Size). A hat's two-value list is left for the visitor.
+  const [sel, setSel] = useState<Record<string, string>>(() => {
     const auto: Record<string, string> = {}
     product.options.forEach((o) => { if (o.values.length === 1) auto[o.name] = o.values[0] })
-    setSel(auto)
-  }, [product])
+    return auto
+  })
+  const [imgIdx, setImgIdx] = useState(0)
+  const [added, setAdded] = useState(false)
+  usePageMeta(product.title, product.description)
 
-  const variant = useMemo(() => product?.variants.find((v) => product.options.every((o) => v.options[o.name] === sel[o.name])), [product, sel])
-  const others = useMemo(() => (product ? related(product, 4) : []), [product])
-  if (!product) return <NotFound />
+  const variant = useMemo(() => product.variants.find((v) => product.options.every((o) => v.options[o.name] === sel[o.name])), [product, sel])
+  const others = useMemo(() => related(product, 4), [product])
 
   const complete = product.options.every((o) => sel[o.name])
   const availableFor = (name: string, value: string) =>
@@ -96,8 +99,14 @@ export default function Product() {
           </button>
           <div className="acc">
             <details open><summary>Details</summary><div className="body" dangerouslySetInnerHTML={{ __html: bullets }} /></details>
-            <details><summary>Size &amp; fit</summary><div className="body"><ul>{product.options.map((o) => <li key={o.name}>{SIZE_GUIDE[o.name] ?? o.name}</li>)}</ul></div></details>
-            <details><summary>Delivery &amp; returns</summary><div className="body"><p>UK standard delivery £3.95, free over £75. Next day £6.95 if you order before 2pm.</p><p>Free returns within 28 days, unworn and with the tags on. Print a label from your order page.</p></div></details>
+            <details><summary>Size &amp; fit</summary><div className="body">
+              <ul>{product.options.map((o) => <li key={o.name}>{SIZE_GUIDE[o.name] ?? o.name}</li>)}</ul>
+              <p style={{ marginTop: 10 }}><Link to="/help#sizing" className="link">Full size guide</Link></p>
+            </div></details>
+            <details><summary>Delivery &amp; returns</summary><div className="body">
+              <p>UK standard delivery £3.95, free over £75. Next day £6.95 if you order before 2pm.</p>
+              <p>Free returns within 28 days, unworn and with the tags on. Print a label from your order page. <Link to="/help#delivery" className="link">More on delivery and returns</Link>.</p>
+            </div></details>
           </div>
         </div>
       </div>
