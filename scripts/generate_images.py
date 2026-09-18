@@ -51,7 +51,8 @@ def cast(p):
     return os.path.join(MODELS_DIR, f), desc
 
 MODEL_RULE = ("The person wearing it is the model in the LAST reference image, a portrait crop: reproduce that exact person, "
-              "same face, hair, skin tone and build, as if photographed on the same day. Do not invent a different person.")
+              "same face, hair, skin tone and build, as if photographed on the same day. Do not invent a different person. "
+              "Style the rest of their outfit simply in plain neutral pieces that suit the product; the product is the focus.")
 
 def prompts(p):
     garment = f"{p['title']} ({p['type'].lower()}, colour {p['colour']}). {p['desc']}"
@@ -87,12 +88,12 @@ def openai_image(key, prompt, refs=None, size="1024x1536"):
         req = urllib.request.Request("https://api.openai.com/v1/images/edits", data=bytes(body), headers={"Authorization": f"Bearer {key}", "Content-Type": f"multipart/form-data; boundary={boundary}"})
     else:
         req = urllib.request.Request("https://api.openai.com/v1/images/generations", data=json.dumps({"model": MODEL, "prompt": prompt, "size": size, "quality": QUALITY, "n": 1}).encode(), headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
-    for attempt in range(4):
+    for attempt in range(7):
         try:
             with urllib.request.urlopen(req, timeout=300) as r: return base64.b64decode(json.loads(r.read())["data"][0]["b64_json"])
         except urllib.error.HTTPError as e:
             msg = e.read().decode()[:300]
-            if e.code in (429, 500, 502, 503) and attempt < 3: time.sleep(10 * (attempt + 1)); continue
+            if e.code in (429, 500, 502, 503) and attempt < 6: time.sleep(15 * (attempt + 1)); continue
             raise RuntimeError(f"OpenAI {e.code}: {msg}")
 
 def generate_product(p, key, shop_products, dry):
