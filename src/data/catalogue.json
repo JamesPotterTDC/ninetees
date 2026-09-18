@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-18T19:24:14+00:00",
+ "generatedAt": "2026-09-18T19:42:34+00:00",
  "shop": {
   "domain": "jamesinternaltesting.myshopify.com",
   "currency": "GBP",
@@ -10,42 +10,42 @@
    "handle": "new-in",
    "title": "New In",
    "description": "The latest drops, fresh from the van.",
-   "count": 20,
+   "count": 23,
    "image": null
   },
   {
    "handle": "men",
    "title": "Men",
    "description": "Parkas, polos, proper denim and terrace trainers.",
-   "count": 43,
+   "count": 44,
    "image": null
   },
   {
    "handle": "women",
    "title": "Women",
    "description": "Slip dresses, baby tees, platforms and mum jeans.",
-   "count": 57,
+   "count": 60,
    "image": null
   },
   {
    "handle": "outerwear",
    "title": "Outerwear",
    "description": "Parkas, Harringtons, puffas and shells.",
-   "count": 9,
+   "count": 10,
    "image": null
   },
   {
    "handle": "denim",
    "title": "Denim",
    "description": "Baggy, ripped, flared and stonewashed.",
-   "count": 11,
+   "count": 12,
    "image": null
   },
   {
    "handle": "tees",
    "title": "Tees & Tops",
    "description": "Graphic tees, baby tees and crops.",
-   "count": 12,
+   "count": 14,
    "image": null
   },
   {
@@ -87,11 +87,135 @@
    "handle": "rave",
    "title": "Rave & Madchester",
    "description": "Tie-dye, smileys, bucket hats and shell suits. Hacienda hours.",
-   "count": 13,
+   "count": 14,
    "image": null
   }
  ],
  "products": [
+  {
+   "id": "gid://shopify/Product/11043076833547",
+   "handle": "acid-wash-denim-jacket",
+   "title": "Acid Wash Denim Jacket",
+   "vendor": "NineTees",
+   "type": "Jackets",
+   "tags": [
+    "Denim",
+    "New In",
+    "NineTees",
+    "Outerwear",
+    "Unisex"
+   ],
+   "gender": "Unisex",
+   "colour": "Pale Acid Wash",
+   "descriptionHtml": "<p>Classic trucker jacket in a pale acid wash with brass buttons, chest flap pockets and a boxy cut. Wear it with the darkest jeans you own.</p><ul>\n<li>\n<strong>Colour:</strong> Pale Acid Wash</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-071</li>\n</ul>",
+   "description": "Classic trucker jacket in a pale acid wash with brass buttons, chest flap pockets and a boxy cut. Wear it with the darkest jeans you own.",
+   "price": 105.0,
+   "priceMax": 105.0,
+   "createdAt": "2026-09-18T19:31:37Z",
+   "newIn": true,
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+     ]
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/Acid_Wash_Denim_Jacket.png?v=1789759910",
+     "alt": "Acid Wash Denim Jacket",
+     "width": 1024,
+     "height": 1024
+    }
+   ],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/53373214097675",
+     "sku": "90S-071-XS",
+     "title": "XS",
+     "price": 105.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 65,
+     "options": {
+      "Size": "XS"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373214130443",
+     "sku": "90S-071-S",
+     "title": "S",
+     "price": 105.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 60,
+     "options": {
+      "Size": "S"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373214163211",
+     "sku": "90S-071-M",
+     "title": "M",
+     "price": 105.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 42,
+     "options": {
+      "Size": "M"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373214195979",
+     "sku": "90S-071-L",
+     "title": "L",
+     "price": 105.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 31,
+     "options": {
+      "Size": "L"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373214228747",
+     "sku": "90S-071-XL",
+     "title": "XL",
+     "price": 105.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 17,
+     "options": {
+      "Size": "XL"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373214261515",
+     "sku": "90S-071-2XL",
+     "title": "2XL",
+     "price": 105.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 133,
+     "options": {
+      "Size": "2XL"
+     }
+    }
+   ],
+   "collections": [
+    "new-in",
+    "men",
+    "women",
+    "outerwear",
+    "denim"
+   ]
+  },
   {
    "id": "gid://shopify/Product/9779333431563",
    "handle": "acid-wash-jeans",
@@ -328,8 +452,8 @@
      "title": "38 / 34",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 31,
      "options": {
       "Waist": "38",
       "Leg": "34"
@@ -1880,8 +2004,8 @@
      "title": "UK 10",
      "price": 70.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 23,
      "options": {
       "Size": "UK 10"
      }
@@ -1904,8 +2028,8 @@
      "title": "UK 14",
      "price": 70.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 13,
      "options": {
       "Size": "UK 14"
      }
@@ -1916,8 +2040,8 @@
      "title": "UK 16",
      "price": 70.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 105,
      "options": {
       "Size": "UK 16"
      }
@@ -2744,8 +2868,8 @@
      "title": "UK 6",
      "price": 50.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 70,
      "options": {
       "Size": "UK 6"
      }
@@ -4191,6 +4315,127 @@
    ]
   },
   {
+   "id": "gid://shopify/Product/11043076931851",
+   "handle": "lettuce-hem-baby-tee",
+   "title": "Lettuce Hem Baby Tee",
+   "vendor": "NineTees",
+   "type": "T-Shirts",
+   "tags": [
+    "New In",
+    "NineTees",
+    "Tees",
+    "Women"
+   ],
+   "gender": "Women",
+   "colour": "Black / White Trim",
+   "descriptionHtml": "<p>Ribbed black baby tee with a white lettuce-edge hem and cuffs and a contrast-stitched neck. Tiny, tight and correct.</p><ul>\n<li>\n<strong>Colour:</strong> Black / White Trim</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-073</li>\n</ul>",
+   "description": "Ribbed black baby tee with a white lettuce-edge hem and cuffs and a contrast-stitched neck. Tiny, tight and correct.",
+   "price": 26.0,
+   "priceMax": 26.0,
+   "createdAt": "2026-09-18T19:31:40Z",
+   "newIn": true,
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+     ]
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/Crop_Top.png?v=1789759914",
+     "alt": "Lettuce Hem Baby Tee",
+     "width": 1024,
+     "height": 1536
+    }
+   ],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/53373214523659",
+     "sku": "90S-073-XS",
+     "title": "XS",
+     "price": 26.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 104,
+     "options": {
+      "Size": "XS"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373214556427",
+     "sku": "90S-073-S",
+     "title": "S",
+     "price": 26.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 31,
+     "options": {
+      "Size": "S"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373214589195",
+     "sku": "90S-073-M",
+     "title": "M",
+     "price": 26.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 86,
+     "options": {
+      "Size": "M"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373214621963",
+     "sku": "90S-073-L",
+     "title": "L",
+     "price": 26.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 22,
+     "options": {
+      "Size": "L"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373214654731",
+     "sku": "90S-073-XL",
+     "title": "XL",
+     "price": 26.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 89,
+     "options": {
+      "Size": "XL"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373214687499",
+     "sku": "90S-073-2XL",
+     "title": "2XL",
+     "price": 26.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 74,
+     "options": {
+      "Size": "2XL"
+     }
+    }
+   ],
+   "collections": [
+    "new-in",
+    "women",
+    "tees"
+   ]
+  },
+  {
    "id": "gid://shopify/Product/9779331563787",
    "handle": "madchester-baggy-jeans",
    "title": "Madchester Baggy Jeans",
@@ -4489,8 +4734,8 @@
      "title": "XS",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 138,
      "options": {
       "Size": "XS"
      }
@@ -4990,8 +5235,8 @@
      "title": "M",
      "price": 60.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 52,
      "options": {
       "Size": "M"
      }
@@ -5454,8 +5699,8 @@
      "title": "2XL",
      "price": 55.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 86,
      "options": {
       "Size": "2XL"
      }
@@ -6080,8 +6325,8 @@
      "title": "S",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 70,
      "options": {
       "Size": "S"
      }
@@ -6104,8 +6349,8 @@
      "title": "L",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 100,
      "options": {
       "Size": "L"
      }
@@ -6116,8 +6361,8 @@
      "title": "XL",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 30,
      "options": {
       "Size": "XL"
      }
@@ -6128,8 +6373,8 @@
      "title": "2XL",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 60,
      "options": {
       "Size": "2XL"
      }
@@ -6802,8 +7047,8 @@
      "title": "9",
      "price": 90.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 65,
      "options": {
       "UK Size": "9"
      }
@@ -6814,8 +7059,8 @@
      "title": "10",
      "price": 90.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 114,
      "options": {
       "UK Size": "10"
      }
@@ -7028,6 +7273,129 @@
     "men",
     "women",
     "outerwear",
+    "rave"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/11043076899083",
+   "handle": "swirl-mesh-long-sleeve",
+   "title": "Swirl Mesh Long Sleeve",
+   "vendor": "NineTees",
+   "type": "Tops",
+   "tags": [
+    "New In",
+    "NineTees",
+    "Rave",
+    "Tops",
+    "Women"
+   ],
+   "gender": "Women",
+   "colour": "Black / Purple / Teal Swirl",
+   "descriptionHtml": "<p>Sheer stretch-mesh long sleeve in a black, purple and teal psychedelic swirl with a fitted crew neck. Layer it over a bralette or under a slip.</p><ul>\n<li>\n<strong>Colour:</strong> Black / Purple / Teal Swirl</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-072</li>\n</ul>",
+   "description": "Sheer stretch-mesh long sleeve in a black, purple and teal psychedelic swirl with a fitted crew neck. Layer it over a bralette or under a slip.",
+   "price": 38.0,
+   "priceMax": 38.0,
+   "createdAt": "2026-09-18T19:31:39Z",
+   "newIn": true,
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UK 6",
+      "UK 8",
+      "UK 10",
+      "UK 12",
+      "UK 14",
+      "UK 16"
+     ]
+    }
+   ],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/Mesh_top.png?v=1789759912",
+     "alt": "Swirl Mesh Long Sleeve",
+     "width": 1024,
+     "height": 1536
+    }
+   ],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/53373214327051",
+     "sku": "90S-072-UK6",
+     "title": "UK 6",
+     "price": 38.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 63,
+     "options": {
+      "Size": "UK 6"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373214359819",
+     "sku": "90S-072-UK8",
+     "title": "UK 8",
+     "price": 38.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 102,
+     "options": {
+      "Size": "UK 8"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373214392587",
+     "sku": "90S-072-UK10",
+     "title": "UK 10",
+     "price": 38.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 36,
+     "options": {
+      "Size": "UK 10"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373214425355",
+     "sku": "90S-072-UK12",
+     "title": "UK 12",
+     "price": 38.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 55,
+     "options": {
+      "Size": "UK 12"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373214458123",
+     "sku": "90S-072-UK14",
+     "title": "UK 14",
+     "price": 38.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 105,
+     "options": {
+      "Size": "UK 14"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373214490891",
+     "sku": "90S-072-UK16",
+     "title": "UK 16",
+     "price": 38.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 16,
+     "options": {
+      "Size": "UK 16"
+     }
+    }
+   ],
+   "collections": [
+    "new-in",
+    "women",
+    "tees",
     "rave"
    ]
   },
@@ -7503,8 +7871,8 @@
      "title": "UK 6",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 22,
      "options": {
       "Size": "UK 6"
      }
@@ -7515,8 +7883,8 @@
      "title": "UK 8",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 22,
      "options": {
       "Size": "UK 8"
      }
@@ -7527,8 +7895,8 @@
      "title": "UK 10",
      "price": 75.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 72,
      "options": {
       "Size": "UK 10"
      }
@@ -7619,8 +7987,8 @@
      "title": "XS",
      "price": 32.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 79,
      "options": {
       "Size": "XS"
      }
@@ -7848,7 +8216,14 @@
      ]
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/Velour_Tracksuit.png?v=1789759907",
+     "alt": "Velour Tracksuit",
+     "width": 1024,
+     "height": 1536
+    }
+   ],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373134668043",
@@ -8212,8 +8587,8 @@
      "title": "32 / 30",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 128,
      "options": {
       "Waist": "32",
       "Leg": "30"
@@ -8225,8 +8600,8 @@
      "title": "32 / 32",
      "price": 85.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 110,
      "options": {
       "Waist": "32",
       "Leg": "32"

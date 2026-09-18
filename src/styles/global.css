@@ -233,10 +233,17 @@ main { flex: 1; }
 .searchbar { display: flex; gap: 10px; margin-bottom: 32px; }
 .searchbar input { flex: 1; min-height: 52px; padding: 0 18px; border: 1px solid var(--ink); background: var(--white); font: inherit; font-size: 16px; border-radius: var(--radius); }
 
+/* about */
+.about-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 48px; align-items: start; }
+.about-mark { position: sticky; top: 88px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.about-mark img { width: 100%; }
+@media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; } .about-mark { position: static; max-width: 420px; } }
+
 /* footer */
 .ftr { background: var(--ink); color: var(--bone); margin-top: auto; }
 .ftr__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; padding-block: 56px 40px; }
 .ftr .logo { font-size: 44px; }
+.ftr__mark { width: 96px; height: 96px; border-radius: 12px; margin-bottom: 18px; }
 .ftr .logo small { color: var(--grey-2); }
 .ftr p { color: var(--grey-2); max-width: 40ch; margin-top: 14px; font-size: 14px; }
 .ftr h4 { font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--grey-2); margin-bottom: 14px; }

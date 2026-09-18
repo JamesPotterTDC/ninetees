@@ -6,6 +6,7 @@ export default function Footer() {
     <footer className="ftr">
       <div className="wrap ftr__grid">
         <div>
+          <img className="ftr__mark" src={`${config.brand.markUrl}&width=240`} alt="" width="96" height="96" loading="lazy" />
           <div className="logo">{config.brand.name.toUpperCase()} <small>EST. {config.brand.est}</small></div>
           <p>{config.brand.strap} Only ever the nineties, only ever from {config.brand.city}. Parkas, platforms and a bit of swagger, cut properly.</p>
         </div>

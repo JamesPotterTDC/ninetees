@@ -221,8 +221,8 @@ PRODUCTS = [
    'Tobacco',
    'Chore jacket in tobacco corduroy with three patch pockets and a corozo button front. Indie disco after-dark uniform.',['Outerwear', 'Men', 'Britpop', 'New In']),
  P('90S-062','velour-tracksuit','Velour Tracksuit','Tracksuits','Women','womens',None,120,
-   'Baby Blue',
-   'Zip-through velour hoodie and matching flared bottoms in baby blue. Soft, slouchy and a bit much.',['Sportswear', 'Women', 'New In']),
+   'Navy',
+   'Zip-through velour track jacket and matching cuffed bottoms in navy. Soft, slouchy and a bit much.',['Sportswear', 'Women', 'New In']),
  P('90S-063','popper-track-pants','Popper Track Pants','Trousers','Unisex','tops',None,60,
    'Black / White',
    'Straight-leg track pants in black with a white side stripe and full-length poppers down each leg. Tear-away optional.',['Trousers', 'Unisex', 'Sportswear', 'New In']),
@@ -247,6 +247,15 @@ PRODUCTS = [
  P('90S-070','twinset-cardigan-and-cami','Twinset Cardigan & Cami','Knitwear','Women','womens',None,75,
    'Lilac',
    'Fine-knit lilac cardigan and matching cami in a soft cotton blend. Buttoned all the way or not at all.',['Knitwear', 'Women', 'Britpop', 'New In']),
+ P('90S-071','acid-wash-denim-jacket','Acid Wash Denim Jacket','Jackets','Unisex','tops',None,105,
+   'Pale Acid Wash',
+   'Classic trucker jacket in a pale acid wash with brass buttons, chest flap pockets and a boxy cut. Wear it with the darkest jeans you own.',['Denim', 'Outerwear', 'Unisex', 'New In']),
+ P('90S-072','swirl-mesh-long-sleeve','Swirl Mesh Long Sleeve','Tops','Women','womens',None,38,
+   'Black / Purple / Teal Swirl',
+   'Sheer stretch-mesh long sleeve in a black, purple and teal psychedelic swirl with a fitted crew neck. Layer it over a bralette or under a slip.',['Tops', 'Women', 'Rave', 'New In']),
+ P('90S-073','lettuce-hem-baby-tee','Lettuce Hem Baby Tee','T-Shirts','Women','tops',None,26,
+   'Black / White Trim',
+   'Ribbed black baby tee with a white lettuce-edge hem and cuffs and a contrast-stitched neck. Tiny, tight and correct.',['Tees', 'Women', 'New In']),
 ]
 
 def variants_for(p):
