@@ -14,6 +14,7 @@ export const config = {
     strap: 'Nineties UK fashion. Cut for now.',
     est: 1994,
     city: 'Manchester',
+    heroUrl: 'https://cdn.shopify.com/s/files/1/0786/6607/2331/files/hero-skatepark.png?v=1789764682',
     markUrl: 'https://cdn.shopify.com/s/files/1/0786/6607/2331/files/NineTees.png?v=1789759916',
   },
 }

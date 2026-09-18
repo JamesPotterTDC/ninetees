@@ -10,34 +10,24 @@ const TILES = ['women', 'men', 'the-britpop-edit', 'footwear', 'rave', 'accessor
 const STAPLES = ['wannabe-platform-sandals', 'supernova-shell-jacket', 'camden-denim-jacket', 'faux-leather-biker-jacket', 'big-beat-platform-trainers', 'tartan-kilt-mini', 'firestarter-shell-tracksuit', 'ripped-mum-jeans']
 
 function Hero() {
-  const picks = ['touchline-hooded-jacket', 'wannabe-platform-sandals', 'supernova-shell-jacket']
-    .map((h) => products.find((p) => p.handle === h && p.images.length)).filter(Boolean) as typeof products
+  const src = config.brand.heroUrl
   return (
-    <section className="hero">
-      <div className="wrap hero__grid">
-        <div>
-          <p className="eyebrow">{config.brand.city} · Est. {config.brand.est} · Only ever the nineties</p>
-          <h1 className="display" style={{ marginTop: 18 }}>
-            Britpop,<br /><span className="hl">reissued</span><span className="ol">.</span>
-          </h1>
-          <p>Parkas, platforms, baby tees and baggy denim, cut the way they should have been the first time. Nineties UK fashion for people who were there, and people who wish they had been.</p>
-          <div className="hero__cta">
-            <Link className="btn" to="/collections/women">Shop women</Link>
-            <Link className="btn btn--ghost" to="/collections/men">Shop men</Link>
-          </div>
-          <div className="hero__meta">
-            <div><strong>{products.length}</strong>pieces, one decade</div>
-            <div><strong>UK 2–12</strong>footwear sizing</div>
-            <div><strong>XS–2XL</strong>everything else</div>
-          </div>
+    <section className="hero hero--photo">
+      <img className="hero__img" src={img(src, 1800)} srcSet={`${img(src, 900)} 900w, ${img(src, 1400)} 1400w, ${img(src, 1800)} 1800w, ${img(src, 2400)} 2400w`} sizes="100vw"
+        alt="Four friends in NineTees clothing at a Manchester skate park" fetchPriority="high" />
+      <div className="hero__shade" aria-hidden="true" />
+      <div className="wrap hero__content">
+        <p className="eyebrow eyebrow--light">{config.brand.city} · Est. {config.brand.est} · Only ever the nineties</p>
+        <h1 className="display">Britpop,<br /><span className="hl">reissued</span>.</h1>
+        <p>Parkas, platforms, baby tees and baggy denim, cut the way they should have been the first time. Nineties UK fashion for people who were there, and people who wish they had been.</p>
+        <div className="hero__cta">
+          <Link className="btn btn--bone" to="/collections/women">Shop women</Link>
+          <Link className="btn btn--ghost-light" to="/collections/men">Shop men</Link>
         </div>
-        <div className="collage" aria-hidden="true">
-          <div className="collage__block" />
-          <div className="collage__check" />
-          {picks.map((p) => (
-            <div className="collage__card" key={p.handle}><img src={img(p.images[0].url, 640)} alt="" /></div>
-          ))}
-          <div className="collage__tag">New season</div>
+        <div className="hero__meta">
+          <div><strong>{products.length}</strong>pieces, one decade</div>
+          <div><strong>UK 2–12</strong>footwear sizing</div>
+          <div><strong>XS–2XL</strong>everything else</div>
         </div>
       </div>
     </section>

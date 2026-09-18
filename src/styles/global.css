@@ -79,6 +79,22 @@ main { flex: 1; }
 .collage__card:nth-child(5) { left: 22%; bottom: 0; transform: rotate(-2deg); width: 42%; }
 .collage__tag { position: absolute; top: 2%; right: 2%; background: var(--acid); padding: 10px 14px; font-family: var(--font-display); font-size: 22px; letter-spacing: .02em; transform: rotate(6deg); }
 
+/* photographic hero */
+.hero--photo { background: var(--ink); color: var(--bone); min-height: min(88vh, 920px); display: grid; align-items: end; }
+.hero--photo::before { display: none; }
+.hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
+.hero__shade { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,11,.88) 0%, rgba(10,10,11,.45) 42%, rgba(10,10,11,.12) 75%, rgba(10,10,11,.25) 100%); }
+.hero__content { position: relative; padding-block: clamp(120px, 22vh, 220px) 56px; max-width: 760px; }
+.hero--photo h1 { font-size: clamp(64px, 10vw, 150px); color: var(--bone); margin-top: 16px; }
+.hero--photo h1 .hl { color: var(--acid); }
+.hero--photo p { color: rgba(243,239,230,.86); }
+.hero--photo .hero__meta div { color: rgba(243,239,230,.7); }
+.hero--photo .hero__meta strong { color: var(--bone); }
+.eyebrow--light { color: rgba(243,239,230,.75); }
+.btn--ghost-light { background: transparent; color: var(--bone); border-color: rgba(243,239,230,.7); }
+.btn--ghost-light:hover { background: var(--bone); color: var(--ink); border-color: var(--bone); }
+@media (max-width: 860px) { .hero--photo { min-height: 78vh; } .hero__img { object-position: 60% 30%; } .hero__content { padding-top: 38vh; } }
+
 /* sections */
 .section { padding-block: clamp(48px, 7vw, 96px); }
 .section--tight { padding-block: clamp(32px, 5vw, 64px); }
