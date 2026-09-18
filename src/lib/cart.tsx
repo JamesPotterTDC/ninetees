@@ -18,6 +18,39 @@ type CartCtx = {
 
 const Ctx = createContext<CartCtx | null>(null)
 const KEY = 'ninetees.bag.v1'
+const CHECKOUT_KEY = 'ninetees.checkout.v1'
+const PENDING_KEY = 'ninetees.checkout.pending'
+
+/** Top-level POST of the store password to Shopify. Shopify sets its session cookie and lands on the
+ *  theme home page, which redirects back here with ?resume=checkout; resumeCheckout() then finishes the job. */
+function postStorePassword() {
+  const form = document.createElement('form')
+  form.method = 'POST'; form.action = `https://${config.shopDomain}/password`; form.style.display = 'none'
+  for (const [name, value] of Object.entries({ form_type: 'storefront_password', utf8: '✓', password: config.storePassword })) {
+    const input = document.createElement('input'); input.type = 'hidden'; input.name = name; input.value = value; form.appendChild(input)
+  }
+  document.body.appendChild(form); form.submit()
+}
+
+/** Called on load. Returns true when we are about to leave for checkout, or when a checkout just finished. */
+export function resumeCheckout(): 'redirecting' | 'returned' | null {
+  const params = new URLSearchParams(window.location.search)
+  if (!params.has('resume')) return null
+  params.delete('resume')
+  const clean = window.location.pathname + (params.toString() ? `?${params}` : '') + window.location.hash
+  window.history.replaceState(null, '', clean)
+  try {
+    const raw = localStorage.getItem(CHECKOUT_KEY)
+    if (raw) {
+      const { url, at } = JSON.parse(raw) as { url: string; at: number }
+      localStorage.removeItem(CHECKOUT_KEY)
+      if (Date.now() - at < 15 * 60 * 1000) { localStorage.setItem(PENDING_KEY, '1'); window.location.replace(url); return 'redirecting' }
+    } else if (localStorage.getItem(PENDING_KEY)) {
+      localStorage.removeItem(PENDING_KEY); localStorage.removeItem(KEY); return 'returned'
+    }
+  } catch { /* storage unavailable */ }
+  return null
+}
 
 function loadItems(): BagItem[] {
   try { const raw = localStorage.getItem(KEY); return raw ? (JSON.parse(raw) as BagItem[]) : [] } catch { return [] }
@@ -72,7 +105,12 @@ export function CartProvider({ children }: { children: ReactNode }) {
       const err = json.errors?.[0]?.message ?? json.data?.cartCreate.userErrors[0]?.message
       const url = json.data?.cartCreate.cart?.checkoutUrl
       if (err || !url) throw new Error(err ?? 'Shopify did not return a checkout link.')
-      window.location.assign(url)
+      if (config.storePassword) {
+        try { localStorage.setItem(CHECKOUT_KEY, JSON.stringify({ url, at: Date.now() })) } catch { window.location.assign(url); return }
+        postStorePassword()
+      } else {
+        window.location.assign(url)
+      }
     } catch (e) {
       setCheckoutError(e instanceof Error ? e.message : 'Checkout failed.')
       setCheckingOut(false)

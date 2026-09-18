@@ -4,6 +4,10 @@ export const config = {
   shopDomain: 'jamesinternaltesting.myshopify.com',
   storefrontApiVersion: '2025-07',
   storefrontToken: (import.meta.env.VITE_SHOPIFY_STOREFRONT_TOKEN as string | undefined) ?? '',
+  // The development store keeps Shopify's storefront password on, and Shopify's checkout insists on the
+  // matching cookie. This is a demo shop, so the password is public: the site posts it for the visitor.
+  storePassword: 'yeltao',
+  siteUrl: 'https://jamespottertdc.github.io/ninetees/',
   brand: {
     name: 'NineTees',
     tagline: 'Britpop, reissued.',

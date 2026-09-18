@@ -43,6 +43,7 @@ export default function BagDrawer() {
             <p className="small">Delivery and any discounts are worked out at checkout. Free UK delivery over £75.</p>
             {!canCheckout && <div className="alert">Checkout is not switched on for this preview yet.</div>}
             {checkoutError && <div className="alert">{checkoutError}</div>}
+            <p className="small">Checkout is handled securely by Shopify. If it asks for a store password, use <strong>yeltao</strong>.</p>
             <button type="button" className="btn btn--full" disabled={!canCheckout || checkingOut} onClick={checkout}>
               {checkingOut ? 'Taking you to checkout…' : 'Checkout'}
             </button>

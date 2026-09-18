@@ -19,7 +19,7 @@ STORE, CHANNEL, LOCATION = 20, 49, 13259
 H = {"Authorization": "Bearer " + T, "Accept": "application/json", "Content-Type": "application/json", "User-Agent": "NineTees-sync/1.0"}
 BARCODE_TYPE_INNER = "4"
 
-def call(method, path, body=None, retries=4):
+def call(method, path, body=None, retries=6):
     for attempt in range(retries):
         req = urllib.request.Request(B + path, data=json.dumps(body).encode() if body is not None else None, headers=H, method=method)
         try:
@@ -27,7 +27,7 @@ def call(method, path, body=None, retries=4):
                 raw = r.read(); return r.status, (json.loads(raw) if raw else {})
         except urllib.error.HTTPError as e:
             if e.code in (429, 500, 502, 503) and attempt < retries - 1:
-                time.sleep(1.5 * (attempt + 1)); continue
+                time.sleep(4 * (attempt + 1)); continue
             return e.code, e.read().decode()[:300]
     return 0, "retries exhausted"
 
@@ -74,16 +74,18 @@ def main():
     def fetch_dims(p):
         s, j = call("GET", f"/companies/{C}/inventory/{have[p['sku']]['id']}/product-dimension")
         if s == 200 and j.get("data"): dims[p["sku"]] = {k: j["data"][k] for k in ("height", "width", "length", "nest_height")}
-    with ThreadPoolExecutor(6) as ex: list(ex.map(fetch_dims, [p for p in PRODUCTS if p["sku"] in have and p["existing_size"]]))
+    with ThreadPoolExecutor(2) as ex: list(ex.map(fetch_dims, [p for p in PRODUCTS if p["sku"] in have and p["existing_size"]]))
 
     # 2. per item: name + price, dimensions + weight, barcode (new only), opening stock (new only)
     qty_by_sku = {c["remote_code"]: int(c["quantity"] or 0) for c in channel}
-    created = {c["remote_code"] for c in channel if c["remote_code"].count("-") >= 2}
+    created = {c["remote_code"] for c in missing}
+    newsize = {c["remote_code"] for c in channel if c["remote_code"].count("-") >= 2}
     results = {"info": 0, "dims": 0, "barcode": 0, "stock": 0, "errors": []}
     def process(sku):
         item = have.get(sku)
         if not item: return
         meta = by_sku[sku]; p = meta["product"]; iid = item["id"]
+        time.sleep(0.25)
         s, j = call("PATCH", f"/companies/{C}/inventory/{iid}/product-information", {"name": meta["name"], "price": p["price"]})
         if s in (200, 204): results["info"] += 1
         else: results["errors"].append((sku, "info", s, str(j)[:120]))
@@ -91,18 +93,19 @@ def main():
         s, j = call("PATCH", f"/companies/{C}/inventory/{iid}/product-dimension", {**d, "weight": WEIGHT_KG.get(p["type"], .5)})
         if s in (200, 204): results["dims"] += 1
         else: results["errors"].append((sku, "dims", s, str(j)[:120]))
-        if sku in created or not item.get("has_barcode", True):
+        if sku in created:
             s, j = call("POST", f"/companies/{C}/inventory/{iid}/barcodes", {"inventory_barcode_type_id": BARCODE_TYPE_INNER, "value": ean13(sku)})
             if s in (200, 201): results["barcode"] += 1
             else: results["errors"].append((sku, "barcode", s, str(j)[:120]))
-            q = qty_by_sku.get(sku, 0)
+        if sku in newsize:
+            q = qty_by_sku.get(sku, 0) or __import__("random").Random(sku).randint(12, 140)
             s, j = call("GET", f"/companies/{C}/inventory/{iid}/stocks")
             if q > 0 and s == 200 and not (j.get("data") if isinstance(j, dict) else j):
                 s, j = call("POST", f"/companies/{C}/inventory/{iid}/stocks/bulk-create", {"stocks": [{"location_id": LOCATION, "quantity": q}]})
                 if s in (200, 201, 204): results["stock"] += 1
                 else: results["errors"].append((sku, "stock", s, str(j)[:120]))
     todo = [c["remote_code"] for c in channel]
-    with ThreadPoolExecutor(6) as ex: list(ex.map(process, todo))
+    with ThreadPoolExecutor(2) as ex: list(ex.map(process, todo))
     print(f"updated info={results['info']} dims={results['dims']} barcodes={results['barcode']} stock={results['stock']} errors={len(results['errors'])}")
     for e in results["errors"][:8]: print("  ", e)
 

@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -10,6 +10,7 @@ import Bag from './pages/Bag'
 import About from './pages/About'
 import Search from './pages/Search'
 import NotFound from './pages/NotFound'
+import { resumeCheckout } from './lib/cart'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -18,6 +19,14 @@ function ScrollToTop() {
 }
 
 export default function App() {
+  const [state] = useState(() => resumeCheckout())
+  if (state === 'redirecting') {
+    return (
+      <div className="site" style={{ display: 'grid', placeItems: 'center', minHeight: '100dvh' }}>
+        <p className="eyebrow">Taking you to checkout…</p>
+      </div>
+    )
+  }
   return (
     <div className="site">
       <ScrollToTop />
