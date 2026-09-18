@@ -21,6 +21,15 @@ import upload_images
 
 OUT = os.path.expanduser("~/ninetees-work/generated")
 REF_DIR = os.path.expanduser("~/Documents/NineTees")
+MODELS_DIR = os.path.expanduser("~/ninetees-work/models")
+# The four people in the home page hero, cropped as portraits. Every model shot casts one of them.
+MODELS = {
+    "Women": [("model-d-slipdress.png", "the young woman with long dark hair"), ("model-b-buckethat.png", "the young woman with long auburn hair")],
+    "Men": [("model-c-tracktop.png", "the young man with the short dark fringe"), ("model-a-parka.png", "the young man with long brown hair")],
+}
+MODELS["Unisex"] = MODELS["Women"] + MODELS["Men"]
+RESTYLE_FILE = os.path.expanduser("~/ninetees-work/restyle_skus.txt")
+RESTYLE = set(open(RESTYLE_FILE).read().split()) if os.path.exists(RESTYLE_FILE) else set()
 MODEL = "gpt-image-1"
 QUALITY = os.environ.get("NINETEES_IMAGE_QUALITY", "medium")
 COST = {"low": 0.02, "medium": 0.07, "high": 0.19}  # rough USD per portrait image
@@ -35,20 +44,28 @@ def api_key():
 BRAND = ("Photorealistic fashion e-commerce photography for NineTees, a modern, sleek British label that only makes 1990s UK "
          "styles: Britpop, Madchester, rave and terrace culture. Contemporary premium retail look, sharp focus, natural colour, no text, no logos, no watermarks.")
 
-def gender_word(p):
-    return {"Women": "a woman in her twenties", "Men": "a man in her twenties".replace("her", "his"), "Unisex": "a young adult"}[p["gender"]]
+def cast(p):
+    """Deterministically pick one of the hero models for this product: (portrait path, description)."""
+    options = MODELS[p["gender"]]
+    f, desc = options[sum(map(ord, p["handle"])) % len(options)]
+    return os.path.join(MODELS_DIR, f), desc
+
+MODEL_RULE = ("The person wearing it is the model in the LAST reference image, a portrait crop: reproduce that exact person, "
+              "same face, hair, skin tone and build, as if photographed on the same day. Do not invent a different person.")
 
 def prompts(p):
     garment = f"{p['title']} ({p['type'].lower()}, colour {p['colour']}). {p['desc']}"
     return [
         ("product", f"{BRAND} Studio product shot of exactly this garment: {garment} Shown alone, front view, laid flat or on an invisible mannequin as appropriate for the item, centred, on a pure white seamless background with soft even studio lighting and a faint natural shadow. Nothing else in frame."),
-        ("model-full", f"{BRAND} Full-length editorial shot of {gender_word(p)} wearing exactly this garment: {garment} Location: a concrete skate park in Manchester on an overcast day, muted grey light, red-brick terrace houses out of focus behind. Confident relaxed pose, 90s Britpop styling, shot on 50mm at f/2. The garment must match the reference exactly."),
-        ("model-half", f"{BRAND} Half-length editorial shot of {gender_word(p)} wearing exactly this garment: {garment} Different pose and angle from a front-on shot: three-quarter turn, looking slightly off camera, leaning against a weathered red-brick wall with a faded painted advert. Overcast British daylight. The garment must match the reference exactly."),
+        ("model-full", f"{BRAND} Full-length editorial shot of {cast(p)[1]} wearing exactly this garment: {garment} Location: a concrete skate park in Manchester on an overcast day, muted grey light, red-brick terrace houses out of focus behind. Confident relaxed pose, 90s Britpop styling, shot on 50mm at f/2. The garment must match the FIRST reference image exactly. {MODEL_RULE}"),
+        ("model-half", f"{BRAND} Half-length editorial shot of {cast(p)[1]} wearing exactly this garment: {garment} Different pose and angle from a front-on shot: three-quarter turn, looking slightly off camera, leaning against a weathered red-brick wall with a faded painted advert. Overcast British daylight. The garment must match the FIRST reference image exactly. {MODEL_RULE}"),
         ("detail", f"{BRAND} Second studio shot of exactly this garment: {garment} Either the back view, or a close detail of the fabric, print and hardware if the item is small. Pure white seamless background, soft studio lighting, same product as the reference."),
     ]
 
 def reference_for(p, shop_products):
-    """Best available reference image for a product: its current Shopify photo, else a local file, else none."""
+    """Best available reference image for a product: its current Shopify photo, else none.
+    Restyled originals deliberately get no reference so the garment follows the UK 90s copy, not the old photo."""
+    if p["sku"] in RESTYLE: return None
     sp = shop_products.get(p["handle"])
     if sp and sp["images"]:
         path = os.path.join(OUT, p["handle"], "reference.png"); os.makedirs(os.path.dirname(path), exist_ok=True)
@@ -85,7 +102,9 @@ def generate_product(p, key, shop_products, dry):
         path = os.path.join(folder, f"{i}-{name}.png")
         if os.path.exists(path): made.append(path); continue
         if dry: print(f"  [{p['handle']}] {name}: ref={'shopify' if ref and i == 1 else ('product shot' if i > 1 else 'none')}\n     {prompt[:160]}…"); continue
-        refs = [ref] if (i == 1 and ref) else ([os.path.join(folder, "1-product.png")] if i > 1 else None)
+        if i == 1: refs = [ref] if ref else None
+        elif name.startswith("model"): refs = [os.path.join(folder, "1-product.png"), cast(p)[0]]
+        else: refs = [os.path.join(folder, "1-product.png")]
         png = openai_image(key, prompt, refs, size="1024x1536")
         open(path, "wb").write(png); made.append(path); print(f"  [{p['handle']}] {name} done")
     return made

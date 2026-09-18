@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-18T19:43:18+00:00",
+ "generatedAt": "2026-09-18T21:26:45+00:00",
  "shop": {
   "domain": "jamesinternaltesting.myshopify.com",
   "currency": "GBP",
@@ -59,7 +59,7 @@
    "handle": "sportswear",
    "title": "Sportswear",
    "description": "Shell suits, track tops and five-a-side kit.",
-   "count": 10,
+   "count": 8,
    "image": null
   },
   {
@@ -80,18 +80,131 @@
    "handle": "the-britpop-edit",
    "title": "The Britpop Edit",
    "description": "Parklife, parkas and a bit of swagger. Everything with a Union Jack heart.",
-   "count": 16,
+   "count": 18,
    "image": null
   },
   {
    "handle": "rave",
    "title": "Rave & Madchester",
    "description": "Tie-dye, smileys, bucket hats and shell suits. Hacienda hours.",
-   "count": 14,
+   "count": 16,
    "image": null
   }
  ],
  "products": [
+  {
+   "id": "gid://shopify/Product/9779332907275",
+   "handle": "acid-house-leggings",
+   "title": "Acid House Leggings",
+   "vendor": "NineTees",
+   "type": "Leggings",
+   "tags": [
+    "Leggings",
+    "NineTees",
+    "Rave",
+    "Women"
+   ],
+   "gender": "Women",
+   "colour": "Black / Acid Smiley",
+   "descriptionHtml": "<p>High-waisted black stretch leggings scattered with a small acid-yellow smiley print. Aerobics class not included.</p><ul>\n<li>\n<strong>Colour:</strong> Black / Acid Smiley</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-036</li>\n</ul>",
+   "description": "High-waisted black stretch leggings scattered with a small acid-yellow smiley print. Aerobics class not included.",
+   "price": 32.0,
+   "priceMax": 32.0,
+   "createdAt": "2025-03-06T16:22:46Z",
+   "newIn": false,
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UK 6",
+      "UK 8",
+      "UK 10",
+      "UK 12",
+      "UK 14",
+      "UK 16"
+     ]
+    }
+   ],
+   "images": [],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/53373129261323",
+     "sku": "90S-036-UK6",
+     "title": "UK 6",
+     "price": 32.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 115,
+     "options": {
+      "Size": "UK 6"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373129294091",
+     "sku": "90S-036-UK8",
+     "title": "UK 8",
+     "price": 32.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 83,
+     "options": {
+      "Size": "UK 8"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/49635493904651",
+     "sku": "90S-036",
+     "title": "UK 10",
+     "price": 32.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "UK 10"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373129326859",
+     "sku": "90S-036-UK12",
+     "title": "UK 12",
+     "price": 32.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 95,
+     "options": {
+      "Size": "UK 12"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373129359627",
+     "sku": "90S-036-UK14",
+     "title": "UK 14",
+     "price": 32.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 136,
+     "options": {
+      "Size": "UK 14"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373129392395",
+     "sku": "90S-036-UK16",
+     "title": "UK 16",
+     "price": 32.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 48,
+     "options": {
+      "Size": "UK 16"
+     }
+    }
+   ],
+   "collections": [
+    "women",
+    "rave"
+   ]
+  },
   {
    "id": "gid://shopify/Product/11043076833547",
    "handle": "acid-wash-denim-jacket",
@@ -217,374 +330,6 @@
    ]
   },
   {
-   "id": "gid://shopify/Product/9779333431563",
-   "handle": "acid-wash-jeans",
-   "title": "Acid Wash Jeans",
-   "vendor": "NineTees",
-   "type": "Jeans",
-   "tags": [
-    "Denim",
-    "Men",
-    "NineTees"
-   ],
-   "gender": "Men",
-   "colour": "Light Wash",
-   "descriptionHtml": "<p>Straight-leg rigid jeans in a light vintage wash. Five pockets, button fly and a slightly tapered leg.</p><ul>\n<li>\n<strong>Colour:</strong> Light Wash</li>\n<li>\n<strong>Fit:</strong> Men's waist 30 to 38, leg 30 to 34.</li>\n<li>\n<strong>Care:</strong> Wash rarely, cold, inside out.</li>\n<li>\n<strong>Style code:</strong> 90S-049</li>\n</ul>",
-   "description": "Straight-leg rigid jeans in a light vintage wash. Five pockets, button fly and a slightly tapered leg.",
-   "price": 85.0,
-   "priceMax": 85.0,
-   "createdAt": "2025-03-06T16:22:59Z",
-   "newIn": false,
-   "options": [
-    {
-     "name": "Waist",
-     "values": [
-      "30",
-      "32",
-      "34",
-      "36",
-      "38"
-     ]
-    },
-    {
-     "name": "Leg",
-     "values": [
-      "30",
-      "32",
-      "34"
-     ]
-    }
-   ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/AcidWashJeans.png?v=1749751206",
-     "alt": "Acid Wash Jeans",
-     "width": 1024,
-     "height": 1536
-    }
-   ],
-   "variants": [
-    {
-     "id": "gid://shopify/ProductVariant/53373131260171",
-     "sku": "90S-049-W30L30",
-     "title": "30 / 30",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 60,
-     "options": {
-      "Waist": "30",
-      "Leg": "30"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373131292939",
-     "sku": "90S-049-W30L32",
-     "title": "30 / 32",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 75,
-     "options": {
-      "Waist": "30",
-      "Leg": "32"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373131325707",
-     "sku": "90S-049-W30L34",
-     "title": "30 / 34",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 72,
-     "options": {
-      "Waist": "30",
-      "Leg": "34"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373131358475",
-     "sku": "90S-049-W32L30",
-     "title": "32 / 30",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 17,
-     "options": {
-      "Waist": "32",
-      "Leg": "30"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/49635497705739",
-     "sku": "90S-049",
-     "title": "32 / 32",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
-     "options": {
-      "Waist": "32",
-      "Leg": "32"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373131391243",
-     "sku": "90S-049-W32L34",
-     "title": "32 / 34",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 37,
-     "options": {
-      "Waist": "32",
-      "Leg": "34"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373131424011",
-     "sku": "90S-049-W34L30",
-     "title": "34 / 30",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 49,
-     "options": {
-      "Waist": "34",
-      "Leg": "30"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373131456779",
-     "sku": "90S-049-W34L32",
-     "title": "34 / 32",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 113,
-     "options": {
-      "Waist": "34",
-      "Leg": "32"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373131489547",
-     "sku": "90S-049-W34L34",
-     "title": "34 / 34",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 79,
-     "options": {
-      "Waist": "34",
-      "Leg": "34"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373131522315",
-     "sku": "90S-049-W36L30",
-     "title": "36 / 30",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 85,
-     "options": {
-      "Waist": "36",
-      "Leg": "30"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373131555083",
-     "sku": "90S-049-W36L32",
-     "title": "36 / 32",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 81,
-     "options": {
-      "Waist": "36",
-      "Leg": "32"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373131587851",
-     "sku": "90S-049-W36L34",
-     "title": "36 / 34",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 107,
-     "options": {
-      "Waist": "36",
-      "Leg": "34"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373131620619",
-     "sku": "90S-049-W38L30",
-     "title": "38 / 30",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 85,
-     "options": {
-      "Waist": "38",
-      "Leg": "30"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373131653387",
-     "sku": "90S-049-W38L32",
-     "title": "38 / 32",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 79,
-     "options": {
-      "Waist": "38",
-      "Leg": "32"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373131686155",
-     "sku": "90S-049-W38L34",
-     "title": "38 / 34",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 31,
-     "options": {
-      "Waist": "38",
-      "Leg": "34"
-     }
-    }
-   ],
-   "collections": [
-    "men",
-    "denim"
-   ]
-  },
-  {
-   "id": "gid://shopify/Product/9779332677899",
-   "handle": "bandana-print-tee",
-   "title": "Bandana Print Tee",
-   "vendor": "NineTees",
-   "type": "T-Shirts",
-   "tags": [
-    "NineTees",
-    "Tees",
-    "Women"
-   ],
-   "gender": "Women",
-   "colour": "Red Paisley",
-   "descriptionHtml": "<p>Fitted baby tee in a red paisley bandana print with a ribbed crew neck. Cool as anything.</p><ul>\n<li>\n<strong>Colour:</strong> Red Paisley</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-030</li>\n</ul>",
-   "description": "Fitted baby tee in a red paisley bandana print with a ribbed crew neck. Cool as anything.",
-   "price": 32.0,
-   "priceMax": 32.0,
-   "createdAt": "2025-03-06T16:22:40Z",
-   "newIn": false,
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "UK 6",
-      "UK 8",
-      "UK 10",
-      "UK 12",
-      "UK 14",
-      "UK 16"
-     ]
-    }
-   ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/BandanaPrintTop.png?v=1749762137",
-     "alt": "Bandana Print Tee",
-     "width": 1024,
-     "height": 1024
-    }
-   ],
-   "variants": [
-    {
-     "id": "gid://shopify/ProductVariant/53373128605963",
-     "sku": "90S-030-UK6",
-     "title": "UK 6",
-     "price": 32.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 139,
-     "options": {
-      "Size": "UK 6"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/49635493478667",
-     "sku": "90S-030",
-     "title": "UK 8",
-     "price": 32.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 105,
-     "options": {
-      "Size": "UK 8"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373128638731",
-     "sku": "90S-030-UK10",
-     "title": "UK 10",
-     "price": 32.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 107,
-     "options": {
-      "Size": "UK 10"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373128671499",
-     "sku": "90S-030-UK12",
-     "title": "UK 12",
-     "price": 32.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 45,
-     "options": {
-      "Size": "UK 12"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373128704267",
-     "sku": "90S-030-UK14",
-     "title": "UK 14",
-     "price": 32.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 28,
-     "options": {
-      "Size": "UK 14"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373128737035",
-     "sku": "90S-030-UK16",
-     "title": "UK 16",
-     "price": 32.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 38,
-     "options": {
-      "Size": "UK 16"
-     }
-    }
-   ],
-   "collections": [
-    "women",
-    "tees"
-   ]
-  },
-  {
    "id": "gid://shopify/Product/9779331924235",
    "handle": "big-beat-platform-trainers",
    "title": "Big Beat Platform Trainers",
@@ -598,8 +343,8 @@
    ],
    "gender": "Women",
    "colour": "White",
-   "descriptionHtml": "<p>Chunky white leather platform trainers with a silver heel tab and a 5cm sole. Built for dancefloors and the queue outside.</p><ul>\n<li>\n<strong>Colour:</strong> White</li>\n<li>\n<strong>Fit:</strong> UK women's sizes 2 to 9. Take your usual size.</li>\n<li>\n<strong>Care:</strong> Wipe clean. Store out of direct sunlight.</li>\n<li>\n<strong>Style code:</strong> 90S-012</li>\n</ul>",
-   "description": "Chunky white leather platform trainers with a silver heel tab and a 5cm sole. Built for dancefloors and the queue outside.",
+   "descriptionHtml": "<p>Chunky white leather platform trainers with a 6cm stacked sole, fat laces and a padded tongue. Built for dancefloors and the queue outside.</p><ul>\n<li>\n<strong>Colour:</strong> White</li>\n<li>\n<strong>Fit:</strong> UK women's sizes 2 to 9. Take your usual size.</li>\n<li>\n<strong>Care:</strong> Wipe clean. Store out of direct sunlight.</li>\n<li>\n<strong>Style code:</strong> 90S-012</li>\n</ul>",
+   "description": "Chunky white leather platform trainers with a 6cm stacked sole, fat laces and a padded tongue. Built for dancefloors and the queue outside.",
    "price": 110.0,
    "priceMax": 110.0,
    "createdAt": "2025-03-06T16:22:23Z",
@@ -619,14 +364,7 @@
      ]
     }
    ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/ChunkyTrainers.png?v=1749763285",
-     "alt": "Big Beat Platform Trainers",
-     "width": 1024,
-     "height": 1024
-    }
-   ],
+   "images": [],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373123297547",
@@ -733,8 +471,8 @@
   },
   {
    "id": "gid://shopify/Product/9779332940043",
-   "handle": "bittersweet-slip-dress",
-   "title": "Bittersweet Slip Dress",
+   "handle": "bittersweet-satin-slip-dress",
+   "title": "Bittersweet Satin Slip Dress",
    "vendor": "NineTees",
    "type": "Dresses",
    "tags": [
@@ -744,9 +482,9 @@
     "Women"
    ],
    "gender": "Women",
-   "colour": "Black",
-   "descriptionHtml": "<p>Bias-cut slip dress in black with skinny straps and a straight neckline. Wear over a white tee, or absolutely not.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-037</li>\n</ul>",
-   "description": "Bias-cut slip dress in black with skinny straps and a straight neckline. Wear over a white tee, or absolutely not.",
+   "colour": "Champagne",
+   "descriptionHtml": "<p>Bias-cut satin slip dress in champagne with a cowl neck and skinny adjustable straps. Wear over a white tee, or absolutely not.</p><ul>\n<li>\n<strong>Colour:</strong> Champagne</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-037</li>\n</ul>",
+   "description": "Bias-cut satin slip dress in champagne with a cowl neck and skinny adjustable straps. Wear over a white tee, or absolutely not.",
    "price": 85.0,
    "priceMax": 85.0,
    "createdAt": "2025-03-06T16:22:47Z",
@@ -764,14 +502,7 @@
      ]
     }
    ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/SpaghettiStrapDress.jpg?v=1755688898",
-     "alt": "Bittersweet Slip Dress",
-     "width": 1024,
-     "height": 1536
-    }
-   ],
+   "images": [],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373129425163",
@@ -852,9 +583,235 @@
    ]
   },
   {
+   "id": "gid://shopify/Product/9779332743435",
+   "handle": "black-mesh-baby-tee",
+   "title": "Black Mesh Baby Tee",
+   "vendor": "NineTees",
+   "type": "T-Shirts",
+   "tags": [
+    "NineTees",
+    "Rave",
+    "Tees",
+    "Women"
+   ],
+   "gender": "Women",
+   "colour": "Black",
+   "descriptionHtml": "<p>Sheer black stretch-mesh baby tee with contrast black binding at the neck and a cropped hem. Layer it or don't.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-032</li>\n</ul>",
+   "description": "Sheer black stretch-mesh baby tee with contrast black binding at the neck and a cropped hem. Layer it or don't.",
+   "price": 30.0,
+   "priceMax": 30.0,
+   "createdAt": "2025-03-06T16:22:42Z",
+   "newIn": false,
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UK 6",
+      "UK 8",
+      "UK 10",
+      "UK 12",
+      "UK 14",
+      "UK 16"
+     ]
+    }
+   ],
+   "images": [],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/53373128933643",
+     "sku": "90S-032-UK6",
+     "title": "UK 6",
+     "price": 30.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 19,
+     "options": {
+      "Size": "UK 6"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/49635493544203",
+     "sku": "90S-032",
+     "title": "UK 8",
+     "price": 30.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 888,
+     "options": {
+      "Size": "UK 8"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373128966411",
+     "sku": "90S-032-UK10",
+     "title": "UK 10",
+     "price": 30.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 78,
+     "options": {
+      "Size": "UK 10"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373128999179",
+     "sku": "90S-032-UK12",
+     "title": "UK 12",
+     "price": 30.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 30,
+     "options": {
+      "Size": "UK 12"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373129031947",
+     "sku": "90S-032-UK14",
+     "title": "UK 14",
+     "price": 30.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 60,
+     "options": {
+      "Size": "UK 14"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373129064715",
+     "sku": "90S-032-UK16",
+     "title": "UK 16",
+     "price": 30.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 12,
+     "options": {
+      "Size": "UK 16"
+     }
+    }
+   ],
+   "collections": [
+    "women",
+    "tees",
+    "rave"
+   ]
+  },
+  {
+   "id": "gid://shopify/Product/9779333038347",
+   "handle": "bootcut-flares",
+   "title": "Bootcut Flares",
+   "vendor": "NineTees",
+   "type": "Jeans",
+   "tags": [
+    "Denim",
+    "NineTees",
+    "Women"
+   ],
+   "gender": "Women",
+   "colour": "Dark Indigo",
+   "descriptionHtml": "<p>Mid-rise, hip-hugging bootcut flares in dark indigo stretch denim. Long enough to catch on your heels.</p><ul>\n<li>\n<strong>Colour:</strong> Dark Indigo</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. Sits on the waist.</li>\n<li>\n<strong>Care:</strong> Wash rarely, cold, inside out.</li>\n<li>\n<strong>Style code:</strong> 90S-040</li>\n</ul>",
+   "description": "Mid-rise, hip-hugging bootcut flares in dark indigo stretch denim. Long enough to catch on your heels.",
+   "price": 85.0,
+   "priceMax": 85.0,
+   "createdAt": "2025-03-06T16:22:50Z",
+   "newIn": false,
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UK 6",
+      "UK 8",
+      "UK 10",
+      "UK 12",
+      "UK 14",
+      "UK 16"
+     ]
+    }
+   ],
+   "images": [],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/53373130014987",
+     "sku": "90S-040-UK6",
+     "title": "UK 6",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 82,
+     "options": {
+      "Size": "UK 6"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373130047755",
+     "sku": "90S-040-UK8",
+     "title": "UK 8",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 31,
+     "options": {
+      "Size": "UK 8"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373130080523",
+     "sku": "90S-040-UK10",
+     "title": "UK 10",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 85,
+     "options": {
+      "Size": "UK 10"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/49635494035723",
+     "sku": "90S-040",
+     "title": "UK 12",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "UK 12"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373130113291",
+     "sku": "90S-040-UK14",
+     "title": "UK 14",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 79,
+     "options": {
+      "Size": "UK 14"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373130146059",
+     "sku": "90S-040-UK16",
+     "title": "UK 16",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 109,
+     "options": {
+      "Size": "UK 16"
+     }
+    }
+   ],
+   "collections": [
+    "women",
+    "denim"
+   ]
+  },
+  {
    "id": "gid://shopify/Product/9779333300491",
-   "handle": "bold-stripe-long-sleeve",
-   "title": "Bold Stripe Long Sleeve",
+   "handle": "breton-stripe-long-sleeve",
+   "title": "Breton Stripe Long Sleeve",
    "vendor": "NineTees",
    "type": "Tops",
    "tags": [
@@ -863,9 +820,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Black / Multi Stripe",
-   "descriptionHtml": "<p>Long-sleeve tee in heavyweight black cotton with bold red, yellow and blue stripes and a crew neck. Effortless, allegedly.</p><ul>\n<li>\n<strong>Colour:</strong> Black / Multi Stripe</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-045</li>\n</ul>",
-   "description": "Long-sleeve tee in heavyweight black cotton with bold red, yellow and blue stripes and a crew neck. Effortless, allegedly.",
+   "colour": "Navy / Ecru",
+   "descriptionHtml": "<p>Long-sleeve tee in a heavyweight navy and ecru Breton stripe with a boat neck. Effortless, allegedly.</p><ul>\n<li>\n<strong>Colour:</strong> Navy / Ecru</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-045</li>\n</ul>",
+   "description": "Long-sleeve tee in a heavyweight navy and ecru Breton stripe with a boat neck. Effortless, allegedly.",
    "price": 45.0,
    "priceMax": 45.0,
    "createdAt": "2025-03-06T16:22:55Z",
@@ -883,14 +840,7 @@
      ]
     }
    ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/StrippedLongSleeve.jpg?v=1755691284",
-     "alt": "Bold Stripe Long Sleeve",
-     "width": 1024,
-     "height": 1536
-    }
-   ],
+   "images": [],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373130572043",
@@ -972,125 +922,6 @@
    ]
   },
   {
-   "id": "gid://shopify/Product/9779333038347",
-   "handle": "bootcut-flares",
-   "title": "Bootcut Flares",
-   "vendor": "NineTees",
-   "type": "Jeans",
-   "tags": [
-    "Denim",
-    "NineTees",
-    "Women"
-   ],
-   "gender": "Women",
-   "colour": "Mid Blue",
-   "descriptionHtml": "<p>Mid-rise, hip-hugging bootcut flares in mid-blue stretch denim. Long enough to catch on your heels.</p><ul>\n<li>\n<strong>Colour:</strong> Mid Blue</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. Sits on the waist.</li>\n<li>\n<strong>Care:</strong> Wash rarely, cold, inside out.</li>\n<li>\n<strong>Style code:</strong> 90S-040</li>\n</ul>",
-   "description": "Mid-rise, hip-hugging bootcut flares in mid-blue stretch denim. Long enough to catch on your heels.",
-   "price": 85.0,
-   "priceMax": 85.0,
-   "createdAt": "2025-03-06T16:22:50Z",
-   "newIn": false,
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "UK 6",
-      "UK 8",
-      "UK 10",
-      "UK 12",
-      "UK 14",
-      "UK 16"
-     ]
-    }
-   ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/FlaredJeansLarge.jpg?v=1755688441",
-     "alt": "Bootcut Flares",
-     "width": 1024,
-     "height": 1536
-    }
-   ],
-   "variants": [
-    {
-     "id": "gid://shopify/ProductVariant/53373130014987",
-     "sku": "90S-040-UK6",
-     "title": "UK 6",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 82,
-     "options": {
-      "Size": "UK 6"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373130047755",
-     "sku": "90S-040-UK8",
-     "title": "UK 8",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 31,
-     "options": {
-      "Size": "UK 8"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373130080523",
-     "sku": "90S-040-UK10",
-     "title": "UK 10",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 85,
-     "options": {
-      "Size": "UK 10"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/49635494035723",
-     "sku": "90S-040",
-     "title": "UK 12",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
-     "options": {
-      "Size": "UK 12"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373130113291",
-     "sku": "90S-040-UK14",
-     "title": "UK 14",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 79,
-     "options": {
-      "Size": "UK 14"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373130146059",
-     "sku": "90S-040-UK16",
-     "title": "UK 16",
-     "price": 85.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 109,
-     "options": {
-      "Size": "UK 16"
-     }
-    }
-   ],
-   "collections": [
-    "women",
-    "denim"
-   ]
-  },
-  {
    "id": "gid://shopify/Product/9779332120843",
    "handle": "britpop-snapback",
    "title": "Britpop Snapback",
@@ -1120,8 +951,26 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/SnapbackCap.jpg?v=1755693394",
-     "alt": "Britpop Snapback",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_4a1ba263-2c0a-4195-a8e3-7f4e850b78ce.png?v=1789765197",
+     "alt": "Britpop Snapback - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_cdde7ffe-a189-415f-a2bd-b5c21d522b9f.png?v=1789765199",
+     "alt": "Britpop Snapback - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_3cfc38c2-0181-4b32-81a1-c7a4b205a229.png?v=1789765201",
+     "alt": "Britpop Snapback - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_90679d7a-3181-4cdb-aa6c-cd1dc364325d.png?v=1789765204",
+     "alt": "Britpop Snapback - detail",
      "width": 1024,
      "height": 1536
     }
@@ -1172,9 +1021,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Teal / Pink / Purple",
-   "descriptionHtml": "<p>Colour-block nylon bum bag in teal, pink and purple with two zipped compartments and a clip-fasten waist strap. Wear it cross-body if you must.</p><ul>\n<li>\n<strong>Colour:</strong> Teal / Pink / Purple</li>\n<li>\n<strong>Fit:</strong> One size.</li>\n<li>\n<strong>Care:</strong> Spot clean only.</li>\n<li>\n<strong>Style code:</strong> 90S-035</li>\n</ul>",
-   "description": "Colour-block nylon bum bag in teal, pink and purple with two zipped compartments and a clip-fasten waist strap. Wear it cross-body if you must.",
+   "colour": "Black Nylon",
+   "descriptionHtml": "<p>Boxy black nylon bum bag with two zipped compartments and a clip-fasten waist strap. Wear it cross-body if you must.</p><ul>\n<li>\n<strong>Colour:</strong> Black Nylon</li>\n<li>\n<strong>Fit:</strong> One size.</li>\n<li>\n<strong>Care:</strong> Spot clean only.</li>\n<li>\n<strong>Style code:</strong> 90S-035</li>\n</ul>",
+   "description": "Boxy black nylon bum bag with two zipped compartments and a clip-fasten waist strap. Wear it cross-body if you must.",
    "price": 38.0,
    "priceMax": 38.0,
    "createdAt": "2025-03-06T16:22:45Z",
@@ -1187,14 +1036,7 @@
      ]
     }
    ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/FannyPack_7c6a1a25-b8f0-4eae-84e2-42be3b70c427.jpg?v=1755689808",
-     "alt": "Bum Bag",
-     "width": 1024,
-     "height": 1536
-    }
-   ],
+   "images": [],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/49635493871883",
@@ -1251,8 +1093,26 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/GrungeDenimJacket.jpg?v=1755700050",
-     "alt": "Camden Denim Jacket",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_8adb9bbc-f0ee-4c0d-8eeb-0fe715e114c0.png?v=1789764652",
+     "alt": "Camden Denim Jacket - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_b48ac7bd-2929-4da1-b747-190e249488bb.png?v=1789764655",
+     "alt": "Camden Denim Jacket - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_bf298605-998c-4045-b9ce-6f2ef614bcc3.png?v=1789764658",
+     "alt": "Camden Denim Jacket - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_faf57836-5d5f-4995-873e-fd99c36661d5.png?v=1789764660",
+     "alt": "Camden Denim Jacket - detail",
      "width": 1024,
      "height": 1536
     }
@@ -1834,7 +1694,32 @@
      ]
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_f6328a72-47f3-4dda-9bde-a69ec00a55f0.png?v=1789765956",
+     "alt": "Classic Leather Trainers - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_6f5538d6-53a4-4f4a-8091-f5cc31cae545.png?v=1789765958",
+     "alt": "Classic Leather Trainers - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_03302cae-d911-4a2b-856e-953b37d95404.png?v=1789765961",
+     "alt": "Classic Leather Trainers - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_e2d039d8-2f8b-4b57-8676-0725501dacae.png?v=1789765962",
+     "alt": "Classic Leather Trainers - detail",
+     "width": 1024,
+     "height": 1536
+    }
+   ],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373133062411",
@@ -1972,7 +1857,32 @@
      ]
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_f7fd9d28-6624-4668-b63e-ce45f8b6fcb9.png?v=1789766008",
+     "alt": "Combat Trousers - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_df0e6a18-1451-4494-8568-813e541f28b1.png?v=1789766011",
+     "alt": "Combat Trousers - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_007fb882-7f03-4485-8e12-41de4a93c660.png?v=1789766013",
+     "alt": "Combat Trousers - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_23b6651b-a742-4567-a3ce-5dafabac6512.png?v=1789766015",
+     "alt": "Combat Trousers - detail",
+     "width": 1024,
+     "height": 1536
+    }
+   ],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373133848843",
@@ -2204,8 +2114,26 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/HighWaistedShorts.jpg?v=1755697665",
-     "alt": "Common People High-Waist Shorts",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_a5fc0f80-e605-4eee-bfeb-1fdafc8f313c.png?v=1789765566",
+     "alt": "Common People High-Waist Shorts - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_2854a272-9d5f-43de-8264-1fe4b8035f23.png?v=1789765567",
+     "alt": "Common People High-Waist Shorts - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_c94a9116-b7df-404d-bb68-a3e7dd6093f0.png?v=1789765570",
+     "alt": "Common People High-Waist Shorts - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_911ee399-15b2-4f37-bbf3-da25ad2768d0.png?v=1789765572",
+     "alt": "Common People High-Waist Shorts - detail",
      "width": 1024,
      "height": 1536
     }
@@ -2323,7 +2251,32 @@
      ]
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_9d4f7ca0-31a7-46fb-99cd-f6ffae20ca27.png?v=1789765783",
+     "alt": "Cool Britannia Bomber - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_d15668fb-2090-454c-b11c-0fe2cb23e3cb.png?v=1789765787",
+     "alt": "Cool Britannia Bomber - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_0da6b0b1-08b5-4a1f-b681-76b929cd1faf.png?v=1789765790",
+     "alt": "Cool Britannia Bomber - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_dc2a5db1-752e-4587-9ff5-dd47c2dd75a8.png?v=1789765792",
+     "alt": "Cool Britannia Bomber - detail",
+     "width": 1024,
+     "height": 1536
+    }
+   ],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373132308747",
@@ -2557,8 +2510,26 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/FlannelShirt.png?v=1749763213",
-     "alt": "Country House Check Shirt",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_5110f1f5-df3c-4724-a555-fd857d77667f.png?v=1789764742",
+     "alt": "Country House Check Shirt - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_b5e31aa1-ba92-4a04-8fb8-410676a83671.png?v=1789764744",
+     "alt": "Country House Check Shirt - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_46f7bd97-9ed3-4741-965a-5f5e61f75214.png?v=1789764747",
+     "alt": "Country House Check Shirt - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_3d7b6be9-5c51-4aa4-8dd7-984c65fa5380.png?v=1789764748",
+     "alt": "Country House Check Shirt - detail",
      "width": 1024,
      "height": 1536
     }
@@ -2671,8 +2642,26 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/VelvetScrunchie.jpg?v=1755694373",
-     "alt": "Crushed Velvet Scrunchie",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_4bb5a3d3-e8e1-4360-acd3-baee7712b591.png?v=1789764980",
+     "alt": "Crushed Velvet Scrunchie - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_1deb6183-9bfa-4011-a213-d24b87fee22f.png?v=1789764984",
+     "alt": "Crushed Velvet Scrunchie - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_2ccc470f-113c-476c-a382-87a2d7e473c2.png?v=1789764985",
+     "alt": "Crushed Velvet Scrunchie - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_f06ed8fd-0e19-48f3-bd1c-c0b10b9df376.png?v=1789764987",
+     "alt": "Crushed Velvet Scrunchie - detail",
      "width": 1024,
      "height": 1536
     }
@@ -2709,8 +2698,8 @@
    ],
    "gender": "Women",
    "colour": "Black",
-   "descriptionHtml": "<p>High-waisted stretch cycle shorts in matte black. Wear under a slip dress, with an oversized shirt or on their own.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-021</li>\n</ul>",
-   "description": "High-waisted stretch cycle shorts in matte black. Wear under a slip dress, with an oversized shirt or on their own.",
+   "descriptionHtml": "<p>High-waisted stretch cycle shorts in matte black with a wide waistband. Wear under a slip dress, with an oversized shirt or on their own.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-021</li>\n</ul>",
+   "description": "High-waisted stretch cycle shorts in matte black with a wide waistband. Wear under a slip dress, with an oversized shirt or on their own.",
    "price": 30.0,
    "priceMax": 30.0,
    "createdAt": "2025-03-06T16:22:32Z",
@@ -2728,14 +2717,7 @@
      ]
     }
    ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/BikeShorts.png?v=1749762797",
-     "alt": "Cycle Shorts",
-     "width": 1024,
-     "height": 1024
-    }
-   ],
+   "images": [],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373127262475",
@@ -2847,20 +2829,7 @@
      ]
     }
    ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/demin-skirt_fce633f3-0a47-4687-b63a-323a696cc4c2.png?v=1742405856",
-     "alt": "Denim Mini Skirt",
-     "width": 386,
-     "height": 299
-    },
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/demin-skirt.png?v=1742405810",
-     "alt": "Denim Mini Skirt",
-     "width": 386,
-     "height": 299
-    }
-   ],
+   "images": [],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373131751691",
@@ -2974,10 +2943,28 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/VelvetCropTop.jpg?v=1755697106",
-     "alt": "Disco 2000 Velvet Cami",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_9c01de70-e461-493e-8851-99536a2716ab.png?v=1789765617",
+     "alt": "Disco 2000 Velvet Cami - product",
      "width": 1024,
-     "height": 1024
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_a3eaccba-fa0b-48b7-87d2-778227681c67.png?v=1789765620",
+     "alt": "Disco 2000 Velvet Cami - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_183bb7e6-9e3f-44ca-90fd-e21c523935f5.png?v=1789765623",
+     "alt": "Disco 2000 Velvet Cami - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_b66f387e-6c81-4661-9922-1cbd9d87c887.png?v=1789765623",
+     "alt": "Disco 2000 Velvet Cami - detail",
+     "width": 1024,
+     "height": 1536
     }
    ],
    "variants": [
@@ -3093,8 +3080,26 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/FloralBabydolldress.jpg?v=1755697969",
-     "alt": "Ditsy Floral Babydoll Dress",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_1ab457cc-dfc7-4103-a4ff-03edc9bc1ee2.png?v=1789765525",
+     "alt": "Ditsy Floral Babydoll Dress - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_89bee834-19b0-4114-89b2-e6ef9d7c174a.png?v=1789765527",
+     "alt": "Ditsy Floral Babydoll Dress - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_561fa45f-1ffe-402e-b730-b59ccb2f153d.png?v=1789765528",
+     "alt": "Ditsy Floral Babydoll Dress - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_858abf60-5dd5-4c13-9926-6471d5bf9d49.png?v=1789765531",
+     "alt": "Ditsy Floral Babydoll Dress - detail",
      "width": 1024,
      "height": 1536
     }
@@ -3190,8 +3195,8 @@
    ],
    "gender": "Women",
    "colour": "Black",
-   "descriptionHtml": "<p>Cropped biker in a soft matte faux leather with an asymmetric zip, belted hem and quilted shoulders. Heavyweight hardware, lightweight conscience.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-033</li>\n</ul>",
-   "description": "Cropped biker in a soft matte faux leather with an asymmetric zip, belted hem and quilted shoulders. Heavyweight hardware, lightweight conscience.",
+   "descriptionHtml": "<p>Cropped biker in soft matte black faux leather with an asymmetric zip, belted hem and quilted shoulders. Heavyweight hardware, lightweight conscience.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-033</li>\n</ul>",
+   "description": "Cropped biker in soft matte black faux leather with an asymmetric zip, belted hem and quilted shoulders. Heavyweight hardware, lightweight conscience.",
    "price": 140.0,
    "priceMax": 140.0,
    "createdAt": "2025-03-06T16:22:43Z",
@@ -3209,14 +3214,7 @@
      ]
     }
    ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/BikerJacket.png?v=1749763177",
-     "alt": "Faux Leather Biker Jacket",
-     "width": 1024,
-     "height": 1024
-    }
-   ],
+   "images": [],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373129097483",
@@ -3297,6 +3295,53 @@
    ]
   },
   {
+   "id": "gid://shopify/Product/9779333136651",
+   "handle": "fingerless-knit-gloves",
+   "title": "Fingerless Knit Gloves",
+   "vendor": "NineTees",
+   "type": "Accessories",
+   "tags": [
+    "Accessories",
+    "NineTees",
+    "Women"
+   ],
+   "gender": "Women",
+   "colour": "Black",
+   "descriptionHtml": "<p>Chunky black knitted fingerless gloves with a ribbed cuff. For the indie disco smoking area.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> One size.</li>\n<li>\n<strong>Care:</strong> Spot clean only.</li>\n<li>\n<strong>Style code:</strong> 90S-043</li>\n</ul>",
+   "description": "Chunky black knitted fingerless gloves with a ribbed cuff. For the indie disco smoking area.",
+   "price": 14.0,
+   "priceMax": 14.0,
+   "createdAt": "2025-03-06T16:22:53Z",
+   "newIn": false,
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "One Size"
+     ]
+    }
+   ],
+   "images": [],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/49635494134027",
+     "sku": "90S-043",
+     "title": "One Size",
+     "price": 14.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Size": "One Size"
+     }
+    }
+   ],
+   "collections": [
+    "women",
+    "accessories"
+   ]
+  },
+  {
    "id": "gid://shopify/Product/9779332186379",
    "handle": "firestarter-shell-tracksuit",
    "title": "Firestarter Shell Tracksuit",
@@ -3331,8 +3376,26 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/TrackSuit.jpg?v=1755691066",
-     "alt": "Firestarter Shell Tracksuit",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_a76c7e5f-6d96-41b2-8d48-79b2fef02cab.png?v=1789765350",
+     "alt": "Firestarter Shell Tracksuit - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_7d8c4414-9bb4-4fa5-801c-ba6ec81f014a.png?v=1789765352",
+     "alt": "Firestarter Shell Tracksuit - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_e63ad78b-2e1d-40c7-a53d-ff62288b71d7.png?v=1789765355",
+     "alt": "Firestarter Shell Tracksuit - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_e75cb13c-0214-49c3-a2d4-8b165f3cba44.png?v=1789765356",
+     "alt": "Firestarter Shell Tracksuit - detail",
      "width": 1024,
      "height": 1536
     }
@@ -3419,60 +3482,6 @@
    ]
   },
   {
-   "id": "gid://shopify/Product/9779333136651",
-   "handle": "fishnet-gloves",
-   "title": "Fishnet Gloves",
-   "vendor": "NineTees",
-   "type": "Accessories",
-   "tags": [
-    "Accessories",
-    "NineTees",
-    "Women"
-   ],
-   "gender": "Women",
-   "colour": "Black",
-   "descriptionHtml": "<p>Fingerless fishnet gloves in black. For the goth-adjacent.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> One size.</li>\n<li>\n<strong>Care:</strong> Spot clean only.</li>\n<li>\n<strong>Style code:</strong> 90S-043</li>\n</ul>",
-   "description": "Fingerless fishnet gloves in black. For the goth-adjacent.",
-   "price": 14.0,
-   "priceMax": 14.0,
-   "createdAt": "2025-03-06T16:22:53Z",
-   "newIn": false,
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "One Size"
-     ]
-    }
-   ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/FishnetGloves.jpg?v=1755692318",
-     "alt": "Fishnet Gloves",
-     "width": 1024,
-     "height": 1536
-    }
-   ],
-   "variants": [
-    {
-     "id": "gid://shopify/ProductVariant/49635494134027",
-     "sku": "90S-043",
-     "title": "One Size",
-     "price": 14.0,
-     "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
-     "options": {
-      "Size": "One Size"
-     }
-    }
-   ],
-   "collections": [
-    "women",
-    "accessories"
-   ]
-  },
-  {
    "id": "gid://shopify/Product/11043024535819",
    "handle": "fishtail-mod-parka",
    "title": "Fishtail Mod Parka",
@@ -3507,7 +3516,32 @@
      ]
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_0eb23fb3-f14b-4e50-9120-c4ac216e35fe.png?v=1789765785",
+     "alt": "Fishtail Mod Parka - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_10993d2d-b1aa-47aa-b9e8-e0a46a4b53cf.png?v=1789765788",
+     "alt": "Fishtail Mod Parka - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_f606e4c8-3031-4152-a63e-7a211dd4b2b9.png?v=1789765790",
+     "alt": "Fishtail Mod Parka - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_ead6c411-eacc-42a8-8ff8-95b912936710.png?v=1789765793",
+     "alt": "Fishtail Mod Parka - detail",
+     "width": 1024,
+     "height": 1536
+    }
+   ],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373131915531",
@@ -3602,9 +3636,9 @@
     "Sportswear"
    ],
    "gender": "Men",
-   "colour": "Teal / Pink / Purple",
-   "descriptionHtml": "<p>Lightweight retro shorts in teal with a pink and purple side stripe and a drawstring waist. Slightly too short, exactly as intended.</p><ul>\n<li>\n<strong>Colour:</strong> Teal / Pink / Purple</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-027</li>\n</ul>",
-   "description": "Lightweight retro shorts in teal with a pink and purple side stripe and a drawstring waist. Slightly too short, exactly as intended.",
+   "colour": "Royal Blue / White",
+   "descriptionHtml": "<p>Lightweight woven football shorts in royal blue with white contrast piping and a drawstring waist. Slightly too short, exactly as intended.</p><ul>\n<li>\n<strong>Colour:</strong> Royal Blue / White</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-027</li>\n</ul>",
+   "description": "Lightweight woven football shorts in royal blue with white contrast piping and a drawstring waist. Slightly too short, exactly as intended.",
    "price": 35.0,
    "priceMax": 35.0,
    "createdAt": "2025-03-06T16:22:37Z",
@@ -3622,14 +3656,7 @@
      ]
     }
    ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/RetroAthleticShorts.jpg?v=1755696219",
-     "alt": "Five-a-Side Shorts",
-     "width": 1024,
-     "height": 1024
-    }
-   ],
+   "images": [],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373128245515",
@@ -3744,8 +3771,26 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/SpiceGirlsTee.jpg?v=1755694893",
-     "alt": "Girl Power Tee",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_dc3ecc39-9c97-48e1-9dfe-73a0dc631afc.png?v=1789764907",
+     "alt": "Girl Power Tee - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_40d499b8-b001-4c37-a179-8eeb97f7778a.png?v=1789764909",
+     "alt": "Girl Power Tee - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_a335ad0f-4420-4df8-913a-24606fc91b36.png?v=1789764912",
+     "alt": "Girl Power Tee - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_5fad04e3-5816-421e-a27b-311aa298a6cd.png?v=1789764914",
+     "alt": "Girl Power Tee - detail",
      "width": 1024,
      "height": 1536
     }
@@ -3830,6 +3875,120 @@
    ]
   },
   {
+   "id": "gid://shopify/Product/9779332677899",
+   "handle": "girls-and-boys-ringer-tee",
+   "title": "Girls & Boys Ringer Tee",
+   "vendor": "NineTees",
+   "type": "T-Shirts",
+   "tags": [
+    "Britpop",
+    "NineTees",
+    "Tees",
+    "Women"
+   ],
+   "gender": "Women",
+   "colour": "White / Red Trim",
+   "descriptionHtml": "<p>Fitted white baby tee with red ringer trim at the neck and cuffs and a small GIRLS &amp; BOYS chest print. Cool as anything.</p><ul>\n<li>\n<strong>Colour:</strong> White / Red Trim</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-030</li>\n</ul>",
+   "description": "Fitted white baby tee with red ringer trim at the neck and cuffs and a small GIRLS &amp; BOYS chest print. Cool as anything.",
+   "price": 32.0,
+   "priceMax": 32.0,
+   "createdAt": "2025-03-06T16:22:40Z",
+   "newIn": false,
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UK 6",
+      "UK 8",
+      "UK 10",
+      "UK 12",
+      "UK 14",
+      "UK 16"
+     ]
+    }
+   ],
+   "images": [],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/53373128605963",
+     "sku": "90S-030-UK6",
+     "title": "UK 6",
+     "price": 32.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 139,
+     "options": {
+      "Size": "UK 6"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/49635493478667",
+     "sku": "90S-030",
+     "title": "UK 8",
+     "price": 32.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 105,
+     "options": {
+      "Size": "UK 8"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373128638731",
+     "sku": "90S-030-UK10",
+     "title": "UK 10",
+     "price": 32.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 107,
+     "options": {
+      "Size": "UK 10"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373128671499",
+     "sku": "90S-030-UK12",
+     "title": "UK 12",
+     "price": 32.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 45,
+     "options": {
+      "Size": "UK 12"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373128704267",
+     "sku": "90S-030-UK14",
+     "title": "UK 14",
+     "price": 32.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 28,
+     "options": {
+      "Size": "UK 14"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373128737035",
+     "sku": "90S-030-UK16",
+     "title": "UK 16",
+     "price": 32.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 38,
+     "options": {
+      "Size": "UK 16"
+     }
+    }
+   ],
+   "collections": [
+    "women",
+    "tees",
+    "the-britpop-edit"
+   ]
+  },
+  {
    "id": "gid://shopify/Product/9779331694859",
    "handle": "glastonbury-denim-dungarees",
    "title": "Glastonbury Denim Dungarees",
@@ -3864,8 +4023,26 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/DenimOveralls.jpg?v=1755698383",
-     "alt": "Glastonbury Denim Dungarees",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_952d2fa5-6e2f-4d60-bded-1e9e7fc44e9d.png?v=1789764802",
+     "alt": "Glastonbury Denim Dungarees - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_ad7b260a-32fd-490e-a186-ba8438b47a45.png?v=1789764804",
+     "alt": "Glastonbury Denim Dungarees - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_3f00d7a3-eda9-4b5e-9ecc-1afda5458ee0.png?v=1789764806",
+     "alt": "Glastonbury Denim Dungarees - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_d612d636-2421-4a0d-ab6e-ebefa4fdd330.png?v=1789764808",
+     "alt": "Glastonbury Denim Dungarees - detail",
      "width": 1024,
      "height": 1536
     }
@@ -3985,10 +4162,28 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/BandTshirt.png?v=1749761184",
-     "alt": "Grunge Band Tee",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_f1499205-021b-46d4-a8c6-9dae77902588.png?v=1789765251",
+     "alt": "Grunge Band Tee - product",
      "width": 1024,
-     "height": 1024
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_03a42469-8daa-4d1e-8d45-c0d994ea78fe.png?v=1789765253",
+     "alt": "Grunge Band Tee - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_d12fc060-07a7-4506-a056-8edfc55b6e61.png?v=1789765255",
+     "alt": "Grunge Band Tee - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_d431be43-77d2-424c-ba38-2f727881bb3d.png?v=1789765258",
+     "alt": "Grunge Band Tee - detail",
+     "width": 1024,
+     "height": 1536
     }
    ],
    "variants": [
@@ -4106,10 +4301,28 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/TieDyeTShirt.jpg?v=1755698969",
-     "alt": "Hacienda Tie-Dye Tee",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_8fa4123c-1b9f-4c0b-a060-e0264679fed4.png?v=1789764694",
+     "alt": "Hacienda Tie-Dye Tee - product",
      "width": 1024,
-     "height": 1024
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_270cb62e-96e7-412c-af53-aa41cfcd392b.png?v=1789764697",
+     "alt": "Hacienda Tie-Dye Tee - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_dbc2fd73-58cf-49a5-9061-c681506769dc.png?v=1789764698",
+     "alt": "Hacienda Tie-Dye Tee - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_1b96d0bc-5311-4513-becc-de39447d7e9b.png?v=1789764700",
+     "alt": "Hacienda Tie-Dye Tee - detail",
+     "width": 1024,
+     "height": 1536
     }
    ],
    "variants": [
@@ -4188,127 +4401,6 @@
    ],
    "collections": [
     "men",
-    "women",
-    "tees",
-    "rave"
-   ]
-  },
-  {
-   "id": "gid://shopify/Product/9779332743435",
-   "handle": "heart-mesh-tee",
-   "title": "Heart Mesh Tee",
-   "vendor": "NineTees",
-   "type": "T-Shirts",
-   "tags": [
-    "NineTees",
-    "Rave",
-    "Tees",
-    "Women"
-   ],
-   "gender": "Women",
-   "colour": "Black / Rainbow Hearts",
-   "descriptionHtml": "<p>Sheer black mesh baby tee scattered with rainbow hearts. Layer it or don't.</p><ul>\n<li>\n<strong>Colour:</strong> Black / Rainbow Hearts</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-032</li>\n</ul>",
-   "description": "Sheer black mesh baby tee scattered with rainbow hearts. Layer it or don't.",
-   "price": 30.0,
-   "priceMax": 30.0,
-   "createdAt": "2025-03-06T16:22:42Z",
-   "newIn": false,
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "UK 6",
-      "UK 8",
-      "UK 10",
-      "UK 12",
-      "UK 14",
-      "UK 16"
-     ]
-    }
-   ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/MeshCropTop.jpg?v=1755691703",
-     "alt": "Heart Mesh Tee",
-     "width": 1024,
-     "height": 1536
-    }
-   ],
-   "variants": [
-    {
-     "id": "gid://shopify/ProductVariant/53373128933643",
-     "sku": "90S-032-UK6",
-     "title": "UK 6",
-     "price": 30.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 19,
-     "options": {
-      "Size": "UK 6"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/49635493544203",
-     "sku": "90S-032",
-     "title": "UK 8",
-     "price": 30.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 888,
-     "options": {
-      "Size": "UK 8"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373128966411",
-     "sku": "90S-032-UK10",
-     "title": "UK 10",
-     "price": 30.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 78,
-     "options": {
-      "Size": "UK 10"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373128999179",
-     "sku": "90S-032-UK12",
-     "title": "UK 12",
-     "price": 30.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 30,
-     "options": {
-      "Size": "UK 12"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373129031947",
-     "sku": "90S-032-UK14",
-     "title": "UK 14",
-     "price": 30.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 60,
-     "options": {
-      "Size": "UK 14"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373129064715",
-     "sku": "90S-032-UK16",
-     "title": "UK 16",
-     "price": 30.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 12,
-     "options": {
-      "Size": "UK 16"
-     }
-    }
-   ],
-   "collections": [
     "women",
     "tees",
     "rave"
@@ -4477,10 +4569,28 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/BaggyJeans.png?v=1749761096",
-     "alt": "Madchester Baggy Jeans",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_2e08fb7f-807d-4d48-97ae-dba76756cf03.png?v=1789764672",
+     "alt": "Madchester Baggy Jeans - product",
      "width": 1024,
-     "height": 1024
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_9e55a5e2-e9ea-4dad-9443-d5a55f06a30a.png?v=1789764675",
+     "alt": "Madchester Baggy Jeans - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_4d8ccfa1-b8ef-4f74-ad29-edd6fdcb09c5.png?v=1789764677",
+     "alt": "Madchester Baggy Jeans - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_3e1b63fb-9ffa-4348-acf7-98033c6044e9.png?v=1789764680",
+     "alt": "Madchester Baggy Jeans - detail",
+     "width": 1024,
+     "height": 1536
     }
    ],
    "variants": [
@@ -4687,24 +4797,24 @@
    ]
   },
   {
-   "id": "gid://shopify/Product/9779333398795",
-   "handle": "memphis-graphic-tee",
-   "title": "Memphis Graphic Tee",
+   "id": "gid://shopify/Product/9779331662091",
+   "handle": "madchester-cord-flares",
+   "title": "Madchester Cord Flares",
    "vendor": "NineTees",
-   "type": "T-Shirts",
+   "type": "Trousers",
    "tags": [
+    "Madchester",
     "NineTees",
-    "Rave",
-    "Tees",
+    "Trousers",
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "White",
-   "descriptionHtml": "<p>White cotton tee with an abstract Memphis-style print in primary colours. The second summer of love, in shapes.</p><ul>\n<li>\n<strong>Colour:</strong> White</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-048</li>\n</ul>",
-   "description": "White cotton tee with an abstract Memphis-style print in primary colours. The second summer of love, in shapes.",
-   "price": 32.0,
-   "priceMax": 32.0,
-   "createdAt": "2025-03-06T16:22:58Z",
+   "colour": "Tobacco Cord",
+   "descriptionHtml": "<p>Wide-leg flares in soft tobacco corduroy with a high rise and a slight kick at the hem. Baggy, loose and made for shuffling.</p><ul>\n<li>\n<strong>Colour:</strong> Tobacco Cord</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-006</li>\n</ul>",
+   "description": "Wide-leg flares in soft tobacco corduroy with a high rise and a slight kick at the hem. Baggy, loose and made for shuffling.",
+   "price": 58.0,
+   "priceMax": 58.0,
+   "createdAt": "2025-03-06T16:22:17Z",
    "newIn": false,
    "options": [
     {
@@ -4719,83 +4829,76 @@
      ]
     }
    ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/GraphicTee.png?v=1749760337",
-     "alt": "Memphis Graphic Tee",
-     "width": 1024,
-     "height": 1024
-    }
-   ],
+   "images": [],
    "variants": [
     {
-     "id": "gid://shopify/ProductVariant/53373131063563",
-     "sku": "90S-048-XS",
+     "id": "gid://shopify/ProductVariant/53373124083979",
+     "sku": "90S-006-XS",
      "title": "XS",
-     "price": 32.0,
+     "price": 58.0,
      "compareAtPrice": null,
      "available": true,
-     "quantity": 138,
+     "quantity": 13,
      "options": {
       "Size": "XS"
      }
     },
     {
-     "id": "gid://shopify/ProductVariant/53373131096331",
-     "sku": "90S-048-S",
+     "id": "gid://shopify/ProductVariant/53373124116747",
+     "sku": "90S-006-S",
      "title": "S",
-     "price": 32.0,
+     "price": 58.0,
      "compareAtPrice": null,
      "available": true,
-     "quantity": 106,
+     "quantity": 73,
      "options": {
       "Size": "S"
      }
     },
     {
-     "id": "gid://shopify/ProductVariant/53373131129099",
-     "sku": "90S-048-M",
+     "id": "gid://shopify/ProductVariant/49635490234635",
+     "sku": "90S-006",
      "title": "M",
-     "price": 32.0,
+     "price": 58.0,
      "compareAtPrice": null,
      "available": true,
-     "quantity": 35,
+     "quantity": 1338,
      "options": {
       "Size": "M"
      }
     },
     {
-     "id": "gid://shopify/ProductVariant/49635497672971",
-     "sku": "90S-048",
+     "id": "gid://shopify/ProductVariant/53373124149515",
+     "sku": "90S-006-L",
      "title": "L",
-     "price": 32.0,
+     "price": 58.0,
      "compareAtPrice": null,
      "available": true,
-     "quantity": 711,
+     "quantity": 34,
      "options": {
       "Size": "L"
      }
     },
     {
-     "id": "gid://shopify/ProductVariant/53373131161867",
-     "sku": "90S-048-XL",
+     "id": "gid://shopify/ProductVariant/53373124182283",
+     "sku": "90S-006-XL",
      "title": "XL",
-     "price": 32.0,
+     "price": 58.0,
      "compareAtPrice": null,
      "available": true,
-     "quantity": 58,
+     "quantity": 89,
      "options": {
       "Size": "XL"
      }
     },
     {
-     "id": "gid://shopify/ProductVariant/53373131194635",
-     "sku": "90S-048-2XL",
+     "id": "gid://shopify/ProductVariant/53373124215051",
+     "sku": "90S-006-2XL",
      "title": "2XL",
-     "price": 32.0,
+     "price": 58.0,
      "compareAtPrice": null,
      "available": true,
-     "quantity": 124,
+     "quantity": 18,
      "options": {
       "Size": "2XL"
      }
@@ -4804,128 +4907,121 @@
    "collections": [
     "men",
     "women",
-    "tees",
     "rave"
    ]
   },
   {
-   "id": "gid://shopify/Product/9779332907275",
-   "handle": "neon-leggings",
-   "title": "Neon Leggings",
+   "id": "gid://shopify/Product/9779333333259",
+   "handle": "parklife-sweatshirt",
+   "title": "Parklife Sweatshirt",
    "vendor": "NineTees",
-   "type": "Leggings",
+   "type": "Sweatshirts",
    "tags": [
-    "Leggings",
+    "Britpop",
     "NineTees",
-    "Sportswear",
-    "Women"
+    "Sweatshirts",
+    "Unisex"
    ],
-   "gender": "Women",
-   "colour": "Acid Green",
-   "descriptionHtml": "<p>High-waisted leggings in a matte acid-green stretch jersey. Aerobics class not included.</p><ul>\n<li>\n<strong>Colour:</strong> Acid Green</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-036</li>\n</ul>",
-   "description": "High-waisted leggings in a matte acid-green stretch jersey. Aerobics class not included.",
-   "price": 32.0,
-   "priceMax": 32.0,
-   "createdAt": "2025-03-06T16:22:46Z",
+   "gender": "Unisex",
+   "colour": "Heather Grey",
+   "descriptionHtml": "<p>Loopback cotton sweatshirt in heather grey with a raised PARKLIFE chest print and ribbed hem. All the people.</p><ul>\n<li>\n<strong>Colour:</strong> Heather Grey</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-046</li>\n</ul>",
+   "description": "Loopback cotton sweatshirt in heather grey with a raised PARKLIFE chest print and ribbed hem. All the people.",
+   "price": 60.0,
+   "priceMax": 60.0,
+   "createdAt": "2025-03-06T16:22:56Z",
    "newIn": false,
    "options": [
     {
      "name": "Size",
      "values": [
-      "UK 6",
-      "UK 8",
-      "UK 10",
-      "UK 12",
-      "UK 14",
-      "UK 16"
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
      ]
     }
    ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/NeonLeggins_067519df-b15f-4c4b-9ed3-376d536b27ba.jpg?v=1755689829",
-     "alt": "Neon Leggings",
-     "width": 1024,
-     "height": 1536
-    }
-   ],
+   "images": [],
    "variants": [
     {
-     "id": "gid://shopify/ProductVariant/53373129261323",
-     "sku": "90S-036-UK6",
-     "title": "UK 6",
-     "price": 32.0,
+     "id": "gid://shopify/ProductVariant/53373130735883",
+     "sku": "90S-046-XS",
+     "title": "XS",
+     "price": 60.0,
      "compareAtPrice": null,
      "available": true,
-     "quantity": 115,
+     "quantity": 91,
      "options": {
-      "Size": "UK 6"
+      "Size": "XS"
      }
     },
     {
-     "id": "gid://shopify/ProductVariant/53373129294091",
-     "sku": "90S-036-UK8",
-     "title": "UK 8",
-     "price": 32.0,
+     "id": "gid://shopify/ProductVariant/53373130768651",
+     "sku": "90S-046-S",
+     "title": "S",
+     "price": 60.0,
      "compareAtPrice": null,
      "available": true,
-     "quantity": 83,
+     "quantity": 78,
      "options": {
-      "Size": "UK 8"
+      "Size": "S"
      }
     },
     {
-     "id": "gid://shopify/ProductVariant/49635493904651",
-     "sku": "90S-036",
-     "title": "UK 10",
-     "price": 32.0,
+     "id": "gid://shopify/ProductVariant/53373130801419",
+     "sku": "90S-046-M",
+     "title": "M",
+     "price": 60.0,
      "compareAtPrice": null,
-     "available": false,
-     "quantity": 0,
+     "available": true,
+     "quantity": 94,
      "options": {
-      "Size": "UK 10"
+      "Size": "M"
      }
     },
     {
-     "id": "gid://shopify/ProductVariant/53373129326859",
-     "sku": "90S-036-UK12",
-     "title": "UK 12",
-     "price": 32.0,
+     "id": "gid://shopify/ProductVariant/49635497607435",
+     "sku": "90S-046",
+     "title": "L",
+     "price": 60.0,
      "compareAtPrice": null,
      "available": true,
-     "quantity": 95,
+     "quantity": 86,
      "options": {
-      "Size": "UK 12"
+      "Size": "L"
      }
     },
     {
-     "id": "gid://shopify/ProductVariant/53373129359627",
-     "sku": "90S-036-UK14",
-     "title": "UK 14",
-     "price": 32.0,
+     "id": "gid://shopify/ProductVariant/53373130834187",
+     "sku": "90S-046-XL",
+     "title": "XL",
+     "price": 60.0,
      "compareAtPrice": null,
      "available": true,
-     "quantity": 136,
+     "quantity": 16,
      "options": {
-      "Size": "UK 14"
+      "Size": "XL"
      }
     },
     {
-     "id": "gid://shopify/ProductVariant/53373129392395",
-     "sku": "90S-036-UK16",
-     "title": "UK 16",
-     "price": 32.0,
+     "id": "gid://shopify/ProductVariant/53373130866955",
+     "sku": "90S-046-2XL",
+     "title": "2XL",
+     "price": 60.0,
      "compareAtPrice": null,
      "available": true,
-     "quantity": 48,
+     "quantity": 18,
      "options": {
-      "Size": "UK 16"
+      "Size": "2XL"
      }
     }
    ],
    "collections": [
+    "men",
     "women",
-    "sportswear"
+    "the-britpop-edit"
    ]
   },
   {
@@ -4962,10 +5058,28 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/DenimVest.jpg?v=1755696022",
-     "alt": "Patched Denim Gilet",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_dab79d80-c5d6-4aad-8dd0-307f30e8d9f6.png?v=1789765148",
+     "alt": "Patched Denim Gilet - product",
      "width": 1024,
-     "height": 1024
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_69a1fa2b-d438-4821-8698-e1081e60def4.png?v=1789765150",
+     "alt": "Patched Denim Gilet - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_3a0af9d8-17a8-4a8d-8685-e44f033ae5aa.png?v=1789765152",
+     "alt": "Patched Denim Gilet - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_d99e3857-17bd-4faa-a531-98541b3f818c.png?v=1789765155",
+     "alt": "Patched Denim Gilet - detail",
+     "width": 1024,
+     "height": 1536
     }
    ],
    "variants": [
@@ -5046,127 +5160,6 @@
     "men",
     "women",
     "denim"
-   ]
-  },
-  {
-   "id": "gid://shopify/Product/9779331662091",
-   "handle": "pirate-radio-track-pants",
-   "title": "Pirate Radio Track Pants",
-   "vendor": "NineTees",
-   "type": "Trousers",
-   "tags": [
-    "NineTees",
-    "Sportswear",
-    "Trousers",
-    "Unisex"
-   ],
-   "gender": "Unisex",
-   "colour": "Acid Green",
-   "descriptionHtml": "<p>Straight-leg joggers in acid-green brushed jersey with a drawstring waist and cuffed hems. Sit low, wear with anything, do not run in them.</p><ul>\n<li>\n<strong>Colour:</strong> Acid Green</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-006</li>\n</ul>",
-   "description": "Straight-leg joggers in acid-green brushed jersey with a drawstring waist and cuffed hems. Sit low, wear with anything, do not run in them.",
-   "price": 58.0,
-   "priceMax": 58.0,
-   "createdAt": "2025-03-06T16:22:17Z",
-   "newIn": false,
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL"
-     ]
-    }
-   ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/NeonJoggers.jpg?v=1755698508",
-     "alt": "Pirate Radio Track Pants",
-     "width": 1024,
-     "height": 1536
-    }
-   ],
-   "variants": [
-    {
-     "id": "gid://shopify/ProductVariant/53373124083979",
-     "sku": "90S-006-XS",
-     "title": "XS",
-     "price": 58.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 13,
-     "options": {
-      "Size": "XS"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373124116747",
-     "sku": "90S-006-S",
-     "title": "S",
-     "price": 58.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 73,
-     "options": {
-      "Size": "S"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/49635490234635",
-     "sku": "90S-006",
-     "title": "M",
-     "price": 58.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 1338,
-     "options": {
-      "Size": "M"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373124149515",
-     "sku": "90S-006-L",
-     "title": "L",
-     "price": 58.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 34,
-     "options": {
-      "Size": "L"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373124182283",
-     "sku": "90S-006-XL",
-     "title": "XL",
-     "price": 58.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 89,
-     "options": {
-      "Size": "XL"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373124215051",
-     "sku": "90S-006-2XL",
-     "title": "2XL",
-     "price": 58.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 18,
-     "options": {
-      "Size": "2XL"
-     }
-    }
-   ],
-   "collections": [
-    "men",
-    "women",
-    "sportswear"
    ]
   },
   {
@@ -5297,9 +5290,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Purple",
-   "descriptionHtml": "<p>A big, glossy purple puffa with a high collar, storm cuffs and a satin-feel lining. Warm enough for a February queue.</p><ul>\n<li>\n<strong>Colour:</strong> Purple</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-044</li>\n</ul>",
-   "description": "A big, glossy purple puffa with a high collar, storm cuffs and a satin-feel lining. Warm enough for a February queue.",
+   "colour": "Black",
+   "descriptionHtml": "<p>A big, glossy black puffa with a high collar, storm cuffs and a satin-feel lining. Warm enough for a February queue.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-044</li>\n</ul>",
+   "description": "A big, glossy black puffa with a high collar, storm cuffs and a satin-feel lining. Warm enough for a February queue.",
    "price": 150.0,
    "priceMax": 150.0,
    "createdAt": "2025-03-06T16:22:54Z",
@@ -5317,14 +5310,7 @@
      ]
     }
    ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/PufferJacket.jpg?v=1755691850",
-     "alt": "Puffa Jacket",
-     "width": 1024,
-     "height": 1536
-    }
-   ],
+   "images": [],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373130408203",
@@ -5440,8 +5426,26 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/Tiedyehoodie.png?v=1749760482",
-     "alt": "Rave Tie-Dye Hoodie",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_ebb8b4b6-8125-4843-8829-902a6c06d35e.png?v=1789765307",
+     "alt": "Rave Tie-Dye Hoodie - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_d3cfccdb-6c36-4e31-b9be-f37df8170c64.png?v=1789765309",
+     "alt": "Rave Tie-Dye Hoodie - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_b2fb66cb-f1e9-4071-9f64-4885b0178c63.png?v=1789765312",
+     "alt": "Rave Tie-Dye Hoodie - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_c7d7974f-6c48-4774-854e-354be673a3b7.png?v=1789765314",
+     "alt": "Rave Tie-Dye Hoodie - detail",
      "width": 1024,
      "height": 1536
     }
@@ -5539,9 +5543,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Royal Blue",
-   "descriptionHtml": "<p>A wide-brim bucket hat in royal blue cotton twill, lined and stitched to hold its shape. The hat that launched a thousand album covers.</p><ul>\n<li>\n<strong>Colour:</strong> Royal Blue</li>\n<li>\n<strong>Fit:</strong> Two sizes: S/M fits up to 57cm, L/XL up to 61cm.</li>\n<li>\n<strong>Care:</strong> Hand wash. Reshape while damp.</li>\n<li>\n<strong>Style code:</strong> 90S-014</li>\n</ul>",
-   "description": "A wide-brim bucket hat in royal blue cotton twill, lined and stitched to hold its shape. The hat that launched a thousand album covers.",
+   "colour": "Stone Corduroy",
+   "descriptionHtml": "<p>A wide-brim bucket hat in stone corduroy, lined and stitched to hold its shape. The hat that launched a thousand album covers.</p><ul>\n<li>\n<strong>Colour:</strong> Stone Corduroy</li>\n<li>\n<strong>Fit:</strong> Two sizes: S/M fits up to 57cm, L/XL up to 61cm.</li>\n<li>\n<strong>Care:</strong> Hand wash. Reshape while damp.</li>\n<li>\n<strong>Style code:</strong> 90S-014</li>\n</ul>",
+   "description": "A wide-brim bucket hat in stone corduroy, lined and stitched to hold its shape. The hat that launched a thousand album covers.",
    "price": 35.0,
    "priceMax": 35.0,
    "createdAt": "2025-03-06T16:22:25Z",
@@ -5555,14 +5559,7 @@
      ]
     }
    ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/BucketHat.png?v=1749763465",
-     "alt": "Reni Bucket Hat",
-     "width": 1024,
-     "height": 1024
-    }
-   ],
+   "images": [],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/49635490857227",
@@ -5726,9 +5723,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Black",
-   "descriptionHtml": "<p>Chunky ribbed beanie in black with a folded cuff. Roll it high or pull it low.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> Two sizes: S/M fits up to 57cm, L/XL up to 61cm.</li>\n<li>\n<strong>Care:</strong> Hand wash. Reshape while damp.</li>\n<li>\n<strong>Style code:</strong> 90S-029</li>\n</ul>",
-   "description": "Chunky ribbed beanie in black with a folded cuff. Roll it high or pull it low.",
+   "colour": "Charcoal",
+   "descriptionHtml": "<p>Chunky ribbed fisherman beanie in charcoal wool with a folded cuff. Roll it high or pull it low.</p><ul>\n<li>\n<strong>Colour:</strong> Charcoal</li>\n<li>\n<strong>Fit:</strong> Two sizes: S/M fits up to 57cm, L/XL up to 61cm.</li>\n<li>\n<strong>Care:</strong> Hand wash. Reshape while damp.</li>\n<li>\n<strong>Style code:</strong> 90S-029</li>\n</ul>",
+   "description": "Chunky ribbed fisherman beanie in charcoal wool with a folded cuff. Roll it high or pull it low.",
    "price": 25.0,
    "priceMax": 25.0,
    "createdAt": "2025-03-06T16:22:39Z",
@@ -5742,14 +5739,7 @@
      ]
     }
    ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/GrungeBeanie.jpg?v=1755695519",
-     "alt": "Ribbed Beanie",
-     "width": 1024,
-     "height": 1024
-    }
-   ],
+   "images": [],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/49635493445899",
@@ -5816,8 +5806,26 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/RippedMomJeans.jpg?v=1755699220",
-     "alt": "Ripped Mum Jeans",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_b17354eb-d031-41d5-8cf9-df9b4ff4c5cd.png?v=1789765013",
+     "alt": "Ripped Mum Jeans - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_207fcda3-e90f-4953-80db-e2fd90119ce8.png?v=1789765015",
+     "alt": "Ripped Mum Jeans - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_5c3c7133-4a7f-4d34-bb54-262ac36ebf02.png?v=1789765018",
+     "alt": "Ripped Mum Jeans - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_a4334d9a-f2c2-4b3f-9286-375f2fbfd58c.png?v=1789765020",
+     "alt": "Ripped Mum Jeans - detail",
      "width": 1024,
      "height": 1536
     }
@@ -5914,9 +5922,9 @@
     "NineTees"
    ],
    "gender": "Men",
-   "colour": "Royal Blue",
-   "descriptionHtml": "<p>Fine-knit merino roll neck in royal blue. Wear it under a Harrington, or a suit, or nothing else.</p><ul>\n<li>\n<strong>Colour:</strong> Royal Blue</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Hand wash cold. Dry flat.</li>\n<li>\n<strong>Style code:</strong> 90S-041</li>\n</ul>",
-   "description": "Fine-knit merino roll neck in royal blue. Wear it under a Harrington, or a suit, or nothing else.",
+   "colour": "Black",
+   "descriptionHtml": "<p>Fine-knit black merino roll neck with a slim fit and long ribbed cuffs. Wear it under a Harrington, or a suit, or nothing else.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Hand wash cold. Dry flat.</li>\n<li>\n<strong>Style code:</strong> 90S-041</li>\n</ul>",
+   "description": "Fine-knit black merino roll neck with a slim fit and long ribbed cuffs. Wear it under a Harrington, or a suit, or nothing else.",
    "price": 80.0,
    "priceMax": 80.0,
    "createdAt": "2025-03-06T16:22:51Z",
@@ -5934,14 +5942,7 @@
      ]
     }
    ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/TurtleNeckSweater.jpg?v=1755693244",
-     "alt": "Roll Neck Jumper",
-     "width": 1024,
-     "height": 1536
-    }
-   ],
+   "images": [],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373130211595",
@@ -6036,9 +6037,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Light Wash",
-   "descriptionHtml": "<p>An oversized light-wash denim jacket with a drop shoulder, oversized chest pockets and a wide body. Wear it like a coat.</p><ul>\n<li>\n<strong>Colour:</strong> Light Wash</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-031</li>\n</ul>",
-   "description": "An oversized light-wash denim jacket with a drop shoulder, oversized chest pockets and a wide body. Wear it like a coat.",
+   "colour": "Dark Indigo",
+   "descriptionHtml": "<p>An oversized dark-indigo denim jacket with a drop shoulder, oversized chest pockets and a wide body. Wear it like a coat.</p><ul>\n<li>\n<strong>Colour:</strong> Dark Indigo</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-031</li>\n</ul>",
+   "description": "An oversized dark-indigo denim jacket with a drop shoulder, oversized chest pockets and a wide body. Wear it like a coat.",
    "price": 115.0,
    "priceMax": 115.0,
    "createdAt": "2025-03-06T16:22:41Z",
@@ -6056,14 +6057,7 @@
      ]
     }
    ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/AcidWashDenimJacket.png?v=1749763378",
-     "alt": "Roll With It Denim Jacket",
-     "width": 1024,
-     "height": 1024
-    }
-   ],
+   "images": [],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373128769803",
@@ -6180,8 +6174,26 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/Rollerbladetee.jpg?v=1755698141",
-     "alt": "Roller Disco Tee",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_7508a0b1-5cf9-4f3d-95ff-aa67f6d8ef0e.png?v=1789765510",
+     "alt": "Roller Disco Tee - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_d60d698f-80ef-403b-971b-16f6f2608e80.png?v=1789765512",
+     "alt": "Roller Disco Tee - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_61444d1d-2871-4ebe-b651-072655af43a3.png?v=1789765515",
+     "alt": "Roller Disco Tee - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_2e9b94c7-bcf8-498e-86fd-cb873cb02c59.png?v=1789765517",
+     "alt": "Roller Disco Tee - detail",
      "width": 1024,
      "height": 1536
     }
@@ -6268,8 +6280,8 @@
   },
   {
    "id": "gid://shopify/Product/9779333366027",
-   "handle": "shell-hooded-track-top",
-   "title": "Shell Hooded Track Top",
+   "handle": "shell-track-top",
+   "title": "Shell Track Top",
    "vendor": "NineTees",
    "type": "Jackets",
    "tags": [
@@ -6278,9 +6290,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Pink / Teal",
-   "descriptionHtml": "<p>Zip-through hooded shell in colour-blocked pink and teal crinkle nylon with a drawstring hood. Sounds like a crisp packet, looks like a legend.</p><ul>\n<li>\n<strong>Colour:</strong> Pink / Teal</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-047</li>\n</ul>",
-   "description": "Zip-through hooded shell in colour-blocked pink and teal crinkle nylon with a drawstring hood. Sounds like a crisp packet, looks like a legend.",
+   "colour": "Red / Navy / White",
+   "descriptionHtml": "<p>Zip-through track top in colour-blocked red, navy and white crinkle nylon with a contrast collar and mesh lining. Sounds like a crisp packet, looks like a legend.</p><ul>\n<li>\n<strong>Colour:</strong> Red / Navy / White</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Cool machine wash inside out. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-047</li>\n</ul>",
+   "description": "Zip-through track top in colour-blocked red, navy and white crinkle nylon with a contrast collar and mesh lining. Sounds like a crisp packet, looks like a legend.",
    "price": 85.0,
    "priceMax": 85.0,
    "createdAt": "2025-03-06T16:22:57Z",
@@ -6298,14 +6310,7 @@
      ]
     }
    ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/RetroTrackJacket.png?v=1749761121",
-     "alt": "Shell Hooded Track Top",
-     "width": 1024,
-     "height": 1024
-    }
-   ],
+   "images": [],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373130899723",
@@ -6384,124 +6389,6 @@
     "men",
     "women",
     "sportswear"
-   ]
-  },
-  {
-   "id": "gid://shopify/Product/9779332972811",
-   "handle": "ska-check-shirt",
-   "title": "Ska Check Shirt",
-   "vendor": "NineTees",
-   "type": "Shirts",
-   "tags": [
-    "NineTees",
-    "Shirts",
-    "Women"
-   ],
-   "gender": "Women",
-   "colour": "Black / White Check",
-   "descriptionHtml": "<p>Short-sleeve button-up in a bold black-and-white checkerboard with a boxy cut. Two-tone, one purpose.</p><ul>\n<li>\n<strong>Colour:</strong> Black / White Check</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-038</li>\n</ul>",
-   "description": "Short-sleeve button-up in a bold black-and-white checkerboard with a boxy cut. Two-tone, one purpose.",
-   "price": 50.0,
-   "priceMax": 50.0,
-   "createdAt": "2025-03-06T16:22:48Z",
-   "newIn": false,
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "UK 6",
-      "UK 8",
-      "UK 10",
-      "UK 12",
-      "UK 14",
-      "UK 16"
-     ]
-    }
-   ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/Checkboardshirt.png?v=1749764267",
-     "alt": "Ska Check Shirt",
-     "width": 1024,
-     "height": 1024
-    }
-   ],
-   "variants": [
-    {
-     "id": "gid://shopify/ProductVariant/53373129589003",
-     "sku": "90S-038-UK6",
-     "title": "UK 6",
-     "price": 50.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 86,
-     "options": {
-      "Size": "UK 6"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373129621771",
-     "sku": "90S-038-UK8",
-     "title": "UK 8",
-     "price": 50.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 119,
-     "options": {
-      "Size": "UK 8"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/49635493970187",
-     "sku": "90S-038",
-     "title": "UK 10",
-     "price": 50.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 733,
-     "options": {
-      "Size": "UK 10"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373129654539",
-     "sku": "90S-038-UK12",
-     "title": "UK 12",
-     "price": 50.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 69,
-     "options": {
-      "Size": "UK 12"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373129687307",
-     "sku": "90S-038-UK14",
-     "title": "UK 14",
-     "price": 50.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 85,
-     "options": {
-      "Size": "UK 14"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373129720075",
-     "sku": "90S-038-UK16",
-     "title": "UK 16",
-     "price": 50.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 66,
-     "options": {
-      "Size": "UK 16"
-     }
-    }
-   ],
-   "collections": [
-    "women"
    ]
   },
   {
@@ -6674,8 +6561,8 @@
   },
   {
    "id": "gid://shopify/Product/9779332612363",
-   "handle": "slacker-oversized-jumper",
-   "title": "Slacker Oversized Jumper",
+   "handle": "slacker-fisherman-jumper",
+   "title": "Slacker Fisherman Jumper",
    "vendor": "NineTees",
    "type": "Knitwear",
    "tags": [
@@ -6684,9 +6571,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Forest Green",
-   "descriptionHtml": "<p>A heavy, oversized crew-neck jumper in a forest green wool blend with dropped shoulders and ribbed cuffs. Slouches beautifully.</p><ul>\n<li>\n<strong>Colour:</strong> Forest Green</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Hand wash cold. Dry flat.</li>\n<li>\n<strong>Style code:</strong> 90S-028</li>\n</ul>",
-   "description": "A heavy, oversized crew-neck jumper in a forest green wool blend with dropped shoulders and ribbed cuffs. Slouches beautifully.",
+   "colour": "Oatmeal",
+   "descriptionHtml": "<p>A heavy, oversized Aran-knit fisherman jumper in oatmeal wool with a crew neck and dropped shoulders. Slouches beautifully.</p><ul>\n<li>\n<strong>Colour:</strong> Oatmeal</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Hand wash cold. Dry flat.</li>\n<li>\n<strong>Style code:</strong> 90S-028</li>\n</ul>",
+   "description": "A heavy, oversized Aran-knit fisherman jumper in oatmeal wool with a crew neck and dropped shoulders. Slouches beautifully.",
    "price": 85.0,
    "priceMax": 85.0,
    "createdAt": "2025-03-06T16:22:38Z",
@@ -6704,14 +6591,7 @@
      ]
     }
    ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/OversizedSweater.jpg?v=1755695606",
-     "alt": "Slacker Oversized Jumper",
-     "width": 1024,
-     "height": 1024
-    }
-   ],
+   "images": [],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373128409355",
@@ -6793,6 +6673,121 @@
    ]
   },
   {
+   "id": "gid://shopify/Product/9779333398795",
+   "handle": "smiley-graphic-tee",
+   "title": "Smiley Graphic Tee",
+   "vendor": "NineTees",
+   "type": "T-Shirts",
+   "tags": [
+    "NineTees",
+    "Rave",
+    "Tees",
+    "Unisex"
+   ],
+   "gender": "Unisex",
+   "colour": "Acid Yellow",
+   "descriptionHtml": "<p>Acid-yellow cotton tee with an oversized black smiley chest print. The second summer of love, on repeat.</p><ul>\n<li>\n<strong>Colour:</strong> Acid Yellow</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-048</li>\n</ul>",
+   "description": "Acid-yellow cotton tee with an oversized black smiley chest print. The second summer of love, on repeat.",
+   "price": 32.0,
+   "priceMax": 32.0,
+   "createdAt": "2025-03-06T16:22:58Z",
+   "newIn": false,
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+     ]
+    }
+   ],
+   "images": [],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/53373131063563",
+     "sku": "90S-048-XS",
+     "title": "XS",
+     "price": 32.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 138,
+     "options": {
+      "Size": "XS"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373131096331",
+     "sku": "90S-048-S",
+     "title": "S",
+     "price": 32.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 106,
+     "options": {
+      "Size": "S"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373131129099",
+     "sku": "90S-048-M",
+     "title": "M",
+     "price": 32.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 35,
+     "options": {
+      "Size": "M"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/49635497672971",
+     "sku": "90S-048",
+     "title": "L",
+     "price": 32.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 711,
+     "options": {
+      "Size": "L"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373131161867",
+     "sku": "90S-048-XL",
+     "title": "XL",
+     "price": 32.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 58,
+     "options": {
+      "Size": "XL"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373131194635",
+     "sku": "90S-048-2XL",
+     "title": "2XL",
+     "price": 32.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 124,
+     "options": {
+      "Size": "2XL"
+     }
+    }
+   ],
+   "collections": [
+    "men",
+    "women",
+    "tees",
+    "rave"
+   ]
+  },
+  {
    "id": "gid://shopify/Product/9779332481291",
    "handle": "sorted-neon-crop-top",
    "title": "Sorted Neon Crop Top",
@@ -6827,10 +6822,10 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/NeonCropTop.jpg?v=1755697225",
-     "alt": "Sorted Neon Crop Top",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_2ab8fa5e-f71d-4af1-8788-3ed26253b24d.png?v=1789765659",
+     "alt": "Sorted Neon Crop Top - product",
      "width": 1024,
-     "height": 1024
+     "height": 1536
     }
    ],
    "variants": [
@@ -6914,6 +6909,248 @@
    ]
   },
   {
+   "id": "gid://shopify/Product/9779333431563",
+   "handle": "stonewash-straight-jeans",
+   "title": "Stonewash Straight Jeans",
+   "vendor": "NineTees",
+   "type": "Jeans",
+   "tags": [
+    "Denim",
+    "Men",
+    "NineTees"
+   ],
+   "gender": "Men",
+   "colour": "Stonewash",
+   "descriptionHtml": "<p>Straight-leg rigid jeans in a classic stonewash with a button fly and a slightly tapered leg. Hands in pockets, chin up.</p><ul>\n<li>\n<strong>Colour:</strong> Stonewash</li>\n<li>\n<strong>Fit:</strong> Men's waist 30 to 38, leg 30 to 34.</li>\n<li>\n<strong>Care:</strong> Wash rarely, cold, inside out.</li>\n<li>\n<strong>Style code:</strong> 90S-049</li>\n</ul>",
+   "description": "Straight-leg rigid jeans in a classic stonewash with a button fly and a slightly tapered leg. Hands in pockets, chin up.",
+   "price": 85.0,
+   "priceMax": 85.0,
+   "createdAt": "2025-03-06T16:22:59Z",
+   "newIn": false,
+   "options": [
+    {
+     "name": "Waist",
+     "values": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+     ]
+    },
+    {
+     "name": "Leg",
+     "values": [
+      "30",
+      "32",
+      "34"
+     ]
+    }
+   ],
+   "images": [],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/53373131260171",
+     "sku": "90S-049-W30L30",
+     "title": "30 / 30",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 60,
+     "options": {
+      "Waist": "30",
+      "Leg": "30"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373131292939",
+     "sku": "90S-049-W30L32",
+     "title": "30 / 32",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 75,
+     "options": {
+      "Waist": "30",
+      "Leg": "32"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373131325707",
+     "sku": "90S-049-W30L34",
+     "title": "30 / 34",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 72,
+     "options": {
+      "Waist": "30",
+      "Leg": "34"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373131358475",
+     "sku": "90S-049-W32L30",
+     "title": "32 / 30",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 17,
+     "options": {
+      "Waist": "32",
+      "Leg": "30"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/49635497705739",
+     "sku": "90S-049",
+     "title": "32 / 32",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": false,
+     "quantity": 0,
+     "options": {
+      "Waist": "32",
+      "Leg": "32"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373131391243",
+     "sku": "90S-049-W32L34",
+     "title": "32 / 34",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 37,
+     "options": {
+      "Waist": "32",
+      "Leg": "34"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373131424011",
+     "sku": "90S-049-W34L30",
+     "title": "34 / 30",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 49,
+     "options": {
+      "Waist": "34",
+      "Leg": "30"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373131456779",
+     "sku": "90S-049-W34L32",
+     "title": "34 / 32",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 113,
+     "options": {
+      "Waist": "34",
+      "Leg": "32"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373131489547",
+     "sku": "90S-049-W34L34",
+     "title": "34 / 34",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 79,
+     "options": {
+      "Waist": "34",
+      "Leg": "34"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373131522315",
+     "sku": "90S-049-W36L30",
+     "title": "36 / 30",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 85,
+     "options": {
+      "Waist": "36",
+      "Leg": "30"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373131555083",
+     "sku": "90S-049-W36L32",
+     "title": "36 / 32",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 81,
+     "options": {
+      "Waist": "36",
+      "Leg": "32"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373131587851",
+     "sku": "90S-049-W36L34",
+     "title": "36 / 34",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 107,
+     "options": {
+      "Waist": "36",
+      "Leg": "34"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373131620619",
+     "sku": "90S-049-W38L30",
+     "title": "38 / 30",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 85,
+     "options": {
+      "Waist": "38",
+      "Leg": "30"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373131653387",
+     "sku": "90S-049-W38L32",
+     "title": "38 / 32",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 79,
+     "options": {
+      "Waist": "38",
+      "Leg": "32"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373131686155",
+     "sku": "90S-049-W38L34",
+     "title": "38 / 34",
+     "price": 85.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 31,
+     "options": {
+      "Waist": "38",
+      "Leg": "34"
+     }
+    }
+   ],
+   "collections": [
+    "men",
+    "denim"
+   ]
+  },
+  {
    "id": "gid://shopify/Product/9779332841739",
    "handle": "studded-leather-belt",
    "title": "Studded Leather Belt",
@@ -6926,8 +7163,8 @@
    ],
    "gender": "Unisex",
    "colour": "Black",
-   "descriptionHtml": "<p>Black leather belt with pyramid studs and a matte silver buckle. Slung low.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> One size.</li>\n<li>\n<strong>Care:</strong> Spot clean only.</li>\n<li>\n<strong>Style code:</strong> 90S-034</li>\n</ul>",
-   "description": "Black leather belt with pyramid studs and a matte silver buckle. Slung low.",
+   "descriptionHtml": "<p>Black leather belt with pyramid studs and a matte silver buckle. Slung low over baggy jeans.</p><ul>\n<li>\n<strong>Colour:</strong> Black</li>\n<li>\n<strong>Fit:</strong> One size.</li>\n<li>\n<strong>Care:</strong> Spot clean only.</li>\n<li>\n<strong>Style code:</strong> 90S-034</li>\n</ul>",
+   "description": "Black leather belt with pyramid studs and a matte silver buckle. Slung low over baggy jeans.",
    "price": 40.0,
    "priceMax": 40.0,
    "createdAt": "2025-03-06T16:22:44Z",
@@ -6940,14 +7177,7 @@
      ]
     }
    ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/StuddedBelt.jpg?v=1755689663",
-     "alt": "Studded Leather Belt",
-     "width": 1024,
-     "height": 1024
-    }
-   ],
+   "images": [],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/49635493839115",
@@ -7003,7 +7233,32 @@
      ]
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_8d11ba09-5b9c-47db-b85a-445fecee6526.png?v=1789765889",
+     "alt": "Suede Terrace Trainers - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_fe9514ed-fae9-4a22-858e-6b5fe616afbd.png?v=1789765892",
+     "alt": "Suede Terrace Trainers - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_dbd76126-47f8-4138-856b-9b111f7b386d.png?v=1789765894",
+     "alt": "Suede Terrace Trainers - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_056e9516-aca6-42e7-b0a3-151b938ccba3.png?v=1789765896",
+     "alt": "Suede Terrace Trainers - detail",
+     "width": 1024,
+     "height": 1536
+    }
+   ],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373132505355",
@@ -7110,9 +7365,9 @@
     "Women"
    ],
    "gender": "Women",
-   "colour": "Memphis Print",
-   "descriptionHtml": "<p>Tiny backpack in a riot of Memphis-pattern print with adjustable straps and a zipped front pocket. Fits a lipstick, a lighter and a phone from 1997.</p><ul>\n<li>\n<strong>Colour:</strong> Memphis Print</li>\n<li>\n<strong>Fit:</strong> One size.</li>\n<li>\n<strong>Care:</strong> Spot clean only.</li>\n<li>\n<strong>Style code:</strong> 90S-020</li>\n</ul>",
-   "description": "Tiny backpack in a riot of Memphis-pattern print with adjustable straps and a zipped front pocket. Fits a lipstick, a lighter and a phone from 1997.",
+   "colour": "Black Nylon",
+   "descriptionHtml": "<p>Tiny black nylon backpack with a reflective strip, adjustable straps and a zipped front pocket. Fits a lipstick, a lighter and a phone from 1997.</p><ul>\n<li>\n<strong>Colour:</strong> Black Nylon</li>\n<li>\n<strong>Fit:</strong> One size.</li>\n<li>\n<strong>Care:</strong> Spot clean only.</li>\n<li>\n<strong>Style code:</strong> 90S-020</li>\n</ul>",
+   "description": "Tiny black nylon backpack with a reflective strip, adjustable straps and a zipped front pocket. Fits a lipstick, a lighter and a phone from 1997.",
    "price": 45.0,
    "priceMax": 45.0,
    "createdAt": "2025-03-06T16:22:31Z",
@@ -7125,14 +7380,7 @@
      ]
     }
    ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/MiniBackpack.jpg?v=1755691032",
-     "alt": "Superclub Mini Backpack",
-     "width": 1024,
-     "height": 1024
-    }
-   ],
+   "images": [],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/49635491414283",
@@ -7188,10 +7436,28 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/NeonWindbreaker.jpg?v=1755700487",
-     "alt": "Supernova Shell Jacket",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product.png?v=1789764563",
+     "alt": "Supernova Shell Jacket - product",
      "width": 1024,
-     "height": 1024
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full.png?v=1789764566",
+     "alt": "Supernova Shell Jacket - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half.png?v=1789764572",
+     "alt": "Supernova Shell Jacket - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail.png?v=1789764570",
+     "alt": "Supernova Shell Jacket - detail",
+     "width": 1024,
+     "height": 1536
     }
    ],
    "variants": [
@@ -7434,10 +7700,28 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/PlaidMiniskirt.png?v=1749760396",
-     "alt": "Tartan Kilt Mini",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_0d9b421c-0d47-4307-928a-32dd4eb7f5c6.png?v=1789764830",
+     "alt": "Tartan Kilt Mini - product",
      "width": 1024,
-     "height": 1024
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_88a81251-8c15-4a19-afaa-c7f97bb6c7e7.png?v=1789764833",
+     "alt": "Tartan Kilt Mini - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_609f512d-c9a5-4e36-939c-1a1b13636c3a.png?v=1789764836",
+     "alt": "Tartan Kilt Mini - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_b351dc0b-c981-48ed-9f63-3441f0a1b33f.png?v=1789764838",
+     "alt": "Tartan Kilt Mini - detail",
+     "width": 1024,
+     "height": 1536
     }
    ],
    "variants": [
@@ -7533,9 +7817,9 @@
     "Unisex"
    ],
    "gender": "Unisex",
-   "colour": "Rainbow Swirl",
-   "descriptionHtml": "<p>Cotton bucket hat, spiral-dyed in every colour of the rainbow. No two the same.</p><ul>\n<li>\n<strong>Colour:</strong> Rainbow Swirl</li>\n<li>\n<strong>Fit:</strong> Two sizes: S/M fits up to 57cm, L/XL up to 61cm.</li>\n<li>\n<strong>Care:</strong> Hand wash. Reshape while damp.</li>\n<li>\n<strong>Style code:</strong> 90S-042</li>\n</ul>",
-   "description": "Cotton bucket hat, spiral-dyed in every colour of the rainbow. No two the same.",
+   "colour": "Blue Swirl",
+   "descriptionHtml": "<p>Cotton bucket hat, spiral-dyed in blues and whites. No two the same.</p><ul>\n<li>\n<strong>Colour:</strong> Blue Swirl</li>\n<li>\n<strong>Fit:</strong> Two sizes: S/M fits up to 57cm, L/XL up to 61cm.</li>\n<li>\n<strong>Care:</strong> Hand wash. Reshape while damp.</li>\n<li>\n<strong>Style code:</strong> 90S-042</li>\n</ul>",
+   "description": "Cotton bucket hat, spiral-dyed in blues and whites. No two the same.",
    "price": 32.0,
    "priceMax": 32.0,
    "createdAt": "2025-03-06T16:22:52Z",
@@ -7549,14 +7833,7 @@
      ]
     }
    ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/TieDyeBucketHat.jpg?v=1755692593",
-     "alt": "Tie-Dye Bucket Hat",
-     "width": 1024,
-     "height": 1536
-    }
-   ],
+   "images": [],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/49635494101259",
@@ -7625,7 +7902,32 @@
      ]
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_5997a744-0617-486c-8f68-207757e4cf04.png?v=1789765840",
+     "alt": "Tipped Knit Polo - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_af7734f2-0463-4619-a1be-769284dfabc3.png?v=1789765842",
+     "alt": "Tipped Knit Polo - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_553f21c5-21f8-474f-b6e2-5e8d5221abd7.png?v=1789765845",
+     "alt": "Tipped Knit Polo - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_f40b91cb-39d1-4fcc-b407-683a9eae3a49.png?v=1789765848",
+     "alt": "Tipped Knit Polo - detail",
+     "width": 1024,
+     "height": 1536
+    }
+   ],
    "variants": [
     {
      "id": "gid://shopify/ProductVariant/53373132112139",
@@ -7742,8 +8044,26 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/StarterJacket.jpg?v=1755698786",
-     "alt": "Touchline Hooded Jacket",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_81129197-b0dd-43c9-8cbd-14a918a8664c.png?v=1789765083",
+     "alt": "Touchline Hooded Jacket - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_5de53dd2-f42a-4dbe-a1fe-df4444a97f62.png?v=1789765085",
+     "alt": "Touchline Hooded Jacket - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_6a95b0e4-4c34-4401-9f6c-87f632d90481.png?v=1789765088",
+     "alt": "Touchline Hooded Jacket - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_60fc6d08-e1c5-4769-bb90-d7f93e515aa3.png?v=1789765090",
+     "alt": "Touchline Hooded Jacket - detail",
      "width": 1024,
      "height": 1536
     }
@@ -7946,6 +8266,119 @@
    ]
   },
   {
+   "id": "gid://shopify/Product/9779332972811",
+   "handle": "two-tone-check-shirt",
+   "title": "Two-Tone Check Shirt",
+   "vendor": "NineTees",
+   "type": "Shirts",
+   "tags": [
+    "Britpop",
+    "NineTees",
+    "Shirts",
+    "Women"
+   ],
+   "gender": "Women",
+   "colour": "Black / White Check",
+   "descriptionHtml": "<p>Short-sleeve button-up in a bold black-and-white two-tone check with a boxy cut and a camp collar. Ska on a hanger.</p><ul>\n<li>\n<strong>Colour:</strong> Black / White Check</li>\n<li>\n<strong>Fit:</strong> UK women's sizing, 6 to 16. True to size.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-038</li>\n</ul>",
+   "description": "Short-sleeve button-up in a bold black-and-white two-tone check with a boxy cut and a camp collar. Ska on a hanger.",
+   "price": 50.0,
+   "priceMax": 50.0,
+   "createdAt": "2025-03-06T16:22:48Z",
+   "newIn": false,
+   "options": [
+    {
+     "name": "Size",
+     "values": [
+      "UK 6",
+      "UK 8",
+      "UK 10",
+      "UK 12",
+      "UK 14",
+      "UK 16"
+     ]
+    }
+   ],
+   "images": [],
+   "variants": [
+    {
+     "id": "gid://shopify/ProductVariant/53373129589003",
+     "sku": "90S-038-UK6",
+     "title": "UK 6",
+     "price": 50.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 86,
+     "options": {
+      "Size": "UK 6"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373129621771",
+     "sku": "90S-038-UK8",
+     "title": "UK 8",
+     "price": 50.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 119,
+     "options": {
+      "Size": "UK 8"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/49635493970187",
+     "sku": "90S-038",
+     "title": "UK 10",
+     "price": 50.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 733,
+     "options": {
+      "Size": "UK 10"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373129654539",
+     "sku": "90S-038-UK12",
+     "title": "UK 12",
+     "price": 50.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 69,
+     "options": {
+      "Size": "UK 12"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373129687307",
+     "sku": "90S-038-UK14",
+     "title": "UK 14",
+     "price": 50.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 85,
+     "options": {
+      "Size": "UK 14"
+     }
+    },
+    {
+     "id": "gid://shopify/ProductVariant/53373129720075",
+     "sku": "90S-038-UK16",
+     "title": "UK 16",
+     "price": 50.0,
+     "compareAtPrice": null,
+     "available": true,
+     "quantity": 66,
+     "options": {
+      "Size": "UK 16"
+     }
+    }
+   ],
+   "collections": [
+    "women",
+    "the-britpop-edit"
+   ]
+  },
+  {
    "id": "gid://shopify/Product/11043024830731",
    "handle": "union-jack-tee",
    "title": "Union Jack Tee",
@@ -8059,127 +8492,6 @@
     "men",
     "women",
     "tees",
-    "the-britpop-edit"
-   ]
-  },
-  {
-   "id": "gid://shopify/Product/9779333333259",
-   "handle": "varsity-sweatshirt",
-   "title": "Varsity Sweatshirt",
-   "vendor": "NineTees",
-   "type": "Sweatshirts",
-   "tags": [
-    "Britpop",
-    "NineTees",
-    "Sweatshirts",
-    "Unisex"
-   ],
-   "gender": "Unisex",
-   "colour": "Navy",
-   "descriptionHtml": "<p>Loopback cotton sweatshirt in navy with a raised red collegiate chest print and ribbed hem. All the people.</p><ul>\n<li>\n<strong>Colour:</strong> Navy</li>\n<li>\n<strong>Fit:</strong> Unisex sizing, XS to 2XL. Relaxed through the body.</li>\n<li>\n<strong>Care:</strong> Machine wash cold. Do not tumble dry.</li>\n<li>\n<strong>Style code:</strong> 90S-046</li>\n</ul>",
-   "description": "Loopback cotton sweatshirt in navy with a raised red collegiate chest print and ribbed hem. All the people.",
-   "price": 60.0,
-   "priceMax": 60.0,
-   "createdAt": "2025-03-06T16:22:56Z",
-   "newIn": false,
-   "options": [
-    {
-     "name": "Size",
-     "values": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL"
-     ]
-    }
-   ],
-   "images": [
-    {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/BaggySweatshirt.png?v=1749751272",
-     "alt": "Varsity Sweatshirt",
-     "width": 1024,
-     "height": 1024
-    }
-   ],
-   "variants": [
-    {
-     "id": "gid://shopify/ProductVariant/53373130735883",
-     "sku": "90S-046-XS",
-     "title": "XS",
-     "price": 60.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 91,
-     "options": {
-      "Size": "XS"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373130768651",
-     "sku": "90S-046-S",
-     "title": "S",
-     "price": 60.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 78,
-     "options": {
-      "Size": "S"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373130801419",
-     "sku": "90S-046-M",
-     "title": "M",
-     "price": 60.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 94,
-     "options": {
-      "Size": "M"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/49635497607435",
-     "sku": "90S-046",
-     "title": "L",
-     "price": 60.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 86,
-     "options": {
-      "Size": "L"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373130834187",
-     "sku": "90S-046-XL",
-     "title": "XL",
-     "price": 60.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 16,
-     "options": {
-      "Size": "XL"
-     }
-    },
-    {
-     "id": "gid://shopify/ProductVariant/53373130866955",
-     "sku": "90S-046-2XL",
-     "title": "2XL",
-     "price": 60.0,
-     "compareAtPrice": null,
-     "available": true,
-     "quantity": 18,
-     "options": {
-      "Size": "2XL"
-     }
-    }
-   ],
-   "collections": [
-    "men",
-    "women",
     "the-britpop-edit"
    ]
   },
@@ -8390,8 +8702,26 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/PlatformSandals.jpg?v=1755688728",
-     "alt": "Wannabe Platform Sandals",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_e0fbfe46-e630-4b8b-8fa6-0f4e648cdaf2.png?v=1789765755",
+     "alt": "Wannabe Platform Sandals - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_0d5051b9-5799-473f-a246-7eadaf85bc5c.png?v=1789765758",
+     "alt": "Wannabe Platform Sandals - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_e28f9185-a392-490e-ba65-6e9b7897cbf5.png?v=1789765759",
+     "alt": "Wannabe Platform Sandals - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_0b8cbf2a-0a0f-4d97-9e8c-3c088f28a17a.png?v=1789765763",
+     "alt": "Wannabe Platform Sandals - detail",
      "width": 1024,
      "height": 1536
     }
