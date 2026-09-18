@@ -53,9 +53,9 @@ export default function BagDrawer() {
           <div className="drawer__foot">
             <div className="totals"><span>Subtotal</span><span>{money(subtotal)}</span></div>
             <p className="small">Delivery and any discounts are worked out at checkout. Free UK delivery over £75.</p>
-            {!canCheckout && <div className="alert">Checkout is not switched on for this preview yet.</div>}
+            {!canCheckout && <div className="alert">Checkout is temporarily unavailable. Please try again in a few minutes.</div>}
             {checkoutError && <div className="alert">{checkoutError}</div>}
-            <p className="small">Checkout is handled securely by Shopify. Test orders only: nothing is charged and nothing is shipped.</p>
+            <p className="small">Secure checkout. Free UK delivery over £75 and free returns within 28 days.</p>
             <button type="button" className="btn btn--full" disabled={!canCheckout || checkingOut} onClick={checkout}>
               {checkingOut ? 'Taking you to checkout…' : 'Checkout'}
             </button>

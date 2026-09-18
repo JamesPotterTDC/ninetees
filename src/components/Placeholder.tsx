@@ -13,14 +13,14 @@ function swatch(colour: string | null) {
 }
 function hue(s: string) { let h = 0; for (const ch of s) h = (h * 31 + ch.charCodeAt(0)) % 360; return h }
 
-/** Designed stand-in for products still waiting on photography. */
+/** Designed stand-in for products without photography. */
 export default function Placeholder({ product, compact = false }: { product: Product; compact?: boolean }) {
   const h = hue(product.handle)
   return (
-    <div className="ph" style={{ background: `linear-gradient(160deg, hsl(${h} 25% 92%), hsl(${(h + 40) % 360} 30% 84%))` }} aria-label={`${product.title} image coming soon`}>
+    <div className="ph" style={{ background: `linear-gradient(160deg, hsl(${h} 25% 92%), hsl(${(h + 40) % 360} 30% 84%))` }} aria-label={product.title}>
       <div className="ph__type" style={compact ? { fontSize: 'clamp(28px, 6vw, 56px)' } : undefined}>{product.type}</div>
       <span className="ph__swatch" style={{ background: swatch(product.colour) }} />
-      {!compact && <div className="ph__title">{product.title}<small>Photography coming soon</small></div>}
+      {!compact && <div className="ph__title">{product.title}<small>{product.colour ?? product.type}</small></div>}
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { config } from '../config'
 import { usePageMeta } from '../lib/usePageMeta'
+import { money } from '../lib/format'
 
 const SECTIONS: [string, string][] = [
   ['delivery', 'Delivery'], ['returns', 'Returns'], ['sizing', 'Size guide'],
@@ -12,13 +13,15 @@ const UNISEX = [['XS', '34-36', '28-30'], ['S', '36-38', '30-32'], ['M', '38-40'
 const WOMEN = [['UK 6', '31', '24', '34'], ['UK 8', '32', '25', '35'], ['UK 10', '34', '27', '37'], ['UK 12', '36', '29', '39'], ['UK 14', '38', '31', '41'], ['UK 16', '40', '33', '43']]
 const SHOES = [['2', '35'], ['3', '36'], ['4', '37'], ['5', '38'], ['6', '39'], ['7', '40.5'], ['8', '42'], ['9', '43'], ['10', '44.5'], ['11', '46'], ['12', '47']]
 
+const d = config.delivery
 const FAQ: [string, string][] = [
-  ['Are the clothes real?', `No. ${config.brand.name} is a demonstration brand. The photography is generated, the stock is imaginary and the nostalgia is entirely genuine.`],
-  ['Will I be charged?', 'No. Every order is a test order. Nothing is charged and nothing is shipped. The order exists to show how the shop, the warehouse and the stock system talk to each other.'],
-  ['What happens after I order?', 'Your order lands in a real warehouse system within a minute or two, where it is picked, packed and marked as despatched on screen. Then, because none of it is real, nothing turns up.'],
-  ['Why does the checkout look like Shopify?', 'Because it is Shopify. The shop front is ours, the till is theirs. It is the same checkout a real independent label would use.'],
-  ['Do you ship outside the UK?', 'UK only, in the story. Everywhere else can wait for the reunion tour.'],
+  ['Where is my order?', `Once it leaves the warehouse you get an email with a tracking link, and the same link sits in your order confirmation. Orders placed before ${d.cutoffHour - 12}pm on a working day are despatched the same day. If nothing has arrived within five working days, email us with your order number and we will chase it.`],
+  ['Can I change or cancel an order?', 'If it has not been picked yet, yes. Reply to your confirmation email straight away and we will catch it. Once it has left the warehouse, the easiest route is to return it when it lands.'],
+  ['Will you restock sold-out sizes?', 'Usually. We make in small runs and restock what sells rather than discontinuing lines, so a missing size normally comes back within a few weeks. Sign up to the mailing list to hear first.'],
+  ['Do you have a shop?', `One, in ${config.brand.city}. ${config.contact.address.join(', ')}, open ${config.contact.shopHours}. Everything on the site is on the rail there too.`],
+  ['Do you ship outside the UK?', 'Not yet. UK only for now, including Northern Ireland, the Highlands and the islands at the same rate. Sign up to the newsletter to hear when that changes.'],
   ['What size am I?', 'Check the size guide above. If you are between sizes, go up. The nineties were never about a close fit.'],
+  ['How do I look after it?', 'Cold wash, inside out, hang to dry. Denim as little as you can get away with. Anything with a print, no tumble dryer, ever.'],
 ]
 
 function Table({ head, rows }: { head: string[]; rows: string[][] }) {
@@ -45,15 +48,15 @@ export default function Help() {
           <p>Everything you need before you order, and a few things you did not ask about. If you are after the story behind the brand, that is over on <Link to="/about" className="link">Our story</Link>.</p>
 
           <h2 id="delivery">Delivery</h2>
-          <p>Everything ships from our warehouse in Yorkshire. UK only.</p>
+          <p>Everything ships from our own warehouse in {config.brand.warehouse}. UK only, one price wherever you are.</p>
           <Table head={['Service', 'Cost', 'When it arrives']} rows={[
-            ['UK standard', '£3.95, free over £75', '2 to 4 working days'],
-            ['UK next day', '£6.95', 'Next working day if you order before 2pm, Monday to Friday'],
+            ['UK standard', `${money(d.standard)}, free over ${money(d.freeOver)}`, '2 to 4 working days'],
+            ['UK next day', money(d.nextDay), `Next working day if you order before ${d.cutoffHour - 12}pm, Monday to Friday`],
           ]} />
-          <p>You will get an email when your order is despatched, with tracking where the service supports it.</p>
+          <p>You will get an email when your order is despatched, with a tracking link. Standard orders go Royal Mail Tracked 48, next day goes DPD.</p>
 
           <h2 id="returns">Returns</h2>
-          <p>Free returns within 28 days of delivery. Unworn, unwashed and with the tags still on. Print a label from your order page and drop the parcel at any Post Office.</p>
+          <p>Free returns within {d.returnsDays} days of delivery. Unworn, unwashed and with the tags still on. Print a label from your order page and drop the parcel at any Post Office, or bring it into the shop.</p>
           <p>Refunds land within five working days of the parcel reaching us. If you need a different size, the quickest route is to order the new one and send the old one back.</p>
 
           <h2 id="sizing">Size guide</h2>
@@ -71,8 +74,8 @@ export default function Help() {
           <p>S/M fits up to 57cm around the head. L/XL fits 58cm and over. One Size fits most, which is what everyone says.</p>
 
           <h2 id="orders">Orders &amp; payment</h2>
-          <p>Every order placed here is a test order. Checkout is handled by Shopify, so it looks and behaves like the real thing, but nothing is charged and nothing is shipped.</p>
-          <p>Behind the till, the order flows straight into a live warehouse system where it is picked, packed and despatched on screen. Stock levels on the site are real numbers from that warehouse. If a size shows as low stock or sold out, that is because the warehouse says so.</p>
+          <p>We take {config.payments.slice(0, -1).join(', ')} and {config.payments.at(-1)}. Your card is charged when you place the order, and you can spread the cost over three payments on anything over £30.</p>
+          <p>Orders placed before {d.cutoffHour - 12}pm Monday to Friday are picked and packed the same day in {config.brand.warehouse}. Anything after that goes out the next working day. You get one email when the order is confirmed and another when it is on its way, with tracking. Stock on the site is live from the warehouse, so if a size shows as low or sold out, that is the real position.</p>
 
           <h2 id="faq">Questions</h2>
           <div className="acc">
@@ -82,7 +85,8 @@ export default function Help() {
           </div>
 
           <h2 id="contact">Contact</h2>
-          <p>There is no customer service team, because there are no customers. If someone sent you this link, they are your best bet for questions about the shop, the warehouse behind it or how the two talk to each other.</p>
+          <p>Email <a className="link" href={`mailto:${config.contact.email}`}>{config.contact.email}</a> or call <a className="link" href={`tel:${config.contact.phone.replace(/\s/g, '')}`}>{config.contact.phone}</a>, {config.contact.hours}. We usually reply within one working day, quicker if you include your order number.</p>
+          <p>{config.brand.legalName}<br />{config.contact.address.map((l) => <span key={l}>{l}<br /></span>)}</p>
           <p>Prefer to browse? <Link to="/collections/new-in" className="link">Start with what's new</Link>.</p>
         </div>
       </div>

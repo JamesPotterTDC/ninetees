@@ -39,9 +39,9 @@ export default function Bag() {
         <div className="totals"><span>Subtotal</span><span>{money(subtotal)}</span></div>
         <div className="totals" style={{ fontWeight: 400, color: 'var(--grey)' }}><span>Delivery</span><span>{subtotal >= 75 ? 'Free' : 'From £3.95'}</span></div>
         <p className="small">Taxes included. Delivery and discount codes are finalised at checkout.</p>
-        {!canCheckout && <div className="alert">Checkout is not switched on for this preview yet.</div>}
+        {!canCheckout && <div className="alert">Checkout is temporarily unavailable. Please try again in a few minutes.</div>}
         {checkoutError && <div className="alert">{checkoutError}</div>}
-        <p className="small">Checkout is handled securely by Shopify. Test orders only: nothing is charged and nothing is shipped.</p>
+        <p className="small">Secure checkout. Free UK delivery over £75 and free returns within 28 days.</p>
         <button type="button" className="btn btn--full" disabled={!canCheckout || checkingOut || lines.length === 0} onClick={checkout}>
           {checkingOut ? 'Taking you to checkout…' : 'Checkout'}
         </button>
