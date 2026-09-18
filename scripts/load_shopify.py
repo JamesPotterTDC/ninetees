@@ -89,7 +89,8 @@ def load(only=None):
     todo = [p for p in PRODUCTS if not only or p["sku"] in only]
     log = []
     for p in todo:
-        existing = idx.get(p["sku"])
+        # a product is "existing" if any of its variant SKUs is already in the store (new lines have no bare SKU)
+        existing = idx.get(p["sku"]) or next((idx[v["sku"]] for v in variants_for(p) if v["sku"] in idx), None)
         out = shop.gql(PRODUCT_SET, {"input": build_input(p, existing, idx)})
         res = (out.get("data") or {}).get("productSet") or {}
         errs = res.get("userErrors") or out.get("errors")
