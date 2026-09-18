@@ -83,9 +83,10 @@ main { flex: 1; }
 .hero--photo { background: var(--ink); color: var(--bone); min-height: min(88vh, 920px); display: grid; align-items: end; }
 .hero--photo::before { display: none; }
 .hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
-.hero__shade { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,11,.88) 0%, rgba(10,10,11,.45) 42%, rgba(10,10,11,.12) 75%, rgba(10,10,11,.25) 100%); }
-.hero__content { position: relative; padding-block: clamp(120px, 22vh, 220px) 56px; max-width: 760px; }
-.hero--photo h1 { font-size: clamp(64px, 10vw, 150px); color: var(--bone); margin-top: 16px; }
+.hero__shade { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,11,.9) 0%, rgba(10,10,11,.55) 38%, rgba(10,10,11,.1) 70%, rgba(10,10,11,.2) 100%), linear-gradient(to right, rgba(10,10,11,.35), transparent 60%); }
+.hero__content { position: relative; padding-block: clamp(120px, 24vh, 260px) 48px; }
+.hero__inner { max-width: 720px; }
+.hero--photo h1 { font-size: clamp(60px, 8.5vw, 124px); color: var(--bone); margin-top: 14px; }
 .hero--photo h1 .hl { color: var(--acid); }
 .hero--photo p { color: rgba(243,239,230,.86); }
 .hero--photo .hero__meta div { color: rgba(243,239,230,.7); }

@@ -18,6 +18,7 @@ function Hero() {
         alt="Four friends in NineTees clothing at a Manchester skate park" fetchPriority="high" />
       <div className="hero__shade" aria-hidden="true" />
       <div className="wrap hero__content">
+        <div className="hero__inner">
         <p className="eyebrow eyebrow--light">{config.brand.city} · Est. {config.brand.est} · Only ever the nineties</p>
         <h1 className="display">Britpop,<br /><span className="hl">reissued</span>.</h1>
         <p>Parkas, platforms, baby tees and baggy denim, cut the way they should have been the first time. Nineties UK fashion for people who were there, and people who wish they had been.</p>
@@ -29,6 +30,7 @@ function Hero() {
           <div><strong>{products.length}</strong>pieces, one decade</div>
           <div><strong>UK 2–12</strong>footwear sizing</div>
           <div><strong>XS–2XL</strong>everything else</div>
+        </div>
         </div>
       </div>
     </section>
