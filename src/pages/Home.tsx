@@ -10,10 +10,11 @@ const TILES = ['women', 'men', 'the-britpop-edit', 'footwear', 'rave', 'accessor
 const STAPLES = ['wannabe-platform-sandals', 'supernova-shell-jacket', 'camden-denim-jacket', 'faux-leather-biker-jacket', 'big-beat-platform-trainers', 'tartan-kilt-mini', 'firestarter-shell-tracksuit', 'ripped-mum-jeans']
 
 function Hero() {
-  const src = config.brand.heroUrl
+  // Shopify's CDN will transcode the PNG master to a progressive JPEG, which is a tenth of the size.
+  const src = `${config.brand.heroUrl}&format=pjpg`
   return (
     <section className="hero hero--photo">
-      <img className="hero__img" src={img(src, 1800)} srcSet={`${img(src, 900)} 900w, ${img(src, 1400)} 1400w, ${img(src, 1800)} 1800w, ${img(src, 2400)} 2400w`} sizes="100vw"
+      <img className="hero__img" src={img(src, 1800)} srcSet={`${img(src, 900)} 900w, ${img(src, 1400)} 1400w, ${img(src, 1800)} 1800w`} sizes="100vw"
         alt="Four friends in NineTees clothing at a Manchester skate park" fetchPriority="high" />
       <div className="hero__shade" aria-hidden="true" />
       <div className="wrap hero__content">
