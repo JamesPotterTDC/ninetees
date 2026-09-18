@@ -1,0 +1,201 @@
+"""NineTees catalogue: the single source of truth for what the brand sells.
+
+Every product has a `sku` base. Existing Shopify/Helm lines keep their 90S-0xx SKU on the
+variant they already have (`existing_size` is that variant's size in the new scheme); every
+other size gets `<sku>-<suffix>`. New lines (051+) have no existing variant.
+"""
+
+VENDOR = "NineTees"
+
+# scheme -> (option names, list of option-value tuples, sku suffix builder)
+SCHEMES = {
+    "tops":          (["Size"],          [("XS",), ("S",), ("M",), ("L",), ("XL",), ("2XL",)]),
+    "womens":        (["Size"],          [("UK 6",), ("UK 8",), ("UK 10",), ("UK 12",), ("UK 14",), ("UK 16",)]),
+    "womens_bottoms":(["Size"],          [("UK 6",), ("UK 8",), ("UK 10",), ("UK 12",), ("UK 14",), ("UK 16",)]),
+    "mens_bottoms":  (["Waist", "Leg"],  [(w, l) for w in ("30", "32", "34", "36", "38") for l in ("30", "32", "34")]),
+    "womens_shoes":  (["UK Size"],       [(s,) for s in ("2", "3", "4", "5", "6", "7", "8", "9")]),
+    "mens_shoes":    (["UK Size"],       [(s,) for s in ("6", "7", "8", "9", "10", "11", "12")]),
+    "unisex_shoes":  (["UK Size"],       [(s,) for s in ("3", "4", "5", "6", "7", "8", "9", "10", "11", "12")]),
+    "hats":          (["Size"],          [("S/M",), ("L/XL",)]),
+    "one_size":      (["Size"],          [("One Size",)]),
+}
+
+def sku_suffix(scheme, values):
+    if scheme == "mens_bottoms":
+        return f"W{values[0]}L{values[1]}"
+    v = values[0]
+    return {"One Size": "OS", "S/M": "SM", "L/XL": "LXL"}.get(v, v.replace("UK ", "UK").replace(" ", ""))
+
+def variant_sku(base, scheme, values, existing_size):
+    """The existing variant keeps the bare SKU so Helm history stays attached."""
+    if existing_size is not None and tuple(existing_size) == tuple(values):
+        return base
+    return f"{base}-{sku_suffix(scheme, values)}"
+
+# fields: sku, handle, title, type, gender, scheme, existing_size (tuple or None), price, colour, desc, tags
+P = lambda *a: dict(zip(("sku","handle","title","type","gender","scheme","existing_size","price","colour","desc","tags"), a))
+
+PRODUCTS = [
+ P("90S-001","supernova-shell-jacket","Supernova Shell Jacket","Jackets","Unisex","tops",("M",),95,"Electric Blue / Acid Yellow",
+   "A lightweight cagoule cut for the festival field and the last bus home. Colour-blocked shell, half-zip neck, packable hood and a kangaroo pocket big enough for a disposable camera.",["Outerwear","Unisex","Festival","Madchester"]),
+ P("90S-002","camden-denim-jacket","Camden Denim Jacket","Jackets","Unisex","tops",("L",),110,"Stonewash",
+   "Boxy, stonewashed and built to be lived in. Classic trucker cut with copper hardware and a slightly dropped shoulder, made to be worn over a hoodie outside a Camden venue in the drizzle.",["Denim","Outerwear","Unisex"]),
+ P("90S-003","madchester-baggy-jeans","Madchester Baggy Jeans","Jeans","Men","mens_bottoms",("32","32"),85,"Bleach Wash",
+   "Wide from hip to hem with a proper amount of swagger. Heavyweight rigid denim in a bleach wash, five pockets and a leg that pools just so over your trainers.",["Denim","Men","Madchester"]),
+ P("90S-004","hacienda-tie-dye-tee","Hacienda Tie-Dye Tee","T-Shirts","Unisex","tops",("L",),32,"Sunset Swirl",
+   "Heavyweight cotton tee, hand-dyed in a sunset swirl so no two are the same. Relaxed fit, ribbed neck, and a small embroidered NineTees mark at the hem.",["Tees","Unisex","Rave"]),
+ P("90S-005","country-house-check-shirt","Country House Check Shirt","Shirts","Men","tops",("L",),65,"Rust & Forest Check",
+   "Brushed cotton flannel in a rust and forest check. Cut oversized to wear open over a tee with the sleeves shoved up. Britpop's unofficial uniform, tidied up.",["Shirts","Men","Britpop"]),
+ P("90S-006","pirate-radio-track-pants","Pirate Radio Track Pants","Trousers","Unisex","tops",("M",),58,"Black / Electric Blue",
+   "Straight-leg track pants in soft brushed jersey with a contrast side stripe and popper cuffs. Sit low, wear with anything, do not run in them.",["Trousers","Unisex","Sportswear"]),
+ P("90S-007","glastonbury-denim-dungarees","Glastonbury Denim Dungarees","Dungarees","Women","womens",("UK 12",),95,"Mid Wash",
+   "Relaxed mid-wash dungarees with adjustable straps, a bib pocket and a wide, cropped leg. Mud optional.",["Denim","Women","Festival"]),
+ P("90S-008","tartan-kilt-mini","Tartan Kilt Mini","Skirts","Women","womens",("UK 10",),55,"Red Tartan",
+   "A pleated red tartan mini with a wraparound front and a chunky leather-look buckle. Wear with knee socks and a bad attitude.",["Skirts","Women","Britpop"]),
+ P("90S-009","girl-power-baby-tee","Girl Power Baby Tee","T-Shirts","Women","tops",("S",),28,"Baby Pink",
+   "A fitted, cropped baby tee in ribbed cotton with a raised chenille GIRL POWER slogan. Cap sleeves, high neck, zero apologies.",["Tees","Women","Girl Power"]),
+ P("90S-010","crushed-velvet-scrunchie","Crushed Velvet Scrunchie","Accessories","Women","one_size",("One Size",),12,"Oxblood",
+   "Oversized scrunchie in crushed oxblood velvet. Sold singly, worn constantly.",["Accessories","Women"]),
+ P("90S-011","ripped-mum-jeans","Ripped Mum Jeans","Jeans","Women","womens_bottoms",("UK 10",),80,"Light Wash",
+   "High-rise, tapered and ripped at both knees in a light vintage wash. Rigid denim that softens with wear, cut to sit right on the waist.",["Denim","Women"]),
+ P("90S-012","big-beat-platform-trainers","Big Beat Platform Trainers","Footwear","Women","womens_shoes",("7",),110,"White / Silver",
+   "Chunky white leather platform trainers with a silver heel tab and a 5cm sole. Built for dancefloors and the queue outside.",["Footwear","Women","Rave"]),
+ P("90S-013","terrace-harrington-jacket","Terrace Harrington Jacket","Jackets","Men","tops",("L",),120,"Bottle Green",
+   "The classic Harrington in bottle green cotton with a tartan lining, elasticated cuffs and a stand collar. Neat, sharp and quietly menacing.",["Outerwear","Men","Britpop"]),
+ P("90S-014","reni-bucket-hat","Reni Bucket Hat","Hats","Unisex","hats",("S/M",),35,"Stone Cord",
+   "A wide-brim bucket hat in stone corduroy, lined and stitched to hold its shape. The hat that launched a thousand album covers.",["Hats","Unisex","Madchester"]),
+ P("90S-015","sleeveless-denim-gilet","Sleeveless Denim Gilet","Jackets","Unisex","tops",("M",),75,"Black Wash",
+   "A cropped, sleeveless denim jacket in a black wash with raw armholes. Layer over a long-sleeve tee or a hoodie and lean against something.",["Denim","Unisex"]),
+ P("90S-016","definitely-tour-tee","Definitely Tour Tee","T-Shirts","Unisex","tops",("L",),35,"Washed Black",
+   "Washed black tee with a full tour-date back print from a tour that never happened. Heavyweight, boxy, pre-faded.",["Tees","Unisex","Britpop"]),
+ P("90S-017","britpop-snapback","Britpop Snapback","Hats","Unisex","hats",("S/M",),32,"Navy",
+   "Structured six-panel cap in navy twill with a flat peak and an embroidered NineTees mark. Wear backwards at your own risk.",["Hats","Unisex"]),
+ P("90S-018","rave-tie-dye-hoodie","Rave Tie-Dye Hoodie","Hoodies","Unisex","tops",("M",),68,"Purple Haze",
+   "Heavyweight hoodie, spiral-dyed in purple and acid green. Oversized hood, kangaroo pocket, and a fit that swallows you whole.",["Hoodies","Unisex","Rave"]),
+ P("90S-019","firestarter-shell-tracksuit","Firestarter Shell Tracksuit","Tracksuits","Unisex","tops",("L",),130,"Purple / Teal",
+   "Full shell suit in crinkle nylon: zip-through jacket and matching elasticated bottoms in purple and teal. Rustles when you walk. That is the point.",["Sportswear","Unisex","Rave"]),
+ P("90S-020","superclub-mini-backpack","Superclub Mini Backpack","Bags","Women","one_size",("One Size",),45,"Patent Black",
+   "Tiny patent backpack with adjustable straps and a zipped front pocket. Fits a lipstick, a lighter and a phone from 1997.",["Accessories","Bags","Women"]),
+ P("90S-021","cycle-shorts","Cycle Shorts","Shorts","Women","womens",("UK 10",),30,"Black",
+   "High-waisted stretch cycle shorts in matte black. Wear under a slip dress, with an oversized shirt or on their own.",["Shorts","Women"]),
+ P("90S-022","roller-disco-tee","Roller Disco Tee","T-Shirts","Unisex","tops",("L",),32,"Cream",
+   "Cream cotton tee with a chunky retro roller-disco graphic in faded primaries. Relaxed fit, dropped shoulder.",["Tees","Unisex"]),
+ P("90S-023","ditsy-floral-babydoll-dress","Ditsy Floral Babydoll Dress","Dresses","Women","womens",("UK 8",),75,"Black Ditsy Floral",
+   "Empire-line babydoll dress in a black ditsy floral with a square neck and puffed cap sleeves. Bring a cardigan and some attitude.",["Dresses","Women"]),
+ P("90S-024","common-people-high-waist-shorts","Common People High-Waist Shorts","Shorts","Women","womens",("UK 10",),55,"Vintage Wash",
+   "High-rise denim shorts in a vintage wash with a rolled hem. Cut to sit at the waist and stop just where they should.",["Denim","Shorts","Women"]),
+ P("90S-025","sorted-neon-crop-top","Sorted Neon Crop Top","Tops","Women","womens",("UK 8",),28,"Acid Lime",
+   "Fitted acid-lime crop in a soft ribbed jersey with a scoop neck. Glows a bit under UV. Sorted.",["Tops","Women","Rave"]),
+ P("90S-026","disco-2000-velvet-crop","Disco 2000 Velvet Crop","Tops","Women","womens",("UK 10",),38,"Midnight Blue",
+   "Stretch velvet crop top in midnight blue with a high neck and long sleeves. For dancing badly, well.",["Tops","Women"]),
+ P("90S-027","five-a-side-shorts","Five-a-Side Shorts","Shorts","Men","tops",("L",),35,"Royal Blue",
+   "Lightweight woven football shorts in royal blue with a white contrast trim and a drawstring waist. Slightly too short, exactly as intended.",["Shorts","Men","Sportswear"]),
+ P("90S-028","slacker-oversized-jumper","Slacker Oversized Jumper","Knitwear","Unisex","tops",("L",),85,"Oatmeal",
+   "A heavy, oversized crew-neck jumper in an oatmeal wool blend with dropped shoulders and ribbed cuffs. Slouches beautifully.",["Knitwear","Unisex"]),
+ P("90S-029","ribbed-beanie","Ribbed Beanie","Hats","Unisex","hats",("S/M",),25,"Charcoal",
+   "Chunky ribbed beanie in charcoal with a folded cuff. Roll it high or pull it low.",["Hats","Unisex"]),
+ P("90S-030","bandana-print-cami","Bandana Print Cami","Tops","Women","womens",("UK 8",),32,"Black Paisley",
+   "Bias-cut cami in a black paisley bandana print with skinny adjustable straps. Cool as anything.",["Tops","Women"]),
+ P("90S-031","roll-with-it-denim-jacket","Roll With It Denim Jacket","Jackets","Unisex","tops",("L",),115,"Dark Indigo",
+   "An oversized dark-indigo denim jacket with a drop shoulder, oversized chest pockets and a wide body. Wear it like a coat.",["Denim","Outerwear","Unisex","Britpop"]),
+ P("90S-032","mesh-long-sleeve-crop","Mesh Long-Sleeve Crop","Tops","Women","womens",("UK 8",),30,"Black",
+   "Sheer black mesh long-sleeve crop with a high neck and thumbholes. Layer it or don't.",["Tops","Women","Rave"]),
+ P("90S-033","faux-leather-biker-jacket","Faux Leather Biker Jacket","Jackets","Women","womens",("UK 10",),140,"Black",
+   "Cropped biker in a soft matte faux leather with an asymmetric zip, belted hem and quilted shoulders. Heavyweight hardware, lightweight conscience.",["Outerwear","Women"]),
+ P("90S-034","studded-leather-belt","Studded Leather Belt","Accessories","Unisex","one_size",("One Size",),40,"Black",
+   "Black leather belt with pyramid studs and a matte silver buckle. Slung low.",["Accessories","Unisex"]),
+ P("90S-035","bum-bag","Bum Bag","Bags","Unisex","one_size",("One Size",),38,"Black Nylon",
+   "Boxy nylon bum bag with two zipped compartments and a clip-fasten waist strap. Wear it cross-body if you must.",["Accessories","Bags","Unisex","Festival"]),
+ P("90S-036","neon-leggings","Neon Leggings","Leggings","Women","womens",("UK 10",),32,"Electric Pink",
+   "High-waisted leggings in a matte electric pink stretch jersey. Aerobics class not included.",["Leggings","Women","Sportswear"]),
+ P("90S-037","bittersweet-satin-slip-dress","Bittersweet Satin Slip Dress","Dresses","Women","womens",("UK 8",),85,"Champagne",
+   "Bias-cut satin slip in champagne with a cowl neck and adjustable spaghetti straps. Wear over a white tee, or absolutely not.",["Dresses","Women","Britpop"]),
+ P("90S-038","ska-check-mini-skirt","Ska Check Mini Skirt","Skirts","Women","womens",("UK 10",),50,"Black / White Check",
+   "A-line mini in a bold black-and-white checkerboard with a hidden side zip. Two-tone, one purpose.",["Skirts","Women"]),
+ P("90S-039","wannabe-platform-sandals","Wannabe Platform Sandals","Footwear","Women","womens_shoes",("6",),95,"Black",
+   "Chunky black platform sandals with a 7cm sole, buckled straps and a padded footbed. Zig-a-zig-ah.",["Footwear","Women","Girl Power"]),
+ P("90S-040","bootcut-flares","Bootcut Flares","Jeans","Women","womens_bottoms",("UK 12",),85,"Dark Indigo",
+   "Mid-rise, hip-hugging bootcut flares in dark indigo stretch denim. Long enough to catch on your heels.",["Denim","Women"]),
+ P("90S-041","roll-neck-jumper","Roll Neck Jumper","Knitwear","Men","tops",("M",),80,"Black",
+   "Fine-knit merino roll neck in black. Wear it under a Harrington, or a suit, or nothing else.",["Knitwear","Men","Britpop"]),
+ P("90S-042","tie-dye-bucket-hat","Tie-Dye Bucket Hat","Hats","Unisex","hats",("S/M",),32,"Blue Swirl",
+   "Cotton bucket hat, spiral-dyed in blues and whites. No two the same.",["Hats","Unisex","Rave","Festival"]),
+ P("90S-043","fishnet-gloves","Fishnet Gloves","Accessories","Women","one_size",("One Size",),14,"Black",
+   "Fingerless fishnet gloves in black. For the goth-adjacent.",["Accessories","Women"]),
+ P("90S-044","puffa-jacket","Puffa Jacket","Jackets","Unisex","tops",("L",),150,"Black",
+   "A big, glossy black puffa with a high collar, storm cuffs and a satin-feel lining. Warm enough for a February queue.",["Outerwear","Unisex"]),
+ P("90S-045","breton-stripe-long-sleeve","Breton Stripe Long Sleeve","Tops","Unisex","tops",("M",),45,"Navy / Ecru",
+   "Long-sleeve tee in a heavyweight navy and ecru Breton stripe with a boat neck. Effortless, allegedly.",["Tops","Unisex"]),
+ P("90S-046","parklife-sweatshirt","Parklife Sweatshirt","Sweatshirts","Unisex","tops",("L",),60,"Heather Grey",
+   "Loopback cotton sweatshirt in heather grey with a raised PARKLIFE chest print and ribbed hem. All the people.",["Sweatshirts","Unisex","Britpop"]),
+ P("90S-047","shell-track-top","Shell Track Top","Jackets","Unisex","tops",("M",),85,"Red / Navy / White",
+   "Zip-through track top in colour-blocked crinkle nylon with a contrast collar and mesh lining. Sounds like a crisp packet, looks like a legend.",["Sportswear","Unisex"]),
+ P("90S-048","smiley-graphic-tee","Smiley Graphic Tee","T-Shirts","Unisex","tops",("L",),32,"Acid Yellow",
+   "Acid-yellow cotton tee with an oversized smiley chest print. The second summer of love, on repeat.",["Tees","Unisex","Rave"]),
+ P("90S-049","acid-wash-jeans","Acid Wash Jeans","Jeans","Men","mens_bottoms",("32","32"),85,"Acid Wash",
+   "Straight-leg rigid jeans in a proper marbled acid wash. Five pockets, button fly and a slightly tapered leg.",["Denim","Men"]),
+ P("90S-050","denim-mini-skirt","Denim Mini Skirt","Skirts","Women","womens",("UK 8",),50,"Mid Wash",
+   "A-line denim mini in a mid wash with a frayed hem and front button fly. Sits high, stops short.",["Denim","Skirts","Women"]),
+ # ---- new lines ----
+ P("90S-051","fishtail-mod-parka","Fishtail Mod Parka","Jackets","Men","tops",None,180,"Olive",
+   "Heavyweight olive fishtail parka with a faux-fur trimmed hood, drawstring waist and quilted lining. The original and best.",["Outerwear","Men","Britpop","Mod","New In"]),
+ P("90S-052","tipped-knit-polo","Tipped Knit Polo","Polos","Men","tops",None,65,"Black / Champagne",
+   "Slim-fit pique polo in black with twin champagne tipping on the collar and cuffs. Buttoned to the top, obviously.",["Polos","Men","Britpop","Mod","New In"]),
+ P("90S-053","cool-britannia-bomber","Cool Britannia Bomber","Jackets","Unisex","tops",None,125,"Navy",
+   "Satin bomber in navy with a Union Jack lining, ribbed cuffs and a zip-through front. Best worn with the collar up.",["Outerwear","Unisex","Britpop","New In"]),
+ P("90S-054","suede-terrace-trainers","Suede Terrace Trainers","Footwear","Men","mens_shoes",None,90,"Navy Suede",
+   "Low-profile suede trainers in navy with a white gum sole and a serrated side stripe. Terrace-approved.",["Footwear","Men","Britpop","New In"]),
+ P("90S-055","chunky-lace-up-boots","Chunky Lace-Up Boots","Footwear","Unisex","unisex_shoes",None,140,"Black",
+   "Eight-eyelet leather boots in black with a chunky cleated sole and yellow contrast stitching. Break them in, then never take them off.",["Footwear","Unisex","Grunge","New In"]),
+ P("90S-056","classic-leather-trainers","Classic Leather Trainers","Footwear","Women","womens_shoes",None,85,"White",
+   "Clean white leather trainers with a soft padded collar and a gum sole. Goes with every single thing on this site.",["Footwear","Women","New In"]),
+ P("90S-057","cargo-trousers","Cargo Trousers","Trousers","Men","mens_bottoms",None,75,"Khaki",
+   "Wide-leg cargo trousers in khaki ripstop with six pockets and a drawstring hem. Pockets for days.",["Trousers","Men","New In"]),
+ P("90S-058","combat-trousers","Combat Trousers","Trousers","Women","womens_bottoms",None,70,"Black",
+   "Low-rise combat trousers in black cotton twill with side cargo pockets and a wide leg. Wear with a tiny top.",["Trousers","Women","New In"]),
+ P("90S-059","union-jack-tee","Union Jack Tee","T-Shirts","Unisex","tops",None,32,"White",
+   "White heavyweight tee with a distressed Union Jack chest print. Pair with a guitar you can't play.",["Tees","Unisex","Britpop","New In"]),
+ P("90S-060","common-people-cardigan","Common People Cardigan","Knitwear","Unisex","tops",None,85,"Mustard",
+   "Chunky-knit cardigan in mustard with oversized buttons and a shawl collar. Charity shop chic, without the smell.",["Knitwear","Unisex","Britpop","New In"]),
+ P("90S-061","corduroy-chore-jacket","Corduroy Chore Jacket","Jackets","Men","tops",None,110,"Tobacco",
+   "Chore jacket in tobacco corduroy with three patch pockets and a corozo button front. Indie disco after-dark uniform.",["Outerwear","Men","Britpop","New In"]),
+ P("90S-062","velour-tracksuit","Velour Tracksuit","Tracksuits","Women","womens",None,120,"Baby Blue",
+   "Zip-through velour hoodie and matching flared bottoms in baby blue. Soft, slouchy and a bit much.",["Sportswear","Women","New In"]),
+ P("90S-063","popper-track-pants","Popper Track Pants","Trousers","Unisex","tops",None,60,"Black / White",
+   "Straight-leg track pants in black with a white side stripe and full-length poppers down each leg. Tear-away optional.",["Trousers","Unisex","Sportswear","New In"]),
+ P("90S-064","skate-shoes","Skate Shoes","Footwear","Unisex","unisex_shoes",None,75,"Black Suede",
+   "Chunky suede skate shoes in black with a padded tongue, fat laces and a vulcanised sole. Made for the car park.",["Footwear","Unisex","Skate","New In"]),
+ P("90S-065","wide-leg-skater-jeans","Wide-Leg Skater Jeans","Jeans","Men","mens_bottoms",None,85,"Raw Indigo",
+   "Extra-wide skater jeans in raw indigo denim with a long inseam and reinforced knees. Yes, they drag.",["Denim","Men","Skate","New In"]),
+ P("90S-066","velvet-choker","Velvet Choker","Accessories","Women","one_size",None,12,"Black",
+   "Black stretch velvet choker with a small silver charm. The nineties in a single centimetre.",["Accessories","Women","New In"]),
+ P("90S-067","chunky-digital-watch","Chunky Digital Watch","Accessories","Unisex","one_size",None,45,"Clear Jelly",
+   "Oversized digital watch in a clear jelly case with a backlight and a rubber strap. Beeps on the hour whether you like it or not.",["Accessories","Unisex","New In"]),
+ P("90S-068","wraparound-sport-shades","Wraparound Sport Shades","Accessories","Unisex","one_size",None,35,"Black / Blue Mirror",
+   "Wraparound sunglasses with a blue mirror lens and a matte black frame. Look faster than you are.",["Accessories","Unisex","Sportswear","New In"]),
+ P("90S-069","retro-football-shirt","Retro Football Shirt","T-Shirts","Men","tops",None,55,"Grey / Indigo",
+   "Retro-cut football shirt in a grey and indigo pattern with a collar and a lace-up placket. Think summer '96.",["Tees","Men","Sportswear","Britpop","New In"]),
+ P("90S-070","twinset-cardigan-and-cami","Twinset Cardigan & Cami","Knitwear","Women","womens",None,75,"Lilac",
+   "Fine-knit lilac cardigan and matching cami in a soft cotton blend. Buttoned all the way or not at all.",["Knitwear","Women","Britpop","New In"]),
+]
+
+def variants_for(p):
+    names, combos = SCHEMES[p["scheme"]]
+    out = []
+    for values in combos:
+        out.append({
+            "options": dict(zip(names, values)),
+            "sku": variant_sku(p["sku"], p["scheme"], values, p["existing_size"]),
+            "is_existing": p["existing_size"] is not None and tuple(p["existing_size"]) == tuple(values),
+        })
+    return out
+
+if __name__ == "__main__":
+    total = 0
+    for p in PRODUCTS:
+        vs = variants_for(p)
+        total += len(vs)
+        assert p["existing_size"] is None or any(v["is_existing"] for v in vs), f"{p['sku']} existing size not in scheme"
+    assert len({p["sku"] for p in PRODUCTS}) == len(PRODUCTS)
+    assert len({p["handle"] for p in PRODUCTS}) == len(PRODUCTS)
+    print(f"{len(PRODUCTS)} products, {total} variants; all existing sizes valid")
