@@ -1,12 +1,15 @@
 import { Link } from 'react-router-dom'
 import { img, type Product } from '../lib/catalogue'
 import { money } from '../lib/format'
+import { ratingFor } from '../lib/reviews'
 import Placeholder from './Placeholder'
+import Stars from './Stars'
 
 export default function ProductCard({ product, eager = false }: { product: Product; eager?: boolean }) {
   const [a, b] = product.images
   const soldOut = !product.variants.some((v) => v.available)
   const from = product.priceMax > product.price
+  const rating = ratingFor(product)
   return (
     <Link to={`/products/${product.handle}`} className="card">
       <div className="card__media">
@@ -23,6 +26,7 @@ export default function ProductCard({ product, eager = false }: { product: Produ
         <div className="card__title">{product.title}</div>
         <div className="card__price">{from ? 'From ' : ''}{money(product.price)}</div>
         <div className="card__meta">{product.type}{product.colour ? ` · ${product.colour}` : ''}</div>
+        {rating.count > 0 && <div className="card__rating"><Stars rating={rating.average} size={11} /><span>({rating.count})</span></div>}
       </div>
     </Link>
   )

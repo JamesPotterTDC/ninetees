@@ -3,11 +3,17 @@ import { Link } from 'react-router-dom'
 import Ticker from '../components/Ticker'
 import ProductGrid from '../components/ProductGrid'
 import ProductCard from '../components/ProductCard'
+import Stars from '../components/Stars'
 import { collectionByHandle, collectionCover, img, newIn, productByHandle, products, productsInCollection } from '../lib/catalogue'
+import { featuredReviews, siteStats } from '../lib/reviews'
 import { config } from '../config'
 import { usePageMeta } from '../lib/usePageMeta'
 
 const TILES = ['women', 'men', 'the-britpop-edit', 'footwear', 'rave', 'accessories']
+const WEARING: [string, string, string][] = [
+  ['wannabe-platform-sandals', '@sophie.rae', 'Manchester'], ['camden-denim-jacket', '@dan_hartley', 'Leeds'], ['supernova-shell-jacket', '@priya.kaur', 'Glasgow'],
+  ['tartan-kilt-mini', '@bex.tomlinson', 'Sheffield'], ['big-beat-platform-trainers', '@callum.m', 'Liverpool'], ['firestarter-shell-tracksuit', '@aisha.b', 'Bristol'],
+]
 const STAPLES = ['fishtail-mod-parka', 'bittersweet-satin-slip-dress', 'tipped-knit-polo', 'wannabe-platform-sandals', 'breton-stripe-long-sleeve', 'bootcut-flares', 'suede-terrace-trainers', 'puffa-jacket']
 
 function Hero() {
@@ -32,6 +38,63 @@ function Hero() {
           <div><strong>UK 2–12</strong>footwear sizing</div>
           <div><strong>XS–2XL</strong>unisex sizing</div>
         </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function Trust() {
+  const stats = siteStats()
+  const d = config.delivery
+  return (
+    <div className="wrap trust">
+      <div>Free UK delivery over £{d.freeOver}</div>
+      <div>Free returns within {d.returnsDays} days</div>
+      <div>Same-day despatch before {d.cutoffHour - 12}pm</div>
+      <div><Stars rating={stats.average} size={12} /> {stats.average.toFixed(1)} from {stats.count.toLocaleString('en-GB')} reviews</div>
+    </div>
+  )
+}
+
+function Voices() {
+  const picks = featuredReviews(3)
+  return (
+    <section className="section section--tight">
+      <div className="wrap">
+        <div className="section__head">
+          <div><p className="eyebrow">Reviews</p><h2 className="display">Don't take our word for it</h2></div>
+        </div>
+        <div className="voices">
+          {picks.map(({ review, product }) => (
+            <article className="voice" key={review.id}>
+              <Stars rating={review.rating} size={14} />
+              <blockquote>“{review.body}”</blockquote>
+              <p className="voice__who">{review.name}, {review.place} · <Link to={`/products/${product.handle}`}>{product.title}</Link></p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function Wearing() {
+  const tiles = WEARING.map(([h, who, where]) => ({ p: productByHandle(h), who, where })).filter((t) => t.p?.images.length)
+  return (
+    <section className="section section--tight" id="wearing">
+      <div className="wrap">
+        <div className="section__head">
+          <div><p className="eyebrow">#ninetees</p><h2 className="display">Wearing NineTees</h2></div>
+          <p>Tag us on Instagram or TikTok and we will put you here.</p>
+        </div>
+        <div className="gallery-grid">
+          {tiles.map(({ p, who, where }) => (
+            <Link to={`/products/${p!.handle}`} className="ugc" key={p!.handle}>
+              <img src={img(p!.images[0].url, 600)} alt={`${who} wearing the ${p!.title}`} loading="lazy" />
+              <span className="ugc__cap">{who} · {where}</span>
+            </Link>
+          ))}
         </div>
       </div>
     </section>
@@ -92,7 +155,7 @@ function Story() {
         <div className="story">
           <article><div className="num">01</div><h3>Only the nineties</h3><p>We never sold anything from any other decade and we are not about to start. If it wasn't on Top of the Pops, it isn't on the rail.</p></article>
           <article><div className="num">02</div><h3>Cut for now</h3><p>The shapes are faithful. The fabrics, fits and sizing are not stuck in 1996. Heavyweight cottons, proper denim, real size ranges.</p></article>
-          <article><div className="num">03</div><h3>Made in the North</h3><p>Designed in {config.brand.city}, packed in Yorkshire, and shipped in a box you will want to keep.</p></article>
+          <article><div className="num">03</div><h3>Made in the North</h3><p>Designed in {config.brand.city}, picked and packed in our own {config.brand.warehouse} warehouse, and shipped in a box you will want to keep.</p></article>
         </div>
       </div>
     </section>
@@ -130,6 +193,7 @@ export default function Home() {
     <>
       <Hero />
       <Ticker />
+      <Trust />
       <Tiles />
       <section className="section section--tight">
         <div className="wrap">
@@ -141,6 +205,7 @@ export default function Home() {
         </div>
       </section>
       <Britpop />
+      <Voices />
       <section className="section section--tight">
         <div className="wrap">
           <div className="section__head">
@@ -151,6 +216,7 @@ export default function Home() {
         </div>
       </section>
       <Story />
+      <Wearing />
       <Newsletter />
     </>
   )
