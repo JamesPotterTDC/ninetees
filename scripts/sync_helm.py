@@ -97,7 +97,7 @@ def main():
             else: results["errors"].append((sku, "barcode", s, str(j)[:120]))
             q = qty_by_sku.get(sku, 0)
             s, j = call("GET", f"/companies/{C}/inventory/{iid}/stocks")
-            if q > 0 and s == 200 and not j.get("data"):
+            if q > 0 and s == 200 and not (j.get("data") if isinstance(j, dict) else j):
                 s, j = call("POST", f"/companies/{C}/inventory/{iid}/stocks/bulk-create", {"stocks": [{"location_id": LOCATION, "quantity": q}]})
                 if s in (200, 201, 204): results["stock"] += 1
                 else: results["errors"].append((sku, "stock", s, str(j)[:120]))
