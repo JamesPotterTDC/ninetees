@@ -1,0 +1,54 @@
+name: Refresh catalogue
+# Re-exports the Shopify catalogue daily. If anything other than the timestamp changed, the new
+# export is committed and the site is rebuilt and deployed from that commit.
+on:
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: refresh-catalogue
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.diff.outputs.changed }}
+      sha: ${{ steps.push.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Export catalogue from Shopify
+        env:
+          SHOPIFY_STORE: jamesinternaltesting.myshopify.com
+          SHOPIFY_ADMIN_TOKEN: ${{ secrets.SHOPIFY_ADMIN_TOKEN }}
+        run: python3 scripts/export_catalogue.py
+      - name: Did anything change besides the timestamp?
+        id: diff
+        run: |
+          if git diff --quiet -I '"generatedAt"' -- src/data/catalogue.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"; echo "No catalogue changes."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"; git --no-pager diff --stat -- src/data/catalogue.json
+          fi
+      - name: Commit and push the new export
+        id: push
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/catalogue.json
+          git commit -m "Refresh catalogue export from Shopify"
+          git push
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+  deploy:
+    needs: refresh
+    if: needs.refresh.outputs.changed == 'true'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/deploy.yml
+    with:
+      ref: ${{ needs.refresh.outputs.sha }}

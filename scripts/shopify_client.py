@@ -1,11 +1,19 @@
-"""Minimal Shopify Admin GraphQL client. Credentials come from ~/.config/helm/shopify-ninetees.env."""
+"""Minimal Shopify Admin GraphQL client. Credentials come from ~/.config/helm/shopify-ninetees.env, or from
+SHOPIFY_STORE / SHOPIFY_ADMIN_TOKEN in the environment (used by the catalogue refresh workflow)."""
 import json, os, time, urllib.request, urllib.error
 
 ENV_PATH = os.path.expanduser("~/.config/helm/shopify-ninetees.env")
 API_VERSION = "2025-07"
 
+KEYS = ("SHOPIFY_STORE", "SHOPIFY_ADMIN_TOKEN", "SHOPIFY_STOREFRONT_TOKEN", "SHOPIFY_CLIENT_ID", "SHOPIFY_CLIENT_SECRET")
+
 def load_env():
-    return dict(l.strip().split("=", 1) for l in open(ENV_PATH) if "=" in l)
+    """The local env file, with real environment variables taking precedence (that is how CI supplies them)."""
+    env = {}
+    if os.path.exists(ENV_PATH):
+        env = dict(l.strip().split("=", 1) for l in open(ENV_PATH) if "=" in l and not l.startswith("#"))
+    env.update({k: os.environ[k] for k in KEYS if os.environ.get(k)})
+    return env
 
 class Shopify:
     def __init__(self):
