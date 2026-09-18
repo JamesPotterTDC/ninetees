@@ -40,10 +40,14 @@ export function related(p: Product, n = 4): Product[] {
 /** Shopify CDN images accept a width parameter; use it rather than shipping 1024px thumbnails. */
 export const img = (url: string, width: number) => `${url}${url.includes('?') ? '&' : '?'}width=${width}`
 
-/** A stable "hero" product for a collection tile: first with an image, prefer new-in. */
-export function collectionCover(handle: string): Product | undefined {
-  const list = productsInCollection(handle).filter((p) => p.images.length)
-  return list.find((p) => p.newIn) ?? list[0]
+/** Cover product for a collection tile: gender-matched where the collection is gendered, photographed
+ *  sets first, and never a product already used by another tile. */
+export function collectionCover(handle: string, exclude: Set<string> = new Set()): Product | undefined {
+  const want = handle === 'women' ? 'Women' : handle === 'men' ? 'Men' : null
+  const rank = (p: Product) => (want && p.gender === want ? 4 : 0) + (p.images.length > 1 ? 2 : 0) + (p.newIn ? 1 : 0)
+  return productsInCollection(handle)
+    .filter((p) => p.images.length && !exclude.has(p.handle))
+    .sort((a, b) => rank(b) - rank(a))[0]
 }
 
 export const allSizes = (list: Product[]) => {

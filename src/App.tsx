@@ -41,8 +41,9 @@ export default function App() {
       {/* While the bag is open the rest of the page is inert, so keyboard focus stays inside the drawer. */}
       <div className="site" inert={open}>
         <ScrollToTop />
+        <a className="skip" href="#main">Skip to content</a>
         <Header />
-        <main id="main">
+        <main id="main" tabIndex={-1}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/collections/:handle" element={<Collection />} />

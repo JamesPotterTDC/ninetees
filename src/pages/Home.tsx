@@ -8,7 +8,7 @@ import { config } from '../config'
 import { usePageMeta } from '../lib/usePageMeta'
 
 const TILES = ['women', 'men', 'the-britpop-edit', 'footwear', 'rave', 'accessories']
-const STAPLES = ['wannabe-platform-sandals', 'supernova-shell-jacket', 'camden-denim-jacket', 'faux-leather-biker-jacket', 'big-beat-platform-trainers', 'tartan-kilt-mini', 'firestarter-shell-tracksuit', 'ripped-mum-jeans']
+const STAPLES = ['fishtail-mod-parka', 'bittersweet-satin-slip-dress', 'tipped-knit-polo', 'wannabe-platform-sandals', 'breton-stripe-long-sleeve', 'bootcut-flares', 'suede-terrace-trainers', 'puffa-jacket']
 
 function Hero() {
   // Shopify's CDN will transcode the PNG master to a progressive JPEG, which is a tenth of the size.
@@ -30,7 +30,7 @@ function Hero() {
         <div className="hero__meta">
           <div><strong>{products.length}</strong>pieces, one decade</div>
           <div><strong>UK 2–12</strong>footwear sizing</div>
-          <div><strong>XS–2XL</strong>everything else</div>
+          <div><strong>XS–2XL</strong>unisex sizing</div>
         </div>
         </div>
       </div>
@@ -39,6 +39,8 @@ function Hero() {
 }
 
 function Tiles() {
+  const used = new Set<string>()
+  const covers = TILES.map((h) => { const c = collectionCover(h, used); if (c) used.add(c.handle); return c })
   return (
     <section className="section section--tight">
       <div className="wrap">
@@ -46,8 +48,8 @@ function Tiles() {
           <div><p className="eyebrow">Shop by mood</p><h2 className="display">Pick your decade. It's the same one.</h2></div>
         </div>
         <div className="tiles">
-          {TILES.map((h) => {
-            const c = collectionByHandle(h); const cover = collectionCover(h)
+          {TILES.map((h, i) => {
+            const c = collectionByHandle(h); const cover = covers[i]
             if (!c) return null
             return (
               <Link to={`/collections/${h}`} className="tile" key={h}>
@@ -120,7 +122,9 @@ function Newsletter() {
 
 export default function Home() {
   usePageMeta()
-  const staples = STAPLES.map(productByHandle).filter(Boolean) as typeof products
+  const picked = STAPLES.map(productByHandle).filter((p): p is NonNullable<typeof p> => Boolean(p && p.images.length))
+  const fill = products.filter((p) => p.images.length > 1 && !picked.includes(p)).slice(0, Math.max(0, 8 - picked.length))
+  const staples = [...picked, ...fill]
   const fresh = newIn.slice(0, 4)
   return (
     <>
