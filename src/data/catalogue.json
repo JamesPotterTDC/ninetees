@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-18T22:00:47+00:00",
+ "generatedAt": "2026-09-18T22:02:16+00:00",
  "shop": {
   "domain": "jamesinternaltesting.myshopify.com",
   "currency": "GBP",
@@ -7633,8 +7633,26 @@
    ],
    "images": [
     {
-     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_2ab8fa5e-f71d-4af1-8788-3ed26253b24d.png?v=1789765659",
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/1-product_ff870160-ccf1-45bb-ad8a-1bb45ce52b7d.png?v=1789768894",
      "alt": "Sorted Neon Crop Top - product",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/2-model-full_08afd50b-1836-4c22-83a8-3204ac6dd203.png?v=1789768897",
+     "alt": "Sorted Neon Crop Top - model-full",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/3-model-half_afb67e39-e043-43e0-b287-de747b10f17f.png?v=1789768899",
+     "alt": "Sorted Neon Crop Top - model-half",
+     "width": 1024,
+     "height": 1536
+    },
+    {
+     "url": "https://cdn.shopify.com/s/files/1/0786/6607/2331/files/4-detail_633793e1-0918-4ba8-b075-26f9e0ff3386.png?v=1789768901",
+     "alt": "Sorted Neon Crop Top - detail",
      "width": 1024,
      "height": 1536
     }

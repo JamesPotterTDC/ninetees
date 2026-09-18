@@ -40,7 +40,7 @@ def main():
             "createdAt": p["createdAt"], "newIn": "New In" in tags,
             "options": p["options"],
             "images": [{"url": m["image"]["url"], "alt": m.get("alt") or p["title"], "width": m["image"]["width"], "height": m["image"]["height"]}
-                       for m in p["media"]["nodes"] if m["mediaContentType"] == "IMAGE"],
+                       for m in p["media"]["nodes"] if m["mediaContentType"] == "IMAGE" and m.get("image") and m["image"].get("url")],  # skip media Shopify is still processing
             "variants": [{"id": v["id"], "sku": v["sku"], "title": v["title"], "price": float(v["price"]),
                           "compareAtPrice": float(v["compareAtPrice"]) if v["compareAtPrice"] else None,
                           "available": bool(v["availableForSale"]), "quantity": v["inventoryQuantity"],
