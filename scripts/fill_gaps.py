@@ -150,7 +150,7 @@ def step_shipping(shop):
     gbp = lambda a: {"amount": a, "currencyCode": "GBP"}
     new = [
         {"name": "Standard delivery (3 to 5 working days)", "active": True, "rateDefinition": {"price": gbp(3.95)},
-         "priceConditionsToCreate": [{"criteria": gbp(0), "operator": "GREATER_THAN_OR_EQUAL_TO"}, {"criteria": gbp(75), "operator": "LESS_THAN"}]},
+         "priceConditionsToCreate": [{"criteria": gbp(0), "operator": "GREATER_THAN_OR_EQUAL_TO"}, {"criteria": gbp(74.99), "operator": "LESS_THAN_OR_EQUAL_TO"}]},
         {"name": "Free standard delivery on orders over £75", "active": True, "rateDefinition": {"price": gbp(0)},
          "priceConditionsToCreate": [{"criteria": gbp(75), "operator": "GREATER_THAN_OR_EQUAL_TO"}]},
         {"name": "Next working day (order by 2pm)", "active": True, "rateDefinition": {"price": gbp(6.95)},
