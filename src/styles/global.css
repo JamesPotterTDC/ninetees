@@ -51,7 +51,7 @@ main:focus { outline: none; }
 .hdr { position: sticky; top: 0; z-index: 40; background: rgba(250, 249, 246, .88); backdrop-filter: saturate(140%) blur(14px); border-bottom: 1px solid var(--line); }
 .hdr__row { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: 64px; gap: 24px; }
 .logo { display: inline-flex; align-items: center; }
-.logo img { display: block; height: 40px; width: auto; }
+.logo img { display: block; height: 44px; width: auto; }
 .nav { display: flex; gap: 26px; justify-content: center; }
 .nav a { white-space: nowrap; font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; padding: 6px 0; border-bottom: 2px solid transparent; }
 .nav a:hover, .nav a.active { border-color: var(--ink); }
@@ -72,7 +72,7 @@ main:focus { outline: none; }
 @media (max-width: 860px) { .menu { display: block; } }
 @media (prefers-reduced-motion: reduce) { .menu { transition: none; } }
 
-/* ticker
+/* ticker */
 .ticker { background: var(--ink); color: var(--acid); overflow: hidden; border-block: 1px solid var(--ink); }
 .ticker__track { display: flex; width: max-content; animation: ticker 40s linear infinite; }
 .ticker__track:hover { animation-play-state: paused; }
@@ -300,7 +300,7 @@ main:focus { outline: none; }
   .nav { display: none; }
   .hdr__actions .hdr__menu { display: inline-flex; }
   .hdr__actions { gap: 14px; }
-  .logo img { height: 34px; }
+  .logo img { height: 36px; }
   .hero__grid { grid-template-columns: 1fr; min-height: 0; padding-block: 40px; }
   .hero__meta { flex-wrap: wrap; gap: 18px; }
   .collage { max-width: 520px; }

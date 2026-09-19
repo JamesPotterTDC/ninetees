@@ -53,9 +53,9 @@ function trackingFor(font, str, capHeight, target) {
 }
 
 /** The full lockup laid out on a wordmark of width W with its top-left at (0,0). Returns svg fragments and total height. */
-export function lockup(W, { fill = C.bone, stripes = 'colour', caption = true, bar = true } = {}) {
+export function lockup(W, { fill = C.bone, stripes = 'colour', caption = true, bar = true, aspect = P.wordAspect } = {}) {
   // wordmark: natural width at cap height h is (advance/capHeight)*h; we want width W and height W/wordAspect
-  const capH = W / P.wordAspect
+  const capH = W / aspect
   const wm = text(anton, 'NINETEES', 1, P.wordTracking)   // at cap height 1, then scaled: x to fit W, y to capH
   const sx = W / wm.width
   let y = capH
@@ -132,6 +132,10 @@ add('ninetees-icon-mono-bone', 1000, 1000, device(1000, { fill: C.bone, bg: null
 { const l = lockup(W, { caption: false, bar: false }); add('web-wordmark-bone', W, l.height, l.svg) }
 { const l = lockup(W, { fill: C.ink, caption: false, stripes: 'light' }); add('web-wordmark-bar-ink', W, l.height, l.svg) }
 { const l = lockup(W); add('web-logo-bone', W, l.height, l.svg) }
+
+// 8. header cut: less vertical stretch so the letters read at 40-50px tall (the full logo keeps the tall proportions)
+{ const l = lockup(W, { fill: C.ink, caption: false, bar: false, aspect: 3.2 }); add('web-wordmark-ink-header', W, l.height, l.svg) }
+{ const l = lockup(W, { caption: false, bar: false, aspect: 3.2 }); add('web-wordmark-bone-header', W, l.height, l.svg) }
 
 // 6. social preview (Open Graph) card: the lockup centred on ink at 1200x630
 { const lw = 760; const l = lockup(lw); add('ninetees-og', 1200, 630, `<g transform="translate(${(1200 - lw) / 2} ${((630 - l.height) / 2).toFixed(2)})">${l.svg}</g>`, C.ink) }

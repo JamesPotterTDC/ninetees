@@ -15,6 +15,19 @@ test('desktop header shows the wordmark and nav, not the phone menu button', asy
   await expect(page.getByRole('button', { name: 'Menu' })).toBeHidden()
 })
 
+test('ticker is a styled marquee, not plain text', async ({ page }) => {
+  await page.goto('./')
+  const track = page.locator('.ticker__track')
+  await expect(track).toHaveCSS('animation-name', 'ticker')
+  await expect(page.locator('.ticker')).toHaveCSS('background-color', 'rgb(10, 10, 11)')
+})
+
+test('header wordmark is wide enough to read', async ({ page }) => {
+  await page.goto('./')
+  const box = await page.getByRole('link', { name: 'NineTees home' }).getByRole('img').boundingBox()
+  expect(box?.width ?? 0).toBeGreaterThan(120)
+})
+
 test('skip link is the first thing the keyboard reaches', async ({ page }) => {
   await page.goto('./')
   await page.keyboard.press('Tab')
