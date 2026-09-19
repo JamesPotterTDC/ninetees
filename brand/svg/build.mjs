@@ -127,6 +127,12 @@ add('ninetees-icon-transparent', 1000, 1000, device(1000, { bg: null }))
 add('ninetees-icon-mono-ink', 1000, 1000, device(1000, { fill: C.ink, bg: null, stripes: 'mono' }))
 add('ninetees-icon-mono-bone', 1000, 1000, device(1000, { fill: C.bone, bg: null, stripes: 'mono' }))
 
+// 7. tight-cropped web set (no margin): the site's header and footer size these by CSS
+{ const l = lockup(W, { fill: C.ink, caption: false, bar: false }); add('web-wordmark-ink', W, l.height, l.svg) }
+{ const l = lockup(W, { caption: false, bar: false }); add('web-wordmark-bone', W, l.height, l.svg) }
+{ const l = lockup(W, { fill: C.ink, caption: false, stripes: 'light' }); add('web-wordmark-bar-ink', W, l.height, l.svg) }
+{ const l = lockup(W); add('web-logo-bone', W, l.height, l.svg) }
+
 // 6. social preview (Open Graph) card: the lockup centred on ink at 1200x630
 { const lw = 760; const l = lockup(lw); add('ninetees-og', 1200, 630, `<g transform="translate(${(1200 - lw) / 2} ${((630 - l.height) / 2).toFixed(2)})">${l.svg}</g>`, C.ink) }
 

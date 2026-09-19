@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { config } from '../config'
 import Stars from './Stars'
 import { siteStats } from '../lib/reviews'
+import logo from '../assets/brand/logo-bone.svg'
 import { products } from '../lib/catalogue'
 
 export default function Footer() {
@@ -10,8 +11,7 @@ export default function Footer() {
     <footer className="ftr">
       <div className="wrap ftr__grid">
         <div>
-          <img className="ftr__mark" src={`${config.brand.markUrl}&width=240`} alt="" width="96" height="96" loading="lazy" />
-          <div className="logo">{config.brand.name.toUpperCase()} <small>EST. {config.brand.est}</small></div>
+          <img className="ftr__logo" src={logo} alt={`${config.brand.name}, est. ${config.brand.est}, ${config.brand.city}`} width="240" height="151" loading="lazy" />
           <p>{config.brand.strap} Only ever the nineties, only ever from {config.brand.city}. Parkas, platforms and a bit of swagger, cut properly.</p>
           <div className="ftr__social">
             <Link to="/#wearing">Instagram {config.social.instagram}</Link>

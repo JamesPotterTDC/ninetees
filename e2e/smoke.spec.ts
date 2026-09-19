@@ -8,6 +8,13 @@ test('home page renders the hero, trust strip and footer', async ({ page }) => {
   await expect(page.getByText('Fulfilment powered by')).toBeVisible()
 })
 
+test('desktop header shows the wordmark and nav, not the phone menu button', async ({ page }) => {
+  await page.goto('./')
+  await expect(page.getByRole('link', { name: 'NineTees home' }).getByRole('img')).toBeVisible()
+  await expect(page.getByRole('navigation', { name: 'Shop' }).first()).toBeVisible()
+  await expect(page.getByRole('button', { name: 'Menu' })).toBeHidden()
+})
+
 test('skip link is the first thing the keyboard reaches', async ({ page }) => {
   await page.goto('./')
   await page.keyboard.press('Tab')

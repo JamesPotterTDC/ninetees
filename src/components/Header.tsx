@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { useCart } from '../lib/cart'
 import { config } from '../config'
+import wordmark from '../assets/brand/wordmark-ink.svg'
 
 const NAV = [
   ['new-in', 'New In'], ['women', 'Women'], ['men', 'Men'], ['the-britpop-edit', 'Britpop Edit'],
@@ -26,7 +27,7 @@ export default function Header() {
     <header className="hdr">
       <div className="wrap hdr__row">
         <Link to="/" className="logo" aria-label={`${config.brand.name} home`} onClick={close}>
-          {config.brand.name.toUpperCase()} <small>EST. {config.brand.est}</small>
+          <img src={wordmark} alt={config.brand.name} width="90" height="40" />
         </Link>
         <nav className="nav" aria-label="Shop">
           {NAV.map(([h, label]) => <NavLink key={h} to={`/collections/${h}`}>{label}</NavLink>)}

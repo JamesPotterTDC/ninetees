@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { config } from '../config'
 import { usePageMeta } from '../lib/usePageMeta'
+import logo from '../assets/brand/logo-on-ink.svg'
 
 export default function About() {
   usePageMeta('Our story', `${config.brand.name} started in ${config.brand.est} in ${config.brand.city} with one rule: if it isn't the nineties, we don't sell it. Thirty years on, the rule still stands.`)
@@ -20,7 +21,7 @@ export default function About() {
         <h2>The practical bit</h2>
         <p>Sizing, delivery, returns and the questions we get asked most all live on the <Link to="/help" className="link">Help page</Link>. Short version: if you are between sizes, go up. The nineties were never about a close fit.</p>
       </div>
-      <aside className="about-mark"><img src={`${config.brand.markUrl}&width=900`} alt="NineTees brand mark" /></aside>
+      <aside className="about-mark"><img src={logo} alt={`${config.brand.name} logo`} width="1160" height="782" /></aside>
       </div>
     </div>
   )

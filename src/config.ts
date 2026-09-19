@@ -17,7 +17,6 @@ export const config = {
     city: 'Manchester',
     warehouse: 'Yorkshire',
     heroUrl: 'https://cdn.shopify.com/s/files/1/0786/6607/2331/files/hero-skatepark.png?v=1789764682',
-    markUrl: 'https://cdn.shopify.com/s/files/1/0786/6607/2331/files/NineTees.png?v=1789759916',
   },
   contact: {
     email: 'hello@ninetees.co.uk',
