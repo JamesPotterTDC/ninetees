@@ -1,7 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { config } from '../config'
 import { lookupVariant, type Product, type Variant } from './catalogue'
-import { BAG_KEY as KEY, CHECKOUT_KEY, PW_DONE_KEY, markPending, postStorePassword } from './checkout'
+import { BAG_KEY as KEY, CHECKOUT_KEY, PW_DONE_KEY, markPending, passwordDoneFor, postStorePassword } from './checkout'
 import { storefront } from './storefront'
 
 export type BagItem = { variantId: string; qty: number }
@@ -78,12 +78,11 @@ export function CartProvider({ children }: { children: ReactNode }) {
       // Shopify drops lines it cannot sell (unpublished products) without reporting an error. Say so rather than checking out short.
       if (cart.totalQuantity < requested) throw new Error(`Shopify could only accept ${cart.totalQuantity} of the ${requested} items in your bag. Remove the rest and try again.`)
       const url = cart.checkoutUrl
-      // Shopify only needs the store password once per browser. After that, go straight to checkout.
-      let pwDone = false
-      try { pwDone = localStorage.getItem(PW_DONE_KEY) === '1' } catch { /* ignore */ }
-      if (config.storePassword && !pwDone) {
-        try { localStorage.setItem(CHECKOUT_KEY, JSON.stringify({ url, cartId: cart.id, at: Date.now() })); localStorage.setItem(PW_DONE_KEY, '1') } catch { window.location.assign(url); return }
-        postStorePassword()
+      // Shopify only needs the store password once per browser per host. After that, go straight to checkout.
+      const origin = new URL(url).origin
+      if (config.storePassword && passwordDoneFor() !== origin) {
+        try { localStorage.setItem(CHECKOUT_KEY, JSON.stringify({ url, cartId: cart.id, at: Date.now() })); localStorage.setItem(PW_DONE_KEY, origin) } catch { window.location.assign(url); return }
+        postStorePassword(origin)
       } else {
         markPending(cart.id)
         window.location.assign(url)

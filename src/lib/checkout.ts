@@ -6,13 +6,22 @@ export const BAG_KEY = 'ninetees.bag.v1'
 export const CHECKOUT_KEY = 'ninetees.checkout.v1'
 /** Set when we leave for Shopify's checkout, so we recognise the visitor when Shopify sends them back. */
 export const PENDING_KEY = 'ninetees.checkout.pending'
+/** The origin the store password has been posted to in this browser. The cookie is per host, so a change of
+ *  checkout domain means posting again. */
 export const PW_DONE_KEY = 'ninetees.pw.done'
+export function passwordDoneFor(): string | null {
+  try {
+    const v = localStorage.getItem(PW_DONE_KEY)
+    return v === '1' ? `https://${config.shopDomain}` : v   // '1' is the flag older builds wrote, before the domain could vary
+  } catch { return null }
+}
 
-/** Top-level POST of the store password to Shopify. Shopify sets its session cookie and lands on the theme home
- *  page, which redirects back here with ?resume=checkout; resumeCheckout() then finishes the job. */
-export function postStorePassword() {
+/** Top-level POST of the store password to Shopify, on the host the checkout lives on (the store's primary domain,
+ *  which can differ from the API host). Shopify sets its session cookie and lands on the theme home page, which
+ *  redirects back here with ?resume=checkout; resumeCheckout() then finishes the job. */
+export function postStorePassword(origin: string) {
   const form = document.createElement('form')
-  form.method = 'POST'; form.action = `https://${config.shopDomain}/password`; form.style.display = 'none'
+  form.method = 'POST'; form.action = `${origin}/password`; form.style.display = 'none'
   for (const [name, value] of Object.entries({ form_type: 'storefront_password', utf8: '✓', password: config.storePassword })) {
     const input = document.createElement('input'); input.type = 'hidden'; input.name = name; input.value = value; form.appendChild(input)
   }
