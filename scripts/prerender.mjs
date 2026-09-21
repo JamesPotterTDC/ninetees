@@ -55,7 +55,11 @@ const add = (path, lastmod, priority) => urls.push({ loc: SITE + path, lastmod, 
 const today = new Date().toISOString().slice(0, 10)
 const exported = catalogue.generatedAt.slice(0, 10)
 
-write('', shell({ path: '', title: '', description: defaultDescription })); add('', today, '1.0')
+const org = {
+  '@context': 'https://schema.org', '@type': 'Organization', name: BRAND, url: SITE, logo: `${SITE}apple-touch-icon.png`,
+  sameAs: ['https://www.instagram.com/nineteesbrand', 'https://www.tiktok.com/@nineteesbrand'],
+}
+write('', shell({ path: '', title: '', description: defaultDescription, extra: `<script type="application/ld+json">${JSON.stringify(org)}</script>` })); add('', today, '1.0')
 write('about', shell({ path: 'about', title: 'Our story', description: `${BRAND} started in 1994 in Manchester with one rule: if it isn't the nineties, we don't sell it.` })); add('about', today, '0.6')
 write('help', shell({ path: 'help', title: 'Help & FAQ', description: `Delivery, returns, sizing and everything else you might want to know before you order from ${BRAND}.` })); add('help', today, '0.6')
 write('search', shell({ path: 'search', title: 'Search', description: defaultDescription, noindex: true }))

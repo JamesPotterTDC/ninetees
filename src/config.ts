@@ -25,7 +25,10 @@ export const config = {
     address: ['Unit 7, Hilton Street', 'Northern Quarter', 'Manchester M1 2EH'],
     shopHours: 'Thursday to Sunday, 11am to 6pm',
   },
-  social: { instagram: '@ninetees', tiktok: '@ninetees.uk' },
+  social: {
+    instagram: { handle: '@nineteesbrand', url: 'https://www.instagram.com/nineteesbrand' },
+    tiktok: { handle: '@nineteesbrand', url: 'https://www.tiktok.com/@nineteesbrand' },
+  },
   payments: ['Visa', 'Mastercard', 'Amex', 'Apple Pay', 'Google Pay', 'PayPal', 'Klarna'],
   delivery: { standard: 3.95, nextDay: 6.95, freeOver: 75, cutoffHour: 14, returnsDays: 28 },
   fulfilment: 'Helm',

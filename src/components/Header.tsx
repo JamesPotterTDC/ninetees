@@ -51,6 +51,8 @@ export default function Header() {
           <Link to="/help#delivery" onClick={close}>Delivery &amp; returns</Link>
           <Link to="/about" onClick={close}>Our story</Link>
           <Link to="/help#contact" onClick={close}>Contact</Link>
+          <a href={config.social.instagram.url} target="_blank" rel="noopener">Instagram</a>
+          <a href={config.social.tiktok.url} target="_blank" rel="noopener">TikTok</a>
         </div>
         <p className="menu__foot">Free UK delivery over £{config.delivery.freeOver} · Free returns within {config.delivery.returnsDays} days</p>
       </div>

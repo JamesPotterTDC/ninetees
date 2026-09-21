@@ -85,8 +85,8 @@ function Wearing() {
     <section className="section section--tight" id="wearing">
       <div className="wrap">
         <div className="section__head">
-          <div><p className="eyebrow">#ninetees</p><h2 className="display">Wearing NineTees</h2></div>
-          <p>Tag us on Instagram or TikTok and we will put you here.</p>
+          <div><p className="eyebrow">{config.social.instagram.handle}</p><h2 className="display">Wearing NineTees</h2></div>
+          <p>Tag {config.social.instagram.handle} on <a className="link" href={config.social.instagram.url} target="_blank" rel="noopener">Instagram</a> or <a className="link" href={config.social.tiktok.url} target="_blank" rel="noopener">TikTok</a> and we will put you here.</p>
         </div>
         <div className="gallery-grid">
           {tiles.map(({ p, who, where }) => (

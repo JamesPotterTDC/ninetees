@@ -28,6 +28,13 @@ test('header wordmark is wide enough to read', async ({ page }) => {
   expect(box?.width ?? 0).toBeGreaterThan(120)
 })
 
+test('footer links out to the brand social accounts', async ({ page }) => {
+  await page.goto('./')
+  const footer = page.locator('footer')
+  await expect(footer.getByRole('link', { name: /Instagram/ })).toHaveAttribute('href', 'https://www.instagram.com/nineteesbrand')
+  await expect(footer.getByRole('link', { name: /TikTok/ })).toHaveAttribute('href', 'https://www.tiktok.com/@nineteesbrand')
+})
+
 test('skip link is the first thing the keyboard reaches', async ({ page }) => {
   await page.goto('./')
   await page.keyboard.press('Tab')

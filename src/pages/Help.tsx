@@ -86,6 +86,7 @@ export default function Help() {
 
           <h2 id="contact">Contact</h2>
           <p>Email <a className="link" href={`mailto:${config.contact.email}`}>{config.contact.email}</a> or call <a className="link" href={`tel:${config.contact.phone.replace(/\s/g, '')}`}>{config.contact.phone}</a>, {config.contact.hours}. We usually reply within one working day, quicker if you include your order number.</p>
+          <p>We are {config.social.instagram.handle} on <a className="link" href={config.social.instagram.url} target="_blank" rel="noopener">Instagram</a> and <a className="link" href={config.social.tiktok.url} target="_blank" rel="noopener">TikTok</a>. Messages there get answered too, just a little slower.</p>
           <p>{config.brand.legalName}<br />{config.contact.address.map((l) => <span key={l}>{l}<br /></span>)}</p>
           <p>Prefer to browse? <Link to="/collections/new-in" className="link">Start with what's new</Link>.</p>
         </div>

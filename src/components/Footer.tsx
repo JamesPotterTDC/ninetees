@@ -14,8 +14,8 @@ export default function Footer() {
           <img className="ftr__logo" src={logo} alt={`${config.brand.name}, est. ${config.brand.est}, ${config.brand.city}`} width="240" height="151" loading="lazy" />
           <p>{config.brand.strap} Only ever the nineties, only ever from {config.brand.city}. Parkas, platforms and a bit of swagger, cut properly.</p>
           <div className="ftr__social">
-            <Link to="/#wearing">Instagram {config.social.instagram}</Link>
-            <Link to="/#wearing">TikTok {config.social.tiktok}</Link>
+            <a href={config.social.instagram.url} target="_blank" rel="noopener">Instagram {config.social.instagram.handle}</a>
+            <a href={config.social.tiktok.url} target="_blank" rel="noopener">TikTok {config.social.tiktok.handle}</a>
           </div>
           <p className="ftr__rating"><Stars rating={stats.average} size={12} /> {stats.average.toFixed(1)} from {stats.count.toLocaleString('en-GB')} reviews</p>
         </div>
