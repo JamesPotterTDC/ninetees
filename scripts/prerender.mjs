@@ -2,13 +2,14 @@
 // social preview tags, so a shared link unfurls as that product or collection rather than the generic
 // home page. GitHub Pages serves dist/products/<handle>.html at /products/<handle>. The body is still
 // rendered by the app; only the head differs. Also writes sitemap.xml, robots.txt and the SPA 404.html.
+// GitHub redirects the old jamespottertdc.github.io/ninetees/ address to the custom domain.
 import { readFileSync, writeFileSync, mkdirSync, copyFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const dist = join(root, 'dist')
-const SITE = 'https://jamespottertdc.github.io/ninetees/'
+const SITE = 'https://www.ninetees.co.uk/'
 const BRAND = 'NineTees'
 const TAGLINE = 'Britpop, reissued.'
 
@@ -96,5 +97,5 @@ void byHandle
 
 copyFileSync(join(dist, 'index.html'), join(dist, '404.html'))
 writeFileSync(join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${u.loc}</loc><lastmod>${u.lastmod}</lastmod><priority>${u.priority}</priority></url>`).join('\n')}\n</urlset>\n`)
-writeFileSync(join(dist, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /ninetees/bag\nDisallow: /ninetees/search\nDisallow: /ninetees/thanks\n\nSitemap: ${SITE}sitemap.xml\n`)
+writeFileSync(join(dist, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /bag\nDisallow: /search\nDisallow: /thanks\n\nSitemap: ${SITE}sitemap.xml\n`)
 console.log(`prerendered ${urls.length + 3} route shells, sitemap with ${urls.length} URLs, robots.txt, 404.html`)

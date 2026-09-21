@@ -7,7 +7,7 @@ export const config = {
   // The store keeps Shopify's storefront password on and Shopify's checkout insists on the matching
   // cookie, so the site posts the password for the visitor before handing over to checkout.
   storePassword: 'yeltao',
-  siteUrl: 'https://jamespottertdc.github.io/ninetees/',
+  siteUrl: 'https://www.ninetees.co.uk/',
   brand: {
     name: 'NineTees',
     legalName: 'NineTees Ltd',
