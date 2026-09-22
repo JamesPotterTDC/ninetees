@@ -16,12 +16,14 @@ npm run build            # type-check, build to dist/, then write per-route HTML
 npm run lint             # oxlint
 npm test                 # unit tests (Vitest) for the catalogue helpers, reviews and despatch countdown
 npm run e2e              # Playwright smoke test against the built site (run npm run build first)
+npm run serve            # serve dist/ like GitHub Pages does, at http://127.0.0.1:4173/
 ```
 
 The deploy workflow runs lint, unit tests, build and the browser suite before publishing. `refresh-catalogue.yml` re-exports the catalogue from Shopify every morning and redeploys if anything changed; it needs a `SHOPIFY_ADMIN_TOKEN` repository secret.
 
 - **Catalogue at runtime**: `src/lib/catalogue.ts` fetches the exported JSON as its own hashed asset (top-level await) and builds the lookups in `catalogue-core.ts`, which is what the unit tests import.
-- **Prerender**: `scripts/prerender.mjs` writes `dist/<route>.html` for every product, collection and static page with its own title, description, Open Graph tags and (for products) JSON-LD, so shared links unfurl correctly. GitHub Pages serves `products/<handle>.html` at `/products/<handle>`.
+- **Prerender**: the build also compiles `src/entry-server.tsx` (`vite build --ssr`) and `scripts/prerender.mjs` renders every product, collection and static page to full HTML, body included, with its own title, description, Open Graph tags, image preload and JSON-LD (Product, BreadcrumbList, Organization). The browser hydrates that HTML. GitHub Pages serves `products/<handle>.html` at `/products/<handle>`; `npm run serve` mimics that locally and is what the Playwright suite runs against.
+- **Hydration rule**: anything that depends on the browser (bag contents, recently viewed, the despatch countdown, live stock) is read after mount, never during the first render, so the prerendered HTML and the first client render match. Review dates hang off the catalogue's export time for the same reason.
 - **Reviews** are generated deterministically per product in `src/lib/reviews.ts`.
 
 Set `VITE_SHOPIFY_STOREFRONT_TOKEN` (a public Storefront API token) to enable checkout. In GitHub it is a repository variable named `SHOPIFY_STOREFRONT_TOKEN`.

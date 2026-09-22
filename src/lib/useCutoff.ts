@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useSyncExternalStore } from 'react'
 import { config } from '../config'
 
 const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
@@ -23,11 +23,16 @@ export function despatchMessage(now: Date = new Date()): string {
   return `Order now and it leaves our warehouse on ${next}.`
 }
 
-export function useCutoff(): string {
+/** False during prerender and hydration, true once the page is live in a browser. */
+const useMounted = () => useSyncExternalStore(() => () => {}, () => true, () => false)
+
+/** Null until the page is running in the browser: the countdown depends on the visitor's clock, not the build's. */
+export function useCutoff(): string | null {
+  const mounted = useMounted()
   const [msg, setMsg] = useState(() => despatchMessage())
   useEffect(() => {
     const t = setInterval(() => setMsg(despatchMessage()), 30_000)
     return () => clearInterval(t)
   }, [])
-  return msg
+  return mounted ? msg : null
 }

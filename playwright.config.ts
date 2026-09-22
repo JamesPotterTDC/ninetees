@@ -1,6 +1,6 @@
 import { defineConfig } from '@playwright/test'
 
-// Runs against the production build served by vite preview (npm run build first).
+// Runs against the production build served like GitHub Pages does (npm run build first).
 export default defineConfig({
   testDir: 'e2e',
   timeout: 30_000,
@@ -8,7 +8,7 @@ export default defineConfig({
   reporter: process.env.CI ? 'github' : 'list',
   use: { baseURL: 'http://127.0.0.1:4173/', trace: 'retain-on-failure' },
   webServer: {
-    command: 'npx vite preview --host 127.0.0.1 --port 4173 --strictPort',
+    command: 'node scripts/serve-dist.mjs',
     url: 'http://127.0.0.1:4173/',
     reuseExistingServer: !process.env.CI,
     timeout: 30_000,

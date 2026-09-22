@@ -116,7 +116,7 @@ function Tiles() {
             if (!c) return null
             return (
               <Link to={`/collections/${h}`} className="tile" key={h}>
-                {cover?.images[0] && <img src={img(cover.images[0].url, 600)} alt="" loading="lazy" />}
+                {cover?.images[0] && <img src={img(cover.images[0].url, 600)} srcSet={`${img(cover.images[0].url, 400)} 400w, ${img(cover.images[0].url, 600)} 600w`} sizes="(max-width: 520px) 50vw, (max-width: 1100px) 33vw, 16vw" alt="" loading="lazy" />}
                 <div className="tile__label"><small>{c.count} pieces</small>{c.title}</div>
               </Link>
             )

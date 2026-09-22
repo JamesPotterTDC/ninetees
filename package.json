@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && node scripts/prerender.mjs",
+    "build": "tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
     "lint": "oxlint",
     "preview": "vite preview",
+    "serve": "node scripts/serve-dist.mjs",
     "export": "python3 scripts/export_catalogue.py",
     "test": "vitest run",
     "e2e": "playwright test"
@@ -15,6 +16,7 @@
   "dependencies": {
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
+    "react-router": "^7.18.4",
     "react-router-dom": "^7.18.4"
   },
   "devDependencies": {

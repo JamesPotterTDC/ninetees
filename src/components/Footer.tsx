@@ -20,7 +20,7 @@ export default function Footer() {
           <p className="ftr__rating"><Stars rating={stats.average} size={12} /> {stats.average.toFixed(1)} from {stats.count.toLocaleString('en-GB')} reviews</p>
         </div>
         <div>
-          <h4>Shop</h4>
+          <h3>Shop</h3>
           <ul>
             <li><Link to="/collections/new-in">New In</Link></li>
             <li><Link to="/collections/women">Women</Link></li>
@@ -30,7 +30,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h4>Help</h4>
+          <h3>Help</h3>
           <ul>
             <li><Link to="/help">Help &amp; FAQ</Link></li>
             <li><Link to="/help#delivery">Delivery &amp; returns</Link></li>
@@ -40,7 +40,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h4>Company</h4>
+          <h3>Company</h3>
           <ul>
             <li><Link to="/about">Our story</Link></li>
             <li><Link to="/about#shop">Our shop</Link></li>

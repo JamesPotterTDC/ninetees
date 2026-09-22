@@ -24,7 +24,13 @@ function loadItems(): BagItem[] {
 }
 
 export function CartProvider({ children }: { children: ReactNode }) {
-  const [items, setItems] = useState<BagItem[]>(loadItems)
+  const [items, setItems] = useState<BagItem[]>([])
+  const [loaded, setLoaded] = useState(false)
+  // The bag lives in localStorage, which the prerendered HTML cannot know about: read it once after hydration.
+  useEffect(() => {
+    // oxlint-disable-next-line react/set-state-in-effect
+    setItems(loadItems()); setLoaded(true)
+  }, [])
   const [open, setOpenState] = useState(false)
   const returnFocus = useRef<HTMLElement | null>(null)
   /** Remember what had focus when the bag opened, so closing it can hand focus straight back. */
@@ -39,7 +45,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const [checkingOut, setCheckingOut] = useState(false)
   const [checkoutError, setCheckoutError] = useState<string | null>(null)
 
-  useEffect(() => { try { localStorage.setItem(KEY, JSON.stringify(items)) } catch { /* storage unavailable */ } }, [items])
+  useEffect(() => { if (!loaded) return; try { localStorage.setItem(KEY, JSON.stringify(items)) } catch { /* storage unavailable */ } }, [items, loaded])
   useEffect(() => { document.body.style.overflow = open ? 'hidden' : ''; return () => { document.body.style.overflow = '' } }, [open])
 
   const lines = useMemo<BagLine[]>(() => items.flatMap((i) => {

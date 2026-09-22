@@ -83,7 +83,9 @@ function ProductView({ product }: { product: ProductInfo }) {
             </div>
           )}
           <div className="gallery__main" style={product.images.length <= 1 ? { gridColumn: '1 / -1' } : undefined}>
-            {main ? <img src={img(main.url, 1200)} alt={main.alt} /> : <Placeholder product={product} />}
+            {main
+              ? <img src={img(main.url, 1200)} srcSet={`${img(main.url, 600)} 600w, ${img(main.url, 900)} 900w, ${img(main.url, 1200)} 1200w`} sizes="(max-width: 860px) 100vw, 55vw" alt={main.alt} fetchPriority="high" />
+              : <Placeholder product={product} />}
           </div>
         </div>
         <div className="buy">
@@ -117,7 +119,7 @@ function ProductView({ product }: { product: ProductInfo }) {
               {' · '}<span className="small">Ref {variant.sku}</span>
             </p>
           )}
-          <p className="cutoff">{despatch}</p>
+          {despatch && <p className="cutoff">{despatch}</p>}
           <button type="button" className="btn btn--full" disabled={!complete || !stock?.available} onClick={onAdd}>
             {added ? 'Added to bag' : !complete ? 'Select your size' : stock?.available && variant ? `Add to bag · ${money(variant.price)}` : 'Sold out'}
           </button>

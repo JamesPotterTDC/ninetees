@@ -76,13 +76,21 @@ function generate(product: Product): Review[] {
     out.push({
       id: `${product.handle}-${i}`, name: pick(r, NAMES), place: pick(r, PLACES), rating,
       title: rating >= 4 ? pick(r, TITLES_GOOD) : pick(r, TITLES_MID), body, size: sizeLabel(product, r), fit,
-      date: fmt.format(new Date(Date.now() - daysAgo * 864e5)), helpful: Math.floor(r() * 24),
+      date: fmt.format(new Date(anchor - daysAgo * 864e5)), helpful: Math.floor(r() * 24),
     })
   }
   return out.sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
 }
 
 const cache = new Map<string, Review[]>()
+let stats: { count: number; average: number } | null = null
+let anchor = Date.now()
+/** Review dates are relative to this instant. The catalogue loader sets it to the export time so the prerendered
+ *  HTML and the browser produce identical dates; tests and the dev server fall back to now. */
+export function setReviewAnchor(ms: number) {
+  if (!Number.isFinite(ms) || ms === anchor) return
+  anchor = ms; cache.clear(); stats = null
+}
 export function reviewsFor(product: Product): Review[] {
   let list = cache.get(product.handle)
   if (!list) { list = generate(product); cache.set(product.handle, list) }
@@ -101,7 +109,6 @@ export function summarise(list: Review[]): ReviewSummary {
 
 export const ratingFor = (product: Product) => summarise(reviewsFor(product))
 
-let stats: { count: number; average: number } | null = null
 /** Store-wide totals for the trust strip and footer. */
 export function siteStats(products: Product[]) {
   if (!stats) {

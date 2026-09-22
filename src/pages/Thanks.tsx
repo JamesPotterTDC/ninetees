@@ -45,7 +45,7 @@ export default function Thanks() {
     <div className="wrap thanks">
       <p className="eyebrow">Order confirmed</p>
       <h1 className="display">Sorted.</h1>
-      <p className="thanks__lede">Thanks for your order. Here is what happens next.</p>
+      <h2 className="thanks__lede">Thanks for your order. Here is what happens next.</h2>
       <div className="story">
         {STEPS.map(([title, body], i) => (
           <article key={title}><div className="num">0{i + 1}</div><h3>{title}</h3><p>{body}</p></article>

@@ -35,6 +35,15 @@ test('footer links out to the brand social accounts', async ({ page }) => {
   await expect(footer.getByRole('link', { name: /TikTok/ })).toHaveAttribute('href', 'https://www.tiktok.com/@nineteesbrand')
 })
 
+test('prerendered product HTML carries the page body for crawlers', async ({ request }) => {
+  const res = await request.get('./products/camden-denim-jacket')
+  expect(res.ok()).toBeTruthy()
+  const html = await res.text()
+  expect(html).toContain('<h1 class="display">Camden Denim Jacket</h1>')
+  expect(html).toContain('"@type":"BreadcrumbList"')
+  expect(html).toMatch(/<link rel="preload" as="image"/)
+})
+
 test('skip link is the first thing the keyboard reaches', async ({ page }) => {
   await page.goto('./')
   await page.keyboard.press('Tab')

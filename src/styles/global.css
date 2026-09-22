@@ -6,7 +6,7 @@
 
 :root {
   --ink: #0a0a0b; --ink-2: #17171a; --bone: #f3efe6; --bone-2: #ebe6da; --paper: #faf9f6; --white: #fff;
-  --acid: #c9ff2f; --royal: #1a3cff; --red: #e0202b; --grey: #6f6f75; --grey-2: #a3a3a8; --line: rgba(10, 10, 11, .12);
+  --acid: #c9ff2f; --royal: #1a3cff; --red: #e0202b; --grey: #63636a; --grey-2: #a3a3a8; --line: rgba(10, 10, 11, .12);
   --font-display: 'Anton', Impact, 'Arial Narrow', sans-serif;
   --font-body: 'Inter Tight', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --max: 1400px; --gutter: clamp(16px, 4vw, 56px); --radius: 2px;
@@ -168,7 +168,7 @@ main:focus { outline: none; }
 .band .btn { margin-top: 28px; }
 .band__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 .band__grid .card__title, .band__grid .card__price { color: var(--bone); }
-.band__grid .card__meta { color: var(--grey-2); }
+.band__grid .card__meta, .band__grid .card__rating { color: var(--grey-2); }
 
 /* story strip */
 .story { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
@@ -284,7 +284,7 @@ main:focus { outline: none; }
 .ftr__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; padding-block: 56px 40px; }
 .ftr__logo { width: 240px; height: auto; margin-bottom: 4px; }
 .ftr p { color: var(--grey-2); max-width: 40ch; margin-top: 14px; font-size: 14px; }
-.ftr h4 { font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--grey-2); margin-bottom: 14px; }
+.ftr h3 { font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--grey-2); margin-bottom: 14px; }
 .ftr li { margin-bottom: 8px; font-size: 14px; }
 .ftr li a:hover { color: var(--acid); }
 .ftr__bar { border-top: 1px solid rgba(243,239,230,.12); padding-block: 18px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 11px; color: var(--grey-2); letter-spacing: .04em; }
@@ -357,7 +357,7 @@ button.link { color: inherit; font: inherit; }
 /* order confirmation */
 .thanks { padding-block: 64px 120px; display: grid; gap: 24px; }
 .thanks h1 { font-size: clamp(64px, 12vw, 180px); }
-.thanks__lede { max-width: 56ch; font-size: 18px; color: #2b2b30; }
+.thanks__lede { max-width: 56ch; font-size: 18px; font-family: var(--font-body); font-weight: 400; text-transform: none; letter-spacing: 0; line-height: 1.5; color: #2b2b30; }
 .thanks .story { margin-top: 8px; }
 .thanks .hero__cta { margin-top: 0; }
 /* live stock indicator */
