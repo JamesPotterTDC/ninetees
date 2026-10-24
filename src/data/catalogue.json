@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-23T10:01:20+00:00",
+ "generatedAt": "2026-10-24T09:30:59+00:00",
  "shop": {
   "domain": "jamesinternaltesting.myshopify.com",
   "currency": "GBP",
@@ -4977,7 +4977,7 @@
      "price": 26.0,
      "compareAtPrice": null,
      "available": true,
-     "quantity": 22,
+     "quantity": 21,
      "options": {
       "Size": "L"
      }
@@ -5001,7 +5001,7 @@
      "price": 26.0,
      "compareAtPrice": null,
      "available": true,
-     "quantity": 73,
+     "quantity": 72,
      "options": {
       "Size": "2XL"
      }
